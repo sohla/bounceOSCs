@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MotionKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>OSCKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +27,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0106D0429A2E43BF8E7D983EF1309B86</key>
+		<key>4F1B973D09B338F2C57CC528998608F5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -33,6 +38,11 @@
 			<true/>
 		</dict>
 		<key>B37E19CA872A7535725D1E1946E5C271</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA88A9F6F9DD52C001B7F2A862EB471D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

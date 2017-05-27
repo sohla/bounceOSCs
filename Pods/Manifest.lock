@@ -2,16 +2,19 @@ PODS:
   - CocoaAsyncSocket (7.5.0):
     - CocoaAsyncSocket/GCD (= 7.5.0)
   - CocoaAsyncSocket/GCD (7.5.0)
+  - MotionKit (0.8.1)
   - OSCKit (0.3.5):
     - CocoaAsyncSocket (~> 7.3)
 
 DEPENDENCIES:
+  - MotionKit
   - OSCKit
 
 SPEC CHECKSUMS:
   CocoaAsyncSocket: 3baeb1ddd969f81cf9fca81053ae49ef2d1cbbfa
+  MotionKit: a88a7d7b5ed6652793a3744f6ca58227d8804236
   OSCKit: 4470dbd30bc792dcf66dc4e7b5d1ec7174add33c
 
-PODFILE CHECKSUM: 5ee3fe67ac6501f817a917782386de7c14a5e505
+PODFILE CHECKSUM: fa798dab2ad6b44d072274afbc2c05cf8e79e53f
 
 COCOAPODS: 1.0.1

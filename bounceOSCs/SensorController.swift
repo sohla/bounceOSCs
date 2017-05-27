@@ -14,11 +14,15 @@ protocol SensorControllerProtocol {
     func onGo() -> Bool
 }
 
-class SensorController : SensorControllerProtocol{
+class SensorController {
     
-    func onGo() -> Bool{
-        
-        return true
+    var delegate:SensorControllerProtocol
+    
+    init(delegate:SensorControllerProtocol){
+        self.delegate = delegate;
     }
     
+    func doSomething() -> Bool{
+        return self.delegate.onGo()
+    }
 }
