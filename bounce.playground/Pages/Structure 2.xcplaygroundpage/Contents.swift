@@ -49,7 +49,25 @@ struct Accel : Sensor {
     
 }
 
-
+struct Seconds : Sensor {
+    
+    let today:Date = Calendar.current.startOfDay(for:Date())
+    
+    func getData() -> Array<Float>{
+        
+        let d:Double = Date().timeIntervalSince(today)
+        
+        return [Float(d)]
+    }
+    
+    func oscData() -> String{
+        return "Todays Time -> \(getData()[0]) secs"
+    }
+    func midiData() -> String{
+        return "MIDITime ->\(getData()[0])"
+    }
+    
+}
 
 
 class SensorTransmitter {
@@ -84,9 +102,9 @@ class SensorTransmitter {
 
 
 let stA = SensorTransmitter(s: Accel(), t: MIDI())
-let stB = SensorTransmitter(s: Gyro(), t: OSC())
+let stB = SensorTransmitter(s: Seconds(), t: OSC())
 
-stA.run()
+//stA.run()
 stB.run(interval:0.5)
 
 //CFRunLoopRun()
