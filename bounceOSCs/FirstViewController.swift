@@ -8,7 +8,7 @@
 
 import UIKit
 import OSCKit
-//import MotionKit
+import MPIMotionKit
 
 class FirstViewController: UIViewController, SensorControllerProtocol {
 
@@ -27,6 +27,11 @@ class FirstViewController: UIViewController, SensorControllerProtocol {
         
         let sc:SensorController = SensorController(delegate:self)
         print(sc.doSomething())
+        
+        MPIMotionManager.shared().getAttitudeFromDeviceMotion(withInterval: 0.01) { (attitude) in
+            
+            print(attitude!.pitch)
+        }
     
     }
 
@@ -44,3 +49,17 @@ class FirstViewController: UIViewController, SensorControllerProtocol {
     }
 }
 
+/*
+ 
+ SensorController.build(Sensor.Motion.Yaw,OSC.Yaw);
+ SensorController.build(Sensor.Audio.Threshold,OSC.AudioThreshold);
+ SensorController.build(Sensor.Time.Seconds,OSC.Seconds);
+ 
+ Yaw{
+    func send(data){
+        OSC.sendMsg("/yaw",data)
+    }
+ }
+ 
+ 
+ */

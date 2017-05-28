@@ -8,5 +8,5 @@ target 'bounceOSCs' do
   # Pods for bounceOSCs
 
 pod 'OSCKit'
-pod 'MotionKit'
+pod 'MPIMotionKit'
 end

@@ -9,7 +9,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>MotionKit.xcscheme</key>
+		<key>MPIMotionKit-MPIMotionKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MPIMotionKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,7 +32,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4F1B973D09B338F2C57CC528998608F5</key>
+		<key>52E7E95C4BEFD22CAA99C22ED72B70F5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6E19FBFFDE0F461DDF8D3547604048FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>980DA2DFF9021959A1EB0E7402119F56</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -38,11 +53,6 @@
 			<true/>
 		</dict>
 		<key>B37E19CA872A7535725D1E1946E5C271</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BA88A9F6F9DD52C001B7F2A862EB471D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -8,6 +8,13 @@
 
 import Foundation
 
+enum Sensor {
+    enum Motion {
+        case Pitch
+        case Roll
+        case Yaw
+    }
+}
 
 
 protocol SensorControllerProtocol {

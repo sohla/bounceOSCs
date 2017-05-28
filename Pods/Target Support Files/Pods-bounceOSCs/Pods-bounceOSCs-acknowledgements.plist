@@ -28,7 +28,7 @@ Updated and maintained by Deusty LLC and the Apple development community.
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright (c) 2015 MotionKit 
+			<string>Copyright (c) 2015 Adam Ro&#769;z&#775;yn&#769;ski &lt;adam@micropixels.pl&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -49,7 +49,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 </string>
 			<key>Title</key>
-			<string>MotionKit</string>
+			<string>MPIMotionKit</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
