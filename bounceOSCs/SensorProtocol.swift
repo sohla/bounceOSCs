@@ -10,8 +10,8 @@ import Foundation
 
 protocol SensorProtocol {
     
-    func getData() -> Array<Float>
+    func getData() -> Array<Double>
     
-    func oscData() -> String
+    func oscData() -> (String,Array<String>)
     func midiData() -> String
 }

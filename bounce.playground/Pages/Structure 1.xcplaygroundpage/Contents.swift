@@ -127,4 +127,17 @@ stB.run(interval:0.5)
 //CFRunLoopRun()
 
 /******/
+let floatArray = [12, 14.6, 35]
+let stringArray = floatArray.flatMap { String($0) }
+stringArray
+let string = stringArray.joined(separator: ",")
+let arrayString = [string]
+
+func tuple() -> (Int,Int){
+    
+    return (1,2)
+}
+
+tuple().0
+
 

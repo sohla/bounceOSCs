@@ -7,41 +7,24 @@
 //
 
 import UIKit
-import OSCKit
-import MPIMotionKit
 
-class FirstViewController: UIViewController , TransmitterProtocol{
 
-    let client:OSCClient = OSCClient();
+class FirstViewController: UIViewController {
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        let head:String = "udp://";
-        let address:String = "localhost";
-        let port:String = ":9000";
+        let stA = SensorTransmitter(sensor: AttitudeSensor(), transmitter: OSCTransmitter())
+        let stB = SensorTransmitter(sensor: AccelSensor(), transmitter: OSCTransmitter())
+        let stC = SensorTransmitter(sensor: RotationRateSensor(), transmitter: OSCTransmitter())
         
-        let msg:OSCMessage = OSCMessage(address: "/hello", arguments: ["world","u","r","awsum"]);
-        client.send(msg, to: head+address+port);
-        
-//        let sc:SensorController = SensorController(delegate:self)
-//        print(sc.doSomething())
-//        
-//        MPIMotionManager.shared().getAttitudeFromDeviceMotion(withInterval: 0.01) { (attitude) in
-//            
-//            print(attitude!.pitch)
-//        }
-    
-        
-        let stB = SensorTransmitter(sensor: Seconds(), transmitter: self)
-        
-        stB.run(interval:0.5)
+        stA.run(interval:0.03)
+        stB.run(interval:0.03)
+        stC.run(interval:0.03)
 
-    }
-    func transmit(sensor: SensorProtocol){
-     
-        print("yes - \(sensor.oscData())")
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,26 +32,9 @@ class FirstViewController: UIViewController , TransmitterProtocol{
         // Dispose of any resources that can be recreated.
     }
 
-    func onGo() -> Bool{
-        
-        return true
-    }
 
     @IBAction func onConnectionTouchUp(_ sender: Any) {
+
     }
 }
 
-/*
- 
- SensorController.build(Sensor.Motion.Yaw,OSC.Yaw);
- SensorController.build(Sensor.Audio.Threshold,OSC.AudioThreshold);
- SensorController.build(Sensor.Time.Seconds,OSC.Seconds);
- 
- Yaw{
-    func send(data){
-        OSC.sendMsg("/yaw",data)
-    }
- }
- 
- 
- */
