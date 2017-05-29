@@ -3,20 +3,20 @@
 import Foundation
 
 
-protocol Transmitter {
-    func transmit(sensor:Sensor)
+protocol TransmitterProtocol {
+    func transmit(sensor:SensorProtocol)
 }
 
-struct OSC : Transmitter {
-    func transmit(sensor:Sensor){
+struct OSC : TransmitterProtocol {
+    func transmit(sensor:SensorProtocol){
         // do OSC stuff to send
         print("OSC -> \(sensor.oscData())")
     }
 }
 
 
-struct MIDI : Transmitter {
-    func transmit(sensor:Sensor){
+struct MIDI : TransmitterProtocol {
+    func transmit(sensor:SensorProtocol){
         // do MIDI stuff to send
         print("send MIDI \(sensor.midiData())")
     }
@@ -24,7 +24,7 @@ struct MIDI : Transmitter {
 
 
 
-protocol Sensor {
+protocol SensorProtocol {
     
     func getData() -> Array<Float>
     
@@ -32,7 +32,7 @@ protocol Sensor {
     func midiData() -> String
 }
 
-struct Gyro : Sensor {
+struct Gyro : SensorProtocol {
     
     func getData() -> Array<Float> { return [0.1,0.3] }
     
@@ -40,7 +40,7 @@ struct Gyro : Sensor {
     func midiData() -> String{ return "cc1:1 \(getData()[0]) cc1:2 \(getData()[1])"}
     
 }
-struct Accel : Sensor {
+struct Accel : SensorProtocol {
     
     func getData() -> Array<Float> { return [Float(arc4random_uniform(100)),0.99] }
     
@@ -49,7 +49,7 @@ struct Accel : Sensor {
     
 }
 
-struct Seconds : Sensor {
+struct Seconds : SensorProtocol {
     
     let today:Date = Calendar.current.startOfDay(for:Date())
     
@@ -72,14 +72,14 @@ struct Seconds : Sensor {
 
 class SensorTransmitter {
     
-    var sensor: Sensor?
-    var transmitter: Transmitter?
+    var sensor: SensorProtocol?
+    var transmitter: TransmitterProtocol?
     weak var timer: Timer?
     
     
-    init(s:Sensor,t:Transmitter){
-        sensor = s;
-        transmitter = t;
+    init(sensor:SensorProtocol,transmitter:TransmitterProtocol){
+        self.sensor = sensor;
+        self.transmitter = transmitter;
     }
     
     func next(){
@@ -101,8 +101,8 @@ class SensorTransmitter {
 }
 
 
-let stA = SensorTransmitter(s: Accel(), t: MIDI())
-let stB = SensorTransmitter(s: Seconds(), t: OSC())
+let stA = SensorTransmitter(sensor: Accel(), transmitter: MIDI())
+let stB = SensorTransmitter(sensor: Seconds(), transmitter: OSC())
 
 //stA.run()
 stB.run(interval:0.5)
