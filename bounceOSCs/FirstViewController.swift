@@ -10,7 +10,7 @@ import UIKit
 import OSCKit
 import MPIMotionKit
 
-class FirstViewController: UIViewController, SensorControllerProtocol {
+class FirstViewController: UIViewController , TransmitterProtocol{
 
     let client:OSCClient = OSCClient();
     
@@ -25,14 +25,23 @@ class FirstViewController: UIViewController, SensorControllerProtocol {
         let msg:OSCMessage = OSCMessage(address: "/hello", arguments: ["world","u","r","awsum"]);
         client.send(msg, to: head+address+port);
         
-        let sc:SensorController = SensorController(delegate:self)
-        print(sc.doSomething())
-        
-        MPIMotionManager.shared().getAttitudeFromDeviceMotion(withInterval: 0.01) { (attitude) in
-            
-            print(attitude!.pitch)
-        }
+//        let sc:SensorController = SensorController(delegate:self)
+//        print(sc.doSomething())
+//        
+//        MPIMotionManager.shared().getAttitudeFromDeviceMotion(withInterval: 0.01) { (attitude) in
+//            
+//            print(attitude!.pitch)
+//        }
     
+        
+        let stB = SensorTransmitter(sensor: Seconds(), transmitter: self)
+        
+        stB.run(interval:0.5)
+
+    }
+    func transmit(sensor: SensorProtocol){
+     
+        print("yes - \(sensor.oscData())")
     }
 
     override func didReceiveMemoryWarning() {

@@ -14,6 +14,11 @@
 		F0345E791ED495CA00D1038A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0345E771ED495CA00D1038A /* Main.storyboard */; };
 		F0345E7B1ED495CA00D1038A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0345E7A1ED495CA00D1038A /* Assets.xcassets */; };
 		F0345E7E1ED495CA00D1038A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0345E7C1ED495CA00D1038A /* LaunchScreen.storyboard */; };
+		F0345E891EDC5BE100D1038A /* SensorTransmitters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E881EDC5BE100D1038A /* SensorTransmitters.swift */; };
+		F0345E8B1EDC5C2700D1038A /* SensorTransmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E8A1EDC5C2700D1038A /* SensorTransmitter.swift */; };
+		F0345E8D1EDC5C4C00D1038A /* SensorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E8C1EDC5C4C00D1038A /* SensorProtocol.swift */; };
+		F0345E8F1EDC5C6D00D1038A /* TransmitterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E8E1EDC5C6D00D1038A /* TransmitterProtocol.swift */; };
+		F0345E911EDC5D5A00D1038A /* MotionSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E901EDC5D5A00D1038A /* MotionSensors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		F0345E7A1ED495CA00D1038A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0345E7D1ED495CA00D1038A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0345E7F1ED495CA00D1038A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0345E881EDC5BE100D1038A /* SensorTransmitters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorTransmitters.swift; sourceTree = "<group>"; };
+		F0345E8A1EDC5C2700D1038A /* SensorTransmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorTransmitter.swift; sourceTree = "<group>"; };
+		F0345E8C1EDC5C4C00D1038A /* SensorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorProtocol.swift; sourceTree = "<group>"; };
+		F0345E8E1EDC5C6D00D1038A /* TransmitterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransmitterProtocol.swift; sourceTree = "<group>"; };
+		F0345E901EDC5D5A00D1038A /* MotionSensors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionSensors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,11 @@
 				F0345E711ED495CA00D1038A /* AppDelegate.swift */,
 				F0345E731ED495CA00D1038A /* FirstViewController.swift */,
 				F0345E751ED495CA00D1038A /* SecondViewController.swift */,
+				F0345E881EDC5BE100D1038A /* SensorTransmitters.swift */,
+				F0345E8A1EDC5C2700D1038A /* SensorTransmitter.swift */,
+				F0345E8C1EDC5C4C00D1038A /* SensorProtocol.swift */,
+				F0345E8E1EDC5C6D00D1038A /* TransmitterProtocol.swift */,
+				F0345E901EDC5D5A00D1038A /* MotionSensors.swift */,
 				F0345E771ED495CA00D1038A /* Main.storyboard */,
 				F0345E7A1ED495CA00D1038A /* Assets.xcassets */,
 				F0345E7C1ED495CA00D1038A /* LaunchScreen.storyboard */,
@@ -217,8 +232,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0345E761ED495CA00D1038A /* SecondViewController.swift in Sources */,
+				F0345E911EDC5D5A00D1038A /* MotionSensors.swift in Sources */,
+				F0345E891EDC5BE100D1038A /* SensorTransmitters.swift in Sources */,
 				F0345E721ED495CA00D1038A /* AppDelegate.swift in Sources */,
+				F0345E8D1EDC5C4C00D1038A /* SensorProtocol.swift in Sources */,
 				F0345E741ED495CA00D1038A /* FirstViewController.swift in Sources */,
+				F0345E8F1EDC5C6D00D1038A /* TransmitterProtocol.swift in Sources */,
+				F0345E8B1EDC5C2700D1038A /* SensorTransmitter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

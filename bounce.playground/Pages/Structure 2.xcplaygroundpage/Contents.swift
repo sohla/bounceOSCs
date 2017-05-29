@@ -82,13 +82,15 @@ class SensorTransmitter {
         self.transmitter = transmitter;
     }
     
-    func next(){
+    @objc func next(){
         transmitter?.transmit(sensor: sensor!)
     }
     func run(interval:Double = 1.0) {
-        timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { [weak self] _ in
-            self?.next()
-        }
+//        timer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true) { [weak self] _ in
+//            self?.next()
+//        }
+
+        timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(next), userInfo: nil, repeats: true)
     }
     
     func stop() {
