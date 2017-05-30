@@ -10,18 +10,33 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>00C6D6BAB133E5F63B11A5D00F343EE8</key>
+		<key>0106D0429A2E43BF8E7D983EF1309B86</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>buildConfigurationList</key>
+			<string>6D0258D7D50CD8C28C23D0CAB63CFB24</string>
+			<key>buildPhases</key>
+			<array>
+				<string>327CA8CF374E7A228CEA3E27304700A8</string>
+				<string>A15A215812C3A053671AF43E4B108DF8</string>
+				<string>32005BEA319BEA5E7E11B186A6AAC644</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>FD721E17E2027DCE5673190375B9A0F7</string>
+				<string>09D9EEA84471B0EBE3CB6127B76F24A9</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>MPIMotionKit.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-bounceOSCs</string>
+			<key>productName</key>
+			<string>Pods-bounceOSCs</string>
+			<key>productReference</key>
+			<string>6D7305821154D487275D128E0BF5777A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
 		</dict>
 		<key>013A64BEEA8296A35688AD4F4D24093F</key>
 		<dict>
@@ -36,29 +51,65 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>022849A63B16010D3CC189E496991EFC</key>
+		<key>059A9263AB167C1B460C978CC77330C4</key>
 		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
+			<key>includeInIndex</key>
 			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>980DA2DFF9021959A1EB0E7402119F56</string>
-			<key>remoteInfo</key>
-			<string>MPIMotionKit-MPIMotionKit</string>
-		</dict>
-		<key>040CF29BC98C0CFCF0598D5557D0300C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
 			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKOperationEffectAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKOperationEffectAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>06725557EF0DB5D75598C5E8952C63F0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OSCKit.h</string>
+			<key>path</key>
+			<string>OSCKit/OSCKit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>067B0E5A25C5AB22A833C951460D81DC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKDripAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKDripAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>068004DCA83362C2436A77A29D3D3DB9</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
 			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>OSCKit.framework</string>
+			<key>path</key>
+			<string>OSCKit.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>071B92DCEC46340ABB0CB6EDB5D69701</key>
 		<dict>
@@ -73,83 +124,193 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>0CB2D08F563B45A08FA2B221BEA1279D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>494553710E2C0970D10429B25F87B5C9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0E6426AC286A4222113D95F1D58DDB54</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>B37E19CA872A7535725D1E1946E5C271</string>
-			<key>remoteInfo</key>
-			<string>CocoaAsyncSocket</string>
-		</dict>
-		<key>1658DB2A5C87BFD4A2D4E00A95993A7A</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>CocoaAsyncSocket.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>17401AF0BA5819FD054E121D3DC81704</key>
+		<key>07B5562BF785721B9E206FE079E07F7C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>OscReceivedElements.cpp</string>
 			<key>path</key>
-			<string>OSCKit.modulemap</string>
+			<string>OSCKit/oscpack/OscReceivedElements.cpp</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>17B122844E20DB340DDF1D38BD997E5E</key>
+		<key>09D9EEA84471B0EBE3CB6127B76F24A9</key>
 		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>OSCKit</string>
+			<key>target</key>
+			<string>9A0BDF4D97F8A7CC7B250449620EAD22</string>
+			<key>targetProxy</key>
+			<string>C46F4AC3DAB7F28C4C1FDE2666D43EE1</string>
+		</dict>
+		<key>0AF23929B01D59C8BC04BDB0F91AC3D0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>EZAudio.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/EZAudio.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0C4AD615CEEB98DF8DB9ACF935D51F72</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0D4D876236968ECC0E43946CC4B78D9B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CocoaAsyncSocket-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F8E630223AFADD06BE2F56638F0892D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKPinkNoiseAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKPinkNoiseAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1090CEC61814EB8C90D5EBD27387E3C2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>EZOutput.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/EZOutput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>11C96E7D10D3C76F737BD5A19AD96EEF</key>
+		<dict>
+			<key>children</key>
 			<array>
-				<string>A062FA9C32121363C5D0CFC3B743E4EF</string>
-				<string>3D409A06044C8DA53CB1504E970FCBC3</string>
+				<string>F06721A25B85AC83321AA7767118546C</string>
+				<string>15C9A9876C33747DE733C259C05AF94E</string>
+				<string>F9D4716748AEE0F29265723A96439D9F</string>
+				<string>0D4D876236968ECC0E43946CC4B78D9B</string>
+				<string>8FFDE2F73FFF1621CBC05E3EA4FDEFF4</string>
+				<string>0C4AD615CEEB98DF8DB9ACF935D51F72</string>
 			</array>
 			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/CocoaAsyncSocket</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>19BAC2C07A9C9D86371E6F4E356D77BF</key>
+		<key>1569ED6D2904888907D21587F717D993</key>
 		<dict>
-			<key>fileRef</key>
-			<string>BF8424CCC7225609A1D89C7EC5862C3F</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>EZAudioPlayer.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/EZAudioPlayer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>159D32DC7D7C08FFCC850F2E2D729BD7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKMandolinAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKMandolinAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>15C9A9876C33747DE733C259C05AF94E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>CocoaAsyncSocket.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>167A59E3E4EA9454A8DCA7BAA82F5363</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKEqualizerFilterAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKEqualizerFilterAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1727AF7B52CCF3ECC8D0727AC2E6A1CA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OscPacketListener.h</string>
+			<key>path</key>
+			<string>OSCKit/oscpack/OscPacketListener.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>19BD33B885D7315B64AE499837B16291</key>
 		<dict>
@@ -164,25 +325,38 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>1DA910ACA09F8904AEAE05E00F4023D4</key>
+		<key>19DAACB23E9C2111A645F027828E8024</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>OscTypes.cpp</string>
+			<key>path</key>
+			<string>OSCKit/oscpack/OscTypes.cpp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1D63AAB848BC5961FD80A4C29C4A0247</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MPIMotionManager.m</string>
+			<string>AKPitchShifterAudioUnit.h</string>
 			<key>path</key>
-			<string>Pod/Classes/MPIMotionManager.m</string>
+			<string>iOS/AudioKit.framework/Headers/AKPitchShifterAudioUnit.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>1DB50C39FD5CB49D6BB91D038531FDCA</key>
 		<dict>
 			<key>fileRef</key>
-			<string>870B446295AB6B694BE5A9D05C3E7C9B</string>
+			<string>D3F0DEE18663EE485C5B267960107625</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -193,14 +367,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>1F082319DEE53614FA8D619212D00A2D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>507F9DB5D16B575C65A727732C013D21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1FF4125ADE8FA2D28C1AACA0DBDBA433</key>
+		<key>1E1E53D962A36FFAD32102486EF474FC</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -209,9 +376,82 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>OSCProtocol.h</string>
+			<string>AKLowShelfParametricEqualizerFilterAudioUnit.h</string>
 			<key>path</key>
-			<string>OSCKit/OSCProtocol.h</string>
+			<string>iOS/AudioKit.framework/Headers/AKLowShelfParametricEqualizerFilterAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1EA2B6A29CACBD37467C906D92C7E9B2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OscTypes.h</string>
+			<key>path</key>
+			<string>OSCKit/oscpack/OscTypes.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1F8EF911B5EC5DAAA389801813C73F7D</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>AudioKit.framework</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>200C2443941A43AA83C374E0ACF7336B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKFormantFilterAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKFormantFilterAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2037C7C604B46B199ACD524A4F731617</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>EZAudioPlot.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/EZAudioPlot.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>205F051D62EA6BA7DB8E8700C38DD725</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKZitaReverbAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKZitaReverbAudioUnit.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -230,28 +470,7 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>2340BD143219121E37798A8D4DD69FBD</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E05DCA26B057CCDFDB8783B91E7399D7</string>
-				<string>93DD8610566FABD90D1B5E3881B421C6</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>25145D4816C4684A3B64AD3B3812C70E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF07A88A82A1AF607D86985D3E216CA6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2648A778485FA10D25B68401587D306B</key>
+		<key>21F6F98997D530105E124AFF41221D2B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -259,47 +478,69 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKFMOscillatorAudioUnit.h</string>
 			<key>path</key>
-			<string>MPIMotionKit-prefix.pch</string>
+			<string>iOS/AudioKit.framework/Headers/AKFMOscillatorAudioUnit.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>27EEEE4E32C5A3FC1084A71544421FA0</key>
+		<key>22409983A5B3C08DC8AE15BC8DACAEE6</key>
 		<dict>
-			<key>baseConfigurationReference</key>
-			<string>00C6D6BAB133E5F63B11A5D00F343EE8</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CONFIGURATION_BUILD_DIR</key>
-				<string>$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MPIMotionKit</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/MPIMotionKit/ResourceBundle-MPIMotionKit-Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>PRODUCT_NAME</key>
-				<string>MPIMotionKit</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>XCBuildConfiguration</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>Release</string>
+			<string>EZAudioUtilities.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/EZAudioUtilities.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>237A52BBF70538BB4CEAAE0B5ED4C154</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKMorphingOscillatorAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKMorphingOscillatorAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>25145D4816C4684A3B64AD3B3812C70E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>07B5562BF785721B9E206FE079E07F7C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2852B14C6782181B60B534A497228526</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKPhaseLockedVocoderAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKPhaseLockedVocoderAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>2ACCDB6444EB3B49481BA760B57B7EFD</key>
 		<dict>
 			<key>fileRef</key>
-			<string>CBB52BB72651433D1EC4BBB6166146D2</string>
+			<string>EF46EF74A13C714ABA5BF37A5D310F68</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -309,6 +550,21 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>2B196A49E3817B8E2EC77C18BA0FA2C9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKPWMOscillatorAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKPWMOscillatorAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>2B53AAD7B207BAB192FB0D6A5FE9A9DD</key>
 		<dict>
@@ -322,6 +578,21 @@
 			<string>B37E19CA872A7535725D1E1946E5C271</string>
 			<key>remoteInfo</key>
 			<string>CocoaAsyncSocket</string>
+		</dict>
+		<key>2CE54FC4F7125149287E14195D396848</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKWhiteNoiseAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKWhiteNoiseAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
 		<dict>
@@ -350,7 +621,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2FEBB95DD719915372CCEB365997AF93</key>
+		<key>2DDF174119B978AADE513E25455D80AF</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -359,88 +630,96 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>GCDAsyncUdpSocket.h</string>
+			<string>AKPhaserAudioUnit.h</string>
 			<key>path</key>
-			<string>Source/GCD/GCDAsyncUdpSocket.h</string>
+			<string>iOS/AudioKit.framework/Headers/AKPhaserAudioUnit.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>302B325A040A6D2FB92D77722F86F43D</key>
+		<key>30A03A52BDBCBB61B8423A3EE8584353</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKConvolutionAudioUnit.h</string>
 			<key>path</key>
-			<string>CocoaAsyncSocket.modulemap</string>
+			<string>iOS/AudioKit.framework/Headers/AKConvolutionAudioUnit.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>345B906E12FD2CEFC187F8F3D28C0375</key>
+		<key>31E5640E73AFB2C74C7D971F38011EB6</key>
 		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
+			<key>children</key>
+			<array>
+				<string>E15A09B81763A473EB7495DCBD606B8F</string>
+				<string>A998F0BD26DB09BE9AE5FB525F3E3D68</string>
+				<string>B27C70FFD850A5E6FAD9A0DB27F34ED3</string>
+				<string>EC0D490B80C4800D03118F56FB42975A</string>
+				<string>BA2827DCB658CE730C8FD93B5C329783</string>
+				<string>A1D309CB2409E0A83D524E3B381162E0</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>CocoaAsyncSocket.framework</string>
+			<string>Support Files</string>
 			<key>path</key>
-			<string>CocoaAsyncSocket.framework</string>
+			<string>../Target Support Files/OSCKit</string>
 			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>3487D6AD1EC5A855B7C1DC1B9B1EA396</key>
+		<key>32005BEA319BEA5E7E11B186A6AAC644</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>854E7B4B0DC4777C07B5BA254CDEE505</string>
+				<string>E6B8689D5C2D79CC12994D97901932F4</string>
 			</array>
 			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
+			<string>PBXHeadersBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>378A7207E2BBF6AD7431F0D1FF855959</key>
+		<key>327CA8CF374E7A228CEA3E27304700A8</key>
 		<dict>
-			<key>children</key>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
 			<array>
-				<string>4A1689D6F5A93D13EAC453DA4D52C5B5</string>
-				<string>6A05B33E370A9441DF690611745FC49D</string>
-				<string>2FEBB95DD719915372CCEB365997AF93</string>
-				<string>F4BE28E48BA9E3483D5E04ED3D21ADDD</string>
+				<string>8AFB15D5FDCA399DE992077598DCD159</string>
 			</array>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3525D645A854A9BAF30436ED5291FB83</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>GCD</string>
+			<string>AKTanhDistortionAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKTanhDistortionAudioUnit.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>37B1441B7AB5EB73989DD948A13B2A7A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>E742B63A4601C559116D17502B8950E1</string>
+			<string>AB3362BF27134B19DE2353A0D586C271</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>3AA11D2CAF09AA2CBA77673688261FCA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OscTypes.cpp</string>
-			<key>path</key>
-			<string>OSCKit/oscpack/OscTypes.cpp</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3B0586AF28DAC10F042F0400A4BF930A</key>
+		<key>39A1610DBD75950E0BD41EC333469ADB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -448,17 +727,12 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>EZAudioDisplayLink.h</string>
 			<key>path</key>
-			<string>MPIMotionKit-umbrella.h</string>
+			<string>iOS/AudioKit.framework/Headers/EZAudioDisplayLink.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3D409A06044C8DA53CB1504E970FCBC3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1DA910ACA09F8904AEAE05E00F4023D4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
 		</dict>
 		<key>3FA451D268613890FA8A5A03801E11D5</key>
 		<dict>
@@ -546,40 +820,91 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>42E0F8227B68F5E6A6B0D97977D286DD</key>
+		<key>43DC5451E119F35E78DEB0F129FD8C1E</key>
 		<dict>
-			<key>fileRef</key>
-			<string>507F9DB5D16B575C65A727732C013D21</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>GCDAsyncUdpSocket.m</string>
+			<key>path</key>
+			<string>Source/GCD/GCDAsyncUdpSocket.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>48A2B1DE414667AD6232BE4888DC65C9</key>
+		<key>44669BF4328159A4916A11AE5D39EB1C</key>
 		<dict>
-			<key>buildConfigurations</key>
+			<key>children</key>
 			<array>
-				<string>7CCE066B61B07EE7D1BC55B060DD7E5F</string>
-				<string>EC7ACD9EB976B58F2E98B441F2331460</string>
+				<string>1F8EF911B5EC5DAAA389801813C73F7D</string>
 			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
 			<key>isa</key>
-			<string>XCConfigurationList</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>494553710E2C0970D10429B25F87B5C9</key>
+		<key>4578FFC352D4C1E0A6835D910A54EA8A</key>
 		<dict>
-			<key>fileRef</key>
-			<string>A5E4F2AE777433C6523F4812E21AE76F</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CFNetwork.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CFNetwork.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>4630F9738D3EC5FDB86DFEAC23F3EEC9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AudioKit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AudioKit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>47274ED947C361A0AF5539DB3AD58B92</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKStereoFieldLimiterAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKStereoFieldLimiterAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>48B567B229628497365F1CC25F321AB2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKDCBlockAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKDCBlockAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>4983F4DEAD4A847F8E4CD5C1A210EA12</key>
 		<dict>
@@ -592,7 +917,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>49A9CABCF66E29FDDE38B0F38C1586FD</key>
+		<key>4A59240D5F348A0A85A9C30A7893E953</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -601,24 +926,24 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>OscTypes.h</string>
+			<string>EZAudioFile.h</string>
 			<key>path</key>
-			<string>OSCKit/oscpack/OscTypes.h</string>
+			<string>iOS/AudioKit.framework/Headers/EZAudioFile.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>4A1689D6F5A93D13EAC453DA4D52C5B5</key>
+		<key>4CC746021AD578DA982AE4AC5CFEFD29</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>A23488A40BCC8A4078E5FAC19E83A880</string>
+				<string>068004DCA83362C2436A77A29D3D3DB9</string>
+				<string>6D7305821154D487275D128E0BF5777A</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>GCDAsyncSocket.h</string>
-			<key>path</key>
-			<string>Source/GCD/GCDAsyncSocket.h</string>
+			<string>Products</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -651,7 +976,7 @@
 		<key>4EEF08F9FC7C1A40CDD0D6EB2E4D2879</key>
 		<dict>
 			<key>fileRef</key>
-			<string>D7302E8096CD524710BE6FA99C2AD1DB</string>
+			<string>75484A6D3206D4E8A9D471C519F64BC5</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -662,27 +987,25 @@
 				</array>
 			</dict>
 		</dict>
-		<key>4F04349A12037F42CF0E2E0D8BD8146F</key>
+		<key>4EF6AFE5A792B22679FA7751FFFF6BBE</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>BF8424CCC7225609A1D89C7EC5862C3F</string>
-				<string>1DA910ACA09F8904AEAE05E00F4023D4</string>
-				<string>6E6DF20F4732E97CD23DAEA458B32999</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MPIMotionKit</string>
+			<string>AKFMOscillatorBankAudioUnit.h</string>
 			<key>path</key>
-			<string>MPIMotionKit</string>
+			<string>iOS/AudioKit.framework/Headers/AKFMOscillatorBankAudioUnit.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>507CD590F2A9AD8D43BDD94EBD550397</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>965D02ECE920C125D26AFC92176FA9AB</string>
+			<string>B27C70FFD850A5E6FAD9A0DB27F34ED3</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -739,64 +1062,7 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>507F9DB5D16B575C65A727732C013D21</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>5253D7ED77F3623E598B51A115ED12D1</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OSCKit.framework</string>
-			<key>path</key>
-			<string>OSCKit.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>52E7E95C4BEFD22CAA99C22ED72B70F5</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>48A2B1DE414667AD6232BE4888DC65C9</string>
-			<key>buildPhases</key>
-			<array>
-				<string>6B09981365E17F51DB0589CD592769D9</string>
-				<string>DAA4B43129380B931CE3F53F9811C2B4</string>
-				<string>0CB2D08F563B45A08FA2B221BEA1279D</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>86401CC6D52AE76FC2A658DAB0ADD3CE</string>
-				<string>C10BD96FBEDB97393F45E22E5DDE005C</string>
-				<string>F54D6B3D961D0B330D1E53D2A763F5ED</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-bounceOSCs</string>
-			<key>productName</key>
-			<string>Pods-bounceOSCs</string>
-			<key>productReference</key>
-			<string>993B639F53F2FF010D72FDB24D600574</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>5357B28649563523AE398423CDDAC1A4</key>
+		<key>50B0A929A931AD1FDDBD87CFCCFE18CD</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -804,8 +1070,25 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKBoosterAudioUnit.h</string>
 			<key>path</key>
-			<string>OSCKit-umbrella.h</string>
+			<string>iOS/AudioKit.framework/Headers/AKBoosterAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>55069AECBC00960486AEB8CDE25C0200</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKPluckedStringAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKPluckedStringAudioUnit.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -823,29 +1106,54 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>5900306CBB1B17F138170FDCA6C36871</key>
+		<key>5607F6528CEE6E8E47B7DD379768C6FF</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>75484A6D3206D4E8A9D471C519F64BC5</string>
+				<string>AE4D1BBAA9EAC201D9CD25A89987C449</string>
+				<string>E8F1138F7DF458880F29E1D71C6BFCA2</string>
+				<string>94E5258FC2E4751EF338CD517A628713</string>
+				<string>6265898789815FB861836198195EFFA2</string>
+				<string>06725557EF0DB5D75598C5E8952C63F0</string>
+				<string>A67BCC4C775051A72A24DD279DF58B07</string>
+				<string>87D7523B314A01C459B5B57A45554D2C</string>
+				<string>A118283E38DC9099CD961B57B344FFE2</string>
+				<string>D3F0DEE18663EE485C5B267960107625</string>
+				<string>1727AF7B52CCF3ECC8D0727AC2E6A1CA</string>
+				<string>F06CCA6E0ADD7995E257B75B5DF5B4AB</string>
+				<string>C249E3FA17687AE40ED6A47C636EDCBF</string>
+				<string>76A9A693577224783FB22891F9E54DB5</string>
+				<string>F9DF84F123721B5FB9C7D8ECE6A3D750</string>
+				<string>07B5562BF785721B9E206FE079E07F7C</string>
+				<string>6EB3DB4B1D5799BA3BA801049D1576E8</string>
+				<string>EF46EF74A13C714ABA5BF37A5D310F68</string>
+				<string>AB3362BF27134B19DE2353A0D586C271</string>
+				<string>19DAACB23E9C2111A645F027828E8024</string>
+				<string>1EA2B6A29CACBD37467C906D92C7E9B2</string>
+				<string>31E5640E73AFB2C74C7D971F38011EB6</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
+			<string>PBXGroup</string>
 			<key>name</key>
-			<string>OscPrintReceivedElements.cpp</string>
+			<string>OSCKit</string>
 			<key>path</key>
-			<string>OSCKit/oscpack/OscPrintReceivedElements.cpp</string>
+			<string>OSCKit</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>59AFB0A9ACF77618568C10847A6AC2A5</key>
+		<key>5690854B84C1278E6F0472A9B69880E4</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>OSCProtocol.mm</string>
+			<string>AKSamplePlayerAudioUnit.h</string>
 			<key>path</key>
-			<string>OSCKit/OSCProtocol.mm</string>
+			<string>iOS/AudioKit.framework/Headers/AKSamplePlayerAudioUnit.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -862,54 +1170,48 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5B5F139A2119EE415CC3029170350D50</key>
+		<key>5D22E3F8BAFAE7CF77C1C2E3E8C3D408</key>
 		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
 			<key>includeInIndex</key>
-			<string>0</string>
+			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MPIMotionKit.framework</string>
+			<string>AKSporthStack.h</string>
 			<key>path</key>
-			<string>MPIMotionKit.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>5D2DD09BCD20CB72C6BF62E864255828</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>378A7207E2BBF6AD7431F0D1FF855959</string>
-				<string>DF07F7AEB2F7EB25A9E655BC598A1A59</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CocoaAsyncSocket</string>
-			<key>path</key>
-			<string>CocoaAsyncSocket</string>
+			<string>iOS/AudioKit.framework/Headers/AKSporthStack.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>5D75AE1885637E695136BB05E885407B</key>
+		<key>5DF3E0578BBE710D49069A6EF560AFA0</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>6EC7C4375CBE8E56B85455331EA00D5E</string>
-				<string>17401AF0BA5819FD054E121D3DC81704</string>
-				<string>965D02ECE920C125D26AFC92176FA9AB</string>
-				<string>987FEED6B5158013991CE0810FC8CBB7</string>
-				<string>EC5400FDF7F003AA511D2D54C2F2CC60</string>
-				<string>5357B28649563523AE398423CDDAC1A4</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>Support Files</string>
+			<string>AKAudioUnit.h</string>
 			<key>path</key>
-			<string>../Target Support Files/OSCKit</string>
+			<string>iOS/AudioKit.framework/Headers/AKAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5E2868EE22210D62ED3443EE721C8A6D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>GCDAsyncSocket.m</string>
+			<key>path</key>
+			<string>Source/GCD/GCDAsyncSocket.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -994,9 +1296,39 @@
 		<key>5F4A7B752A5082B23CC5B7A873948229</key>
 		<dict>
 			<key>fileRef</key>
-			<string>BD2FE5956DCDF0E3F44D74F0C2842616</string>
+			<string>A118283E38DC9099CD961B57B344FFE2</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>6115B27786D7FD42D555F7709A1B1A8C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKMoogLadderAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKMoogLadderAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62277C3232B4AF579255E41AF61C0FE4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>EZMicrophone.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/EZMicrophone.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>6248DEC1E1FE70B760194CF900A9317B</key>
 		<dict>
@@ -1011,7 +1343,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>630E22371BD156B08D5F14E0CD5FED15</key>
+		<key>6265898789815FB861836198195EFFA2</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1019,44 +1351,62 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OscHostEndianness.h</string>
 			<key>path</key>
-			<string>CocoaAsyncSocket-umbrella.h</string>
+			<string>OSCKit/oscpack/OscHostEndianness.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>65C8BDC69B5653427AB9C6FCCA18C8E4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F2771E6E6AD4FA3A70B2B43564B5A2FC</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>6A05B33E370A9441DF690611745FC49D</key>
+		<key>62CF61F08C7F4F6B5A472FB1749DD098</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>GCDAsyncSocket.m</string>
+			<string>AKToneComplementFilterAudioUnit.h</string>
 			<key>path</key>
-			<string>Source/GCD/GCDAsyncSocket.m</string>
+			<string>iOS/AudioKit.framework/Headers/AKToneComplementFilterAudioUnit.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6AAFA2F344A6B58F728AF958F3FE6D89</key>
+		<key>65AD905974B2DC9E7A3A2BE79BF0080A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKHighShelfParametricEqualizerFilterAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKHighShelfParametricEqualizerFilterAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65BDA7C2E44BA932E11700B80671A7CA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKOscillatorBankAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKOscillatorBankAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>65C8BDC69B5653427AB9C6FCCA18C8E4</key>
 		<dict>
 			<key>fileRef</key>
-			<string>4A1689D6F5A93D13EAC453DA4D52C5B5</string>
+			<string>A67BCC4C775051A72A24DD279DF58B07</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1067,7 +1417,277 @@
 				</array>
 			</dict>
 		</dict>
-		<key>6AB8F6DFF39EB682321FE45934215CC4</key>
+		<key>66C8953FA4227B23D2AA99793B6A1610</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A563D5F796964A1E97C85831746F3A19</string>
+				<string>5E2868EE22210D62ED3443EE721C8A6D</string>
+				<string>CF8DC3C4B18AFCCC1433E473C0888E4F</string>
+				<string>43DC5451E119F35E78DEB0F129FD8C1E</string>
+				<string>11C96E7D10D3C76F737BD5A19AD96EEF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>CocoaAsyncSocket</string>
+			<key>path</key>
+			<string>CocoaAsyncSocket</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>681AAF696D1CCFE1EBBE443C371DF556</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKPhaseDistortionOscillatorAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKPhaseDistortionOscillatorAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6AAFA2F344A6B58F728AF958F3FE6D89</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A563D5F796964A1E97C85831746F3A19</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6D0258D7D50CD8C28C23D0CAB63CFB24</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>9A0CF01F2006B4D51F41A106E2189084</string>
+				<string>B1F8777BDA30DA2342B08DF3015E6144</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>6D7305821154D487275D128E0BF5777A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_bounceOSCs.framework</string>
+			<key>path</key>
+			<string>Pods-bounceOSCs.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>6DE3F0BE6FDA0BD13DB7573ABEB75F3C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKTremoloAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKTremoloAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6E823B443CA73462E28487C4E10E5C17</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKThreePoleLowpassFilterAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKThreePoleLowpassFilterAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6EB3DB4B1D5799BA3BA801049D1576E8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OscReceivedElements.h</string>
+			<key>path</key>
+			<string>OSCKit/oscpack/OscReceivedElements.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FF6AFC53765079D314C2E821C60405B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>87D7523B314A01C459B5B57A45554D2C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>700801311DA3D48DAB3795CFAEEA35EF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC0D490B80C4800D03118F56FB42975A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>72D1DAD12F8AE8A9DB0DE5DFB8883CC5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKPhaseDistortionOscillatorBankAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKPhaseDistortionOscillatorBankAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>74588AB2FC45A89A9B5F109BE847B8D1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>EZAudioFloatData.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/EZAudioFloatData.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>75484A6D3206D4E8A9D471C519F64BC5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>MessageMappingOscPacketListener.h</string>
+			<key>path</key>
+			<string>OSCKit/oscpack/MessageMappingOscPacketListener.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76A9A693577224783FB22891F9E54DB5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OSCProtocol.h</string>
+			<key>path</key>
+			<string>OSCKit/OSCProtocol.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79280DF48B60CAF1A46A4D361A94B894</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>TPCircularBuffer.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/TPCircularBuffer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
+				<string>E57D8BB42B7367E2EA1AB4BAF61E5D44</string>
+				<string>DDC4EDF51A0E83C57D09B21508A9D588</string>
+				<string>4CC746021AD578DA982AE4AC5CFEFD29</string>
+				<string>C18AD7FBF4F2AE95C13FC67526A77D26</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7E42AFC5E07CB83E5D9EAE36DDAB55CF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKOscillatorAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKOscillatorAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F5C0F35EBF53C37F5219687C38DC7E3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C249E3FA17687AE40ED6A47C636EDCBF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>8010402B04678C54FEED290213DD9C56</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKHighPassButterworthFilterAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKHighPassButterworthFilterAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>87D7523B314A01C459B5B57A45554D2C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1082,96 +1702,90 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6B09981365E17F51DB0589CD592769D9</key>
+		<key>8A3D2796BCB618C95E6220260585A448</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>F8AFF49E2B08951F850249EA350B8B91</string>
+				<string>4EEF08F9FC7C1A40CDD0D6EB2E4D2879</string>
+				<string>AB0A81A77BD540F302E5AF9C8DD2E63E</string>
+				<string>8FD89692B52F4EC924742F9649CB256D</string>
+				<string>D0565BAC039D21E469B8D76633A89BFE</string>
+				<string>E7361E51937BF6943872D2EE99A0F2AE</string>
+				<string>C6CA0714FD644EB0DEEC411C848C6C50</string>
+				<string>65C8BDC69B5653427AB9C6FCCA18C8E4</string>
+				<string>1DB50C39FD5CB49D6BB91D038531FDCA</string>
+				<string>FCB9B9EEE280C9DBEA275EF06A68802C</string>
+				<string>7F5C0F35EBF53C37F5219687C38DC7E3</string>
+				<string>C70E01021D63EC048FF4CB33285A9AF1</string>
+				<string>D30FD88883C58C900C2EEFA2FED5EFD8</string>
+				<string>2ACCDB6444EB3B49481BA760B57B7EFD</string>
+				<string>C0B4FFD2183204591862D7A1289551D4</string>
 			</array>
 			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
+			<string>PBXHeadersBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>6E19FBFFDE0F461DDF8D3547604048FB</key>
+		<key>8A4CF939608C4003B81E27F22D2DFC26</key>
 		<dict>
-			<key>buildConfigurationList</key>
-			<string>2340BD143219121E37798A8D4DD69FBD</string>
-			<key>buildPhases</key>
-			<array>
-				<string>17B122844E20DB340DDF1D38BD997E5E</string>
-				<string>81C2E0F15706F617F7308EEA9F820B8C</string>
-				<string>3487D6AD1EC5A855B7C1DC1B9B1EA396</string>
-				<string>7FE15A3B5006118093CD266B66119AD5</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>88CBE1EF98B696884B79BF2411AFF800</string>
-			</array>
+			<key>fileRef</key>
+			<string>E8D496FB53E280030B310506E3777C9A</string>
 			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>MPIMotionKit</string>
-			<key>productName</key>
-			<string>MPIMotionKit</string>
-			<key>productReference</key>
-			<string>5B5F139A2119EE415CC3029170350D50</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
+			<string>PBXBuildFile</string>
 		</dict>
-		<key>6E6DF20F4732E97CD23DAEA458B32999</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F1422190AFCA712633194960627CD5D7</string>
-				<string>F953D7419181AB0A2C67FC1ADF9E59EC</string>
-				<string>00C6D6BAB133E5F63B11A5D00F343EE8</string>
-				<string>A2BE834C71C5F0FC7822E4180684DF12</string>
-				<string>2648A778485FA10D25B68401587D306B</string>
-				<string>3B0586AF28DAC10F042F0400A4BF930A</string>
-				<string>A42E17C301F85DC7A0C0CE400E88AFD5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/MPIMotionKit</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6EC7C4375CBE8E56B85455331EA00D5E</key>
+		<key>8A587EE7CDF7BA893579B169813D9F87</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKCostelloReverbAudioUnit.h</string>
 			<key>path</key>
-			<string>Info.plist</string>
+			<string>iOS/AudioKit.framework/Headers/AKCostelloReverbAudioUnit.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>6FF6AFC53765079D314C2E821C60405B</key>
+		<key>8AFB15D5FDCA399DE992077598DCD159</key>
 		<dict>
 			<key>fileRef</key>
-			<string>6AB8F6DFF39EB682321FE45934215CC4</string>
+			<string>2DDE526FE78EFF7E0846525D12B8E7E5</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>700801311DA3D48DAB3795CFAEEA35EF</key>
+		<key>8DFC6523A396F8FCA3A63E2D38E53294</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>91F9A947145627262718D50F9E25F171</string>
+				<string>8A4CF939608C4003B81E27F22D2DFC26</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8FD89692B52F4EC924742F9649CB256D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>987FEED6B5158013991CE0810FC8CBB7</string>
+			<string>94E5258FC2E4751EF338CD517A628713</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
 		</dict>
-		<key>70DA3DA1A567E317A429A0B242E938E1</key>
+		<key>8FFDE2F73FFF1621CBC05E3EA4FDEFF4</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1180,24 +1794,215 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>CocoaAsyncSocket-prefix.pch</string>
+			<string>CocoaAsyncSocket-umbrella.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>76089F81E87C72DE638C89028408F0C0</key>
+		<key>90F7F95594C426430F6D290558F76ADF</key>
 		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>Security.framework</string>
+			<string>AKBrownianNoiseAudioUnit.h</string>
 			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework</string>
+			<string>iOS/AudioKit.framework/Headers/AKBrownianNoiseAudioUnit.h</string>
 			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>7CCE066B61B07EE7D1BC55B060DD7E5F</key>
+		<key>91BA6F6CCD385509DC9FF3B1ACE3E309</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>CocoaAsyncSocket.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>91F9A947145627262718D50F9E25F171</key>
+		<dict>
+			<key>fileRef</key>
+			<string>91BA6F6CCD385509DC9FF3B1ACE3E309</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>92AED971B91C640191A5ABA1567FE358</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CF8DC3C4B18AFCCC1433E473C0888E4F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>93A4A3777CF96A4AAC1D13BA6DCCEA73</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>text.script.ruby</string>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>94E5258FC2E4751EF338CD517A628713</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OscException.h</string>
+			<key>path</key>
+			<string>OSCKit/oscpack/OscException.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9707364889B0475B0FA5C9D40B9C05EA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F06CCA6E0ADD7995E257B75B5DF5B4AB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>991BFD139F6A45C9B654960C2F6A7F09</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5E2868EE22210D62ED3443EE721C8A6D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>99BC16DAE09CDD5BA3C3A4F8E3D65225</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>15C9A9876C33747DE733C259C05AF94E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/CocoaAsyncSocket/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>CocoaAsyncSocket</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>99C60DA8877B0015663C3B966C8D63F5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKMetalBarAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKMetalBarAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9A0BDF4D97F8A7CC7B250449620EAD22</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>DB7A42E2DF2B7DF5768083D9BBB39492</string>
+			<key>buildPhases</key>
+			<array>
+				<string>BEB595183E2F44D83D8F7851D1605647</string>
+				<string>8DFC6523A396F8FCA3A63E2D38E53294</string>
+				<string>8A3D2796BCB618C95E6220260585A448</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>AF531983800E9C8D3172DD5FD00D769E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>OSCKit</string>
+			<key>productName</key>
+			<string>OSCKit</string>
+			<key>productReference</key>
+			<string>068004DCA83362C2436A77A29D3D3DB9</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>9A0CF01F2006B4D51F41A106E2189084</key>
 		<dict>
 			<key>baseConfigurationReference</key>
 			<string>19BD33B885D7315B64AE499837B16291</string>
@@ -1265,117 +2070,7 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>93A4A3777CF96A4AAC1D13BA6DCCEA73</string>
-				<string>8F06BA47F0285E168EE3E6FDE7E09F61</string>
-				<string>A76E362FE5A13C47DDB56C461DF1A84D</string>
-				<string>90D193752398B22163BFFA3EDE715145</string>
-				<string>C18AD7FBF4F2AE95C13FC67526A77D26</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7EF9B9CF423BE4C16B8AD17FD81CBCBF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>CocoaAsyncSocket-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7F5C0F35EBF53C37F5219687C38DC7E3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B7BB27644DFE768925CB0AC5E9D758C6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Project</string>
-				</array>
-			</dict>
-		</dict>
-		<key>7FE15A3B5006118093CD266B66119AD5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BDF9FA4CCA5C1F7E83698BF65CFC0A2F</string>
-				<string>19BAC2C07A9C9D86371E6F4E356D77BF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>81C2E0F15706F617F7308EEA9F820B8C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>868F6B4566B1E44D9A4B2C37A6FC56E5</string>
-				<string>1F082319DEE53614FA8D619212D00A2D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>8469F1CEDE9018757278192D57C9B93F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>MPIMotionKit.bundle</string>
-			<key>path</key>
-			<string>MPIMotionKit.bundle</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>854E7B4B0DC4777C07B5BA254CDEE505</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8469F1CEDE9018757278192D57C9B93F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>86401CC6D52AE76FC2A658DAB0ADD3CE</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>CocoaAsyncSocket</string>
-			<key>target</key>
-			<string>B37E19CA872A7535725D1E1946E5C271</string>
-			<key>targetProxy</key>
-			<string>0E6426AC286A4222113D95F1D58DDB54</string>
-		</dict>
-		<key>868F6B4566B1E44D9A4B2C37A6FC56E5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9330668F878471FF28FC6EA03460640C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>870B446295AB6B694BE5A9D05C3E7C9B</key>
+		<key>9B595BB87B55FDE32AC4A0878D2919B1</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1384,379 +2079,97 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>OscOutboundPacketStream.h</string>
+			<string>AKMorphingOscillatorBankAudioUnit.h</string>
 			<key>path</key>
-			<string>OSCKit/oscpack/OscOutboundPacketStream.h</string>
+			<string>iOS/AudioKit.framework/Headers/AKMorphingOscillatorBankAudioUnit.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>87110308E36A6743BD17AF8235D8BF92</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>8763777045D8E0F2D49B5CBB2C666878</key>
+		<key>9BA62F593EEB9C084D0456ABCE542694</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKMicrophoneTrackerEngine.h</string>
 			<key>path</key>
-			<string>CocoaAsyncSocket.xcconfig</string>
+			<string>iOS/AudioKit.framework/Headers/AKMicrophoneTrackerEngine.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>88CBE1EF98B696884B79BF2411AFF800</key>
+		<key>9EA362C23B3ACB0A385AE9B6415E8172</key>
 		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXTargetDependency</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>MPIMotionKit-MPIMotionKit</string>
-			<key>target</key>
-			<string>980DA2DFF9021959A1EB0E7402119F56</string>
-			<key>targetProxy</key>
-			<string>022849A63B16010D3CC189E496991EFC</string>
+			<string>AKBandPassButterworthFilterAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKBandPassButterworthFilterAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>8A3D2796BCB618C95E6220260585A448</key>
+		<key>A118283E38DC9099CD961B57B344FFE2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>OscOutboundPacketStream.cpp</string>
+			<key>path</key>
+			<string>OSCKit/oscpack/OscOutboundPacketStream.cpp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A15A215812C3A053671AF43E4B108DF8</key>
 		<dict>
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
 			<array>
-				<string>4EEF08F9FC7C1A40CDD0D6EB2E4D2879</string>
-				<string>AB0A81A77BD540F302E5AF9C8DD2E63E</string>
-				<string>8FD89692B52F4EC924742F9649CB256D</string>
-				<string>D0565BAC039D21E469B8D76633A89BFE</string>
-				<string>E7361E51937BF6943872D2EE99A0F2AE</string>
-				<string>C6CA0714FD644EB0DEEC411C848C6C50</string>
-				<string>65C8BDC69B5653427AB9C6FCCA18C8E4</string>
-				<string>1DB50C39FD5CB49D6BB91D038531FDCA</string>
-				<string>FCB9B9EEE280C9DBEA275EF06A68802C</string>
-				<string>7F5C0F35EBF53C37F5219687C38DC7E3</string>
-				<string>C70E01021D63EC048FF4CB33285A9AF1</string>
-				<string>D30FD88883C58C900C2EEFA2FED5EFD8</string>
-				<string>2ACCDB6444EB3B49481BA760B57B7EFD</string>
-				<string>C0B4FFD2183204591862D7A1289551D4</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>8A4CF939608C4003B81E27F22D2DFC26</key>
-		<dict>
-			<key>fileRef</key>
-			<string>507F9DB5D16B575C65A727732C013D21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8DFC6523A396F8FCA3A63E2D38E53294</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>91F9A947145627262718D50F9E25F171</string>
-				<string>8A4CF939608C4003B81E27F22D2DFC26</string>
+				<string>A6616A5DFE0022B4318FD804277EC26C</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>8E44193E8561CFB2F0EF65FFFAC00BAE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>8F06BA47F0285E168EE3E6FDE7E09F61</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1658DB2A5C87BFD4A2D4E00A95993A7A</string>
-				<string>F201409FE105A6BF99611A557B2C7E3C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8FD89692B52F4EC924742F9649CB256D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D56635DB9B026AB590AD199497A279A8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Project</string>
-				</array>
-			</dict>
-		</dict>
-		<key>90D193752398B22163BFFA3EDE715145</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>345B906E12FD2CEFC187F8F3D28C0375</string>
-				<string>8469F1CEDE9018757278192D57C9B93F</string>
-				<string>5B5F139A2119EE415CC3029170350D50</string>
-				<string>5253D7ED77F3623E598B51A115ED12D1</string>
-				<string>993B639F53F2FF010D72FDB24D600574</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>91F9A947145627262718D50F9E25F171</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1658DB2A5C87BFD4A2D4E00A95993A7A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>92AED971B91C640191A5ABA1567FE358</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2FEBB95DD719915372CCEB365997AF93</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>9330668F878471FF28FC6EA03460640C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreMotion.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreMotion.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>93A4A3777CF96A4AAC1D13BA6DCCEA73</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>text.script.ruby</string>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>93DD8610566FABD90D1B5E3881B421C6</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>00C6D6BAB133E5F63B11A5D00F343EE8</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/MPIMotionKit/MPIMotionKit-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/MPIMotionKit/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/MPIMotionKit/MPIMotionKit.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>MPIMotionKit</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>940DF1EC1445AF26B84A1A96F2C4DF37</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CFNetwork.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CFNetwork.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>95BEE25D19A98CFD6A422B37ADD58589</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>00C6D6BAB133E5F63B11A5D00F343EE8</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CONFIGURATION_BUILD_DIR</key>
-				<string>$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MPIMotionKit</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/MPIMotionKit/ResourceBundle-MPIMotionKit-Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>PRODUCT_NAME</key>
-				<string>MPIMotionKit</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>965D02ECE920C125D26AFC92176FA9AB</key>
+		<key>A1D309CB2409E0A83D524E3B381162E0</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>OSCKit.xcconfig</string>
+			<string>OSCKit-umbrella.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>9707364889B0475B0FA5C9D40B9C05EA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5900306CBB1B17F138170FDCA6C36871</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>980DA2DFF9021959A1EB0E7402119F56</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E6AC95A3AC7E745FC879816B39691B3E</string>
-			<key>buildPhases</key>
-			<array>
-				<string>8E44193E8561CFB2F0EF65FFFAC00BAE</string>
-				<string>040CF29BC98C0CFCF0598D5557D0300C</string>
-				<string>87110308E36A6743BD17AF8235D8BF92</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>MPIMotionKit-MPIMotionKit</string>
-			<key>productName</key>
-			<string>MPIMotionKit-MPIMotionKit</string>
-			<key>productReference</key>
-			<string>8469F1CEDE9018757278192D57C9B93F</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>987FEED6B5158013991CE0810FC8CBB7</key>
+		<key>A22D54D34B75C0C232CC7AD219E6D9CC</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKBitCrusherAudioUnit.h</string>
 			<key>path</key>
-			<string>OSCKit-dummy.m</string>
+			<string>iOS/AudioKit.framework/Headers/AKBitCrusherAudioUnit.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>991BFD139F6A45C9B654960C2F6A7F09</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6A05B33E370A9441DF690611745FC49D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>993B639F53F2FF010D72FDB24D600574</key>
+		<key>A23488A40BCC8A4078E5FAC19E83A880</key>
 		<dict>
 			<key>explicitFileType</key>
 			<string>wrapper.framework</string>
@@ -1765,129 +2178,24 @@
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>name</key>
-			<string>Pods_bounceOSCs.framework</string>
+			<string>CocoaAsyncSocket.framework</string>
 			<key>path</key>
-			<string>Pods-bounceOSCs.framework</string>
+			<string>CocoaAsyncSocket.framework</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>99BC16DAE09CDD5BA3C3A4F8E3D65225</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>8763777045D8E0F2D49B5CBB2C666878</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/CocoaAsyncSocket/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>CocoaAsyncSocket</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>9A0BDF4D97F8A7CC7B250449620EAD22</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>DB7A42E2DF2B7DF5768083D9BBB39492</string>
-			<key>buildPhases</key>
-			<array>
-				<string>BEB595183E2F44D83D8F7851D1605647</string>
-				<string>8DFC6523A396F8FCA3A63E2D38E53294</string>
-				<string>8A3D2796BCB618C95E6220260585A448</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>AF531983800E9C8D3172DD5FD00D769E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>OSCKit</string>
-			<key>productName</key>
-			<string>OSCKit</string>
-			<key>productReference</key>
-			<string>5253D7ED77F3623E598B51A115ED12D1</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>A062FA9C32121363C5D0CFC3B743E4EF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A2BE834C71C5F0FC7822E4180684DF12</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A2BE834C71C5F0FC7822E4180684DF12</key>
+		<key>A563D5F796964A1E97C85831746F3A19</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>GCDAsyncSocket.h</string>
 			<key>path</key>
-			<string>MPIMotionKit-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A42E17C301F85DC7A0C0CE400E88AFD5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>ResourceBundle-MPIMotionKit-Info.plist</string>
+			<string>Source/GCD/GCDAsyncSocket.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1904,61 +2212,73 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>A76E362FE5A13C47DDB56C461DF1A84D</key>
+		<key>A6616A5DFE0022B4318FD804277EC26C</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>5D2DD09BCD20CB72C6BF62E864255828</string>
-				<string>4F04349A12037F42CF0E2E0D8BD8146F</string>
-				<string>A8E67476BF3AD01E1263831C7B872417</string>
-			</array>
+			<key>fileRef</key>
+			<string>E8D496FB53E280030B310506E3777C9A</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A67BCC4C775051A72A24DD279DF58B07</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>Pods</string>
+			<string>OSCMessage.h</string>
+			<key>path</key>
+			<string>OSCKit/OSCMessage.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>A8E67476BF3AD01E1263831C7B872417</key>
+		<key>A763BDC3DFAE275FB9117D17E014FBA3</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>D7302E8096CD524710BE6FA99C2AD1DB</string>
-				<string>C094248B4717370BBACA6475940AE040</string>
-				<string>F5F4F4A6FF27DD09D63964AEC5510D9B</string>
-				<string>D56635DB9B026AB590AD199497A279A8</string>
-				<string>E0C0F4C045E7C1B966DF7BEF065C562C</string>
-				<string>EA4DD44BDBE003E1B2DD8486FC356116</string>
-				<string>F2771E6E6AD4FA3A70B2B43564B5A2FC</string>
-				<string>6AB8F6DFF39EB682321FE45934215CC4</string>
-				<string>BD2FE5956DCDF0E3F44D74F0C2842616</string>
-				<string>870B446295AB6B694BE5A9D05C3E7C9B</string>
-				<string>C30725B1C763635E84CC0DA742BD8471</string>
-				<string>5900306CBB1B17F138170FDCA6C36871</string>
-				<string>B7BB27644DFE768925CB0AC5E9D758C6</string>
-				<string>1FF4125ADE8FA2D28C1AACA0DBDBA433</string>
-				<string>59AFB0A9ACF77618568C10847A6AC2A5</string>
-				<string>DF07A88A82A1AF607D86985D3E216CA6</string>
-				<string>F5CFB9E3A052F0DF6C4AD8F450D57882</string>
-				<string>CBB52BB72651433D1EC4BBB6166146D2</string>
-				<string>E742B63A4601C559116D17502B8950E1</string>
-				<string>3AA11D2CAF09AA2CBA77673688261FCA</string>
-				<string>49A9CABCF66E29FDDE38B0F38C1586FD</string>
-				<string>5D75AE1885637E695136BB05E885407B</string>
-			</array>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>OSCKit</string>
+			<string>AKResonantFilterAudioUnit.h</string>
 			<key>path</key>
-			<string>OSCKit</string>
+			<string>iOS/AudioKit.framework/Headers/AKResonantFilterAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A7E0F511533F7C06094616AC8DE8D495</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKRhodesPianoAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKRhodesPianoAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A998F0BD26DB09BE9AE5FB525F3E3D68</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>OSCKit.modulemap</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>AB0A81A77BD540F302E5AF9C8DD2E63E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C094248B4717370BBACA6475940AE040</string>
+			<string>AE4D1BBAA9EAC201D9CD25A89987C449</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1969,627 +2289,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>AC912BFA7E2C754B05B3F4E305038250</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>ACFE60AB34A7FEF697E6EEFB62436A8D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>630E22371BD156B08D5F14E0CD5FED15</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>AF531983800E9C8D3172DD5FD00D769E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>CocoaAsyncSocket</string>
-			<key>target</key>
-			<string>B37E19CA872A7535725D1E1946E5C271</string>
-			<key>targetProxy</key>
-			<string>2B53AAD7B207BAB192FB0D6A5FE9A9DD</string>
-		</dict>
-		<key>B1C36F8E1B1D69D37812562EF03FA7A4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>940DF1EC1445AF26B84A1A96F2C4DF37</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B37E19CA872A7535725D1E1946E5C271</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>551479B287B69C7447DFBC6CA5EADF0B</string>
-			<key>buildPhases</key>
-			<array>
-				<string>217D9EA001DB8A7A00EBCC79A99280A3</string>
-				<string>B9ED45E2D8B8BCFB22AEA1A0810ABD96</string>
-				<string>41F6279547BA8C6095CA882FB1059614</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>CocoaAsyncSocket</string>
-			<key>productName</key>
-			<string>CocoaAsyncSocket</string>
-			<key>productReference</key>
-			<string>345B906E12FD2CEFC187F8F3D28C0375</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>B4F2CD4FEAA7B8089570598B70BAE4A7</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>6E19FBFFDE0F461DDF8D3547604048FB</string>
-			<key>remoteInfo</key>
-			<string>MPIMotionKit</string>
-		</dict>
-		<key>B7BB27644DFE768925CB0AC5E9D758C6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>OscPrintReceivedElements.h</string>
-			<key>path</key>
-			<string>OSCKit/oscpack/OscPrintReceivedElements.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9ED45E2D8B8BCFB22AEA1A0810ABD96</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B1C36F8E1B1D69D37812562EF03FA7A4</string>
-				<string>CEFE28420773FC61D2DB4778ABDC12A1</string>
-				<string>F87F607CCD51536EC9CAD7F1488845C6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BD2FE5956DCDF0E3F44D74F0C2842616</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OscOutboundPacketStream.cpp</string>
-			<key>path</key>
-			<string>OSCKit/oscpack/OscOutboundPacketStream.cpp</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BDF9FA4CCA5C1F7E83698BF65CFC0A2F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3B0586AF28DAC10F042F0400A4BF930A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>BEB595183E2F44D83D8F7851D1605647</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C5FB2DEBF7FD13D3D7E6C2185BE657E9</string>
-				<string>700801311DA3D48DAB3795CFAEEA35EF</string>
-				<string>6FF6AFC53765079D314C2E821C60405B</string>
-				<string>5F4A7B752A5082B23CC5B7A873948229</string>
-				<string>9707364889B0475B0FA5C9D40B9C05EA</string>
-				<string>D4638F6CAE72857BADE4DB8DDE5BC466</string>
-				<string>25145D4816C4684A3B64AD3B3812C70E</string>
-				<string>37B1441B7AB5EB73989DD948A13B2A7A</string>
-				<string>EE4AF45899ECCFAFD2C4EC4E5CD22F3F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BF8424CCC7225609A1D89C7EC5862C3F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MPIMotionManager.h</string>
-			<key>path</key>
-			<string>Pod/Classes/MPIMotionManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C07A5478DB84216C6B93FE8877257994</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>9A0BDF4D97F8A7CC7B250449620EAD22</string>
-			<key>remoteInfo</key>
-			<string>OSCKit</string>
-		</dict>
-		<key>C094248B4717370BBACA6475940AE040</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>OSCClient.h</string>
-			<key>path</key>
-			<string>OSCKit/OSCClient.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C0B4FFD2183204591862D7A1289551D4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>49A9CABCF66E29FDDE38B0F38C1586FD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Project</string>
-				</array>
-			</dict>
-		</dict>
-		<key>C10BD96FBEDB97393F45E22E5DDE005C</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>MPIMotionKit</string>
-			<key>target</key>
-			<string>6E19FBFFDE0F461DDF8D3547604048FB</string>
-			<key>targetProxy</key>
-			<string>B4F2CD4FEAA7B8089570598B70BAE4A7</string>
-		</dict>
-		<key>C18AD7FBF4F2AE95C13FC67526A77D26</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CCFCA5319BB1048F74EB5650B67D47F6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C30725B1C763635E84CC0DA742BD8471</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>OscPacketListener.h</string>
-			<key>path</key>
-			<string>OSCKit/oscpack/OscPacketListener.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5FB2DEBF7FD13D3D7E6C2185BE657E9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F5F4F4A6FF27DD09D63964AEC5510D9B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C6CA0714FD644EB0DEEC411C848C6C50</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EA4DD44BDBE003E1B2DD8486FC356116</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>C70E01021D63EC048FF4CB33285A9AF1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1FF4125ADE8FA2D28C1AACA0DBDBA433</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>CBB52BB72651433D1EC4BBB6166146D2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>OSCServer.h</string>
-			<key>path</key>
-			<string>OSCKit/OSCServer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CCFCA5319BB1048F74EB5650B67D47F6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4E4F643460501F692EC1BC97EBFA0C93</string>
-				<string>4983F4DEAD4A847F8E4CD5C1A210EA12</string>
-				<string>6248DEC1E1FE70B760194CF900A9317B</string>
-				<string>071B92DCEC46340ABB0CB6EDB5D69701</string>
-				<string>2DDE526FE78EFF7E0846525D12B8E7E5</string>
-				<string>4DBC9A1D9230580F18F6CF597D6F5CF8</string>
-				<string>013A64BEEA8296A35688AD4F4D24093F</string>
-				<string>A5E4F2AE777433C6523F4812E21AE76F</string>
-				<string>19BD33B885D7315B64AE499837B16291</string>
-				<string>5B496DA29814EFECF7F79EB740A29293</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-bounceOSCs</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-bounceOSCs</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CEFE28420773FC61D2DB4778ABDC12A1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>507F9DB5D16B575C65A727732C013D21</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D0565BAC039D21E469B8D76633A89BFE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E0C0F4C045E7C1B966DF7BEF065C562C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Project</string>
-				</array>
-			</dict>
-		</dict>
-		<key>D30FD88883C58C900C2EEFA2FED5EFD8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F5CFB9E3A052F0DF6C4AD8F450D57882</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Project</string>
-				</array>
-			</dict>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>90D193752398B22163BFFA3EDE715145</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>B37E19CA872A7535725D1E1946E5C271</string>
-				<string>6E19FBFFDE0F461DDF8D3547604048FB</string>
-				<string>980DA2DFF9021959A1EB0E7402119F56</string>
-				<string>9A0BDF4D97F8A7CC7B250449620EAD22</string>
-				<string>52E7E95C4BEFD22CAA99C22ED72B70F5</string>
-			</array>
-		</dict>
-		<key>D4638F6CAE72857BADE4DB8DDE5BC466</key>
-		<dict>
-			<key>fileRef</key>
-			<string>59AFB0A9ACF77618568C10847A6AC2A5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D56635DB9B026AB590AD199497A279A8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>OscException.h</string>
-			<key>path</key>
-			<string>OSCKit/oscpack/OscException.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D7302E8096CD524710BE6FA99C2AD1DB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>MessageMappingOscPacketListener.h</string>
-			<key>path</key>
-			<string>OSCKit/oscpack/MessageMappingOscPacketListener.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D9A44696356E299F3C9A4BFF9E57343F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F4BE28E48BA9E3483D5E04ED3D21ADDD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>COMPILER_FLAGS</key>
-				<string>-DOS_OBJECT_USE_OBJC=0</string>
-			</dict>
-		</dict>
-		<key>DAA4B43129380B931CE3F53F9811C2B4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>42E0F8227B68F5E6A6B0D97977D286DD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>DB7A42E2DF2B7DF5768083D9BBB39492</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>507CD590F2A9AD8D43BDD94EBD550397</string>
-				<string>FC45A88B6AA7E50D2EA9456EC6CE93EE</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>DF07A88A82A1AF607D86985D3E216CA6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>OscReceivedElements.cpp</string>
-			<key>path</key>
-			<string>OSCKit/oscpack/OscReceivedElements.cpp</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF07F7AEB2F7EB25A9E655BC598A1A59</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>302B325A040A6D2FB92D77722F86F43D</string>
-				<string>8763777045D8E0F2D49B5CBB2C666878</string>
-				<string>7EF9B9CF423BE4C16B8AD17FD81CBCBF</string>
-				<string>70DA3DA1A567E317A429A0B242E938E1</string>
-				<string>630E22371BD156B08D5F14E0CD5FED15</string>
-				<string>AC912BFA7E2C754B05B3F4E305038250</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>../Target Support Files/CocoaAsyncSocket</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E05DCA26B057CCDFDB8783B91E7399D7</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>00C6D6BAB133E5F63B11A5D00F343EE8</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/MPIMotionKit/MPIMotionKit-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/MPIMotionKit/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/MPIMotionKit/MPIMotionKit.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>MPIMotionKit</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E0C0F4C045E7C1B966DF7BEF065C562C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>OscHostEndianness.h</string>
-			<key>path</key>
-			<string>OSCKit/oscpack/OscHostEndianness.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6AC95A3AC7E745FC879816B39691B3E</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>95BEE25D19A98CFD6A422B37ADD58589</string>
-				<string>27EEEE4E32C5A3FC1084A71544421FA0</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E7361E51937BF6943872D2EE99A0F2AE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5357B28649563523AE398423CDDAC1A4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>E742B63A4601C559116D17502B8950E1</key>
+		<key>AB3362BF27134B19DE2353A0D586C271</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2604,7 +2304,34 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>EA4DD44BDBE003E1B2DD8486FC356116</key>
+		<key>AC7790C102DCFE268B7488B0F5234BC0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Security.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Security.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>ACFE60AB34A7FEF697E6EEFB62436A8D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8FFDE2F73FFF1621CBC05E3EA4FDEFF4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>AE4D1BBAA9EAC201D9CD25A89987C449</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2613,13 +2340,24 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>OSCKit.h</string>
+			<string>OSCClient.h</string>
 			<key>path</key>
-			<string>OSCKit/OSCKit.h</string>
+			<string>OSCKit/OSCClient.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>EC5400FDF7F003AA511D2D54C2F2CC60</key>
+		<key>AF531983800E9C8D3172DD5FD00D769E</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>CocoaAsyncSocket</string>
+			<key>target</key>
+			<string>B37E19CA872A7535725D1E1946E5C271</string>
+			<key>targetProxy</key>
+			<string>2B53AAD7B207BAB192FB0D6A5FE9A9DD</string>
+		</dict>
+		<key>B1ACF01DF006A3D58AC824D0F17FC3B0</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2627,12 +2365,21 @@
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKCombFilterReverbAudioUnit.h</string>
 			<key>path</key>
-			<string>OSCKit-prefix.pch</string>
+			<string>iOS/AudioKit.framework/Headers/AKCombFilterReverbAudioUnit.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>EC7ACD9EB976B58F2E98B441F2331460</key>
+		<key>B1C36F8E1B1D69D37812562EF03FA7A4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4578FFC352D4C1E0A6835D910A54EA8A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B1F8777BDA30DA2342B08DF3015E6144</key>
 		<dict>
 			<key>baseConfigurationReference</key>
 			<string>5B496DA29814EFECF7F79EB740A29293</string>
@@ -2700,14 +2447,840 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>EE4AF45899ECCFAFD2C4EC4E5CD22F3F</key>
+		<key>B25EA39FAE78BA1F6AE0C0065102FBDC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AudioKit-Swift.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AudioKit-Swift.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B27C70FFD850A5E6FAD9A0DB27F34ED3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>OSCKit.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2C9C5F2BCE7CFC0A381C27AC6F73E58</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKVariableDelayAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKVariableDelayAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B2D11E51E9DFE06CFFA2549FF32604A1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>EZPlot.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/EZPlot.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B37E19CA872A7535725D1E1946E5C271</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>551479B287B69C7447DFBC6CA5EADF0B</string>
+			<key>buildPhases</key>
+			<array>
+				<string>217D9EA001DB8A7A00EBCC79A99280A3</string>
+				<string>B9ED45E2D8B8BCFB22AEA1A0810ABD96</string>
+				<string>41F6279547BA8C6095CA882FB1059614</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>CocoaAsyncSocket</string>
+			<key>productName</key>
+			<string>CocoaAsyncSocket</string>
+			<key>productReference</key>
+			<string>A23488A40BCC8A4078E5FAC19E83A880</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>B597F88BD35003825769FF5E509D7C79</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKPannerAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKPannerAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B85737A00FE56831F8C88079F32CFBD0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKOfflineRenderer.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKOfflineRenderer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B9ED45E2D8B8BCFB22AEA1A0810ABD96</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B1C36F8E1B1D69D37812562EF03FA7A4</string>
+				<string>CEFE28420773FC61D2DB4778ABDC12A1</string>
+				<string>F87F607CCD51536EC9CAD7F1488845C6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>BA0F41A34C0DD437CC6A4D0F56DD11F4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>EZAudioFFT.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/EZAudioFFT.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BA2827DCB658CE730C8FD93B5C329783</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>OSCKit-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BCC2518406AF126781B138489FB68C19</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKAmplitudeTrackerAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKAmplitudeTrackerAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BD4D6D74231203BB4AD8A7B352A79AFD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKFluteAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKFluteAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BDC7B348775C666ABFB56335F2108B90</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKBandRejectButterworthFilterAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKBandRejectButterworthFilterAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BEB595183E2F44D83D8F7851D1605647</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C5FB2DEBF7FD13D3D7E6C2185BE657E9</string>
+				<string>700801311DA3D48DAB3795CFAEEA35EF</string>
+				<string>6FF6AFC53765079D314C2E821C60405B</string>
+				<string>5F4A7B752A5082B23CC5B7A873948229</string>
+				<string>9707364889B0475B0FA5C9D40B9C05EA</string>
+				<string>D4638F6CAE72857BADE4DB8DDE5BC466</string>
+				<string>25145D4816C4684A3B64AD3B3812C70E</string>
+				<string>37B1441B7AB5EB73989DD948A13B2A7A</string>
+				<string>EE4AF45899ECCFAFD2C4EC4E5CD22F3F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>BF0C171F51CACF185E3784F6B146FD11</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKLowPassButterworthFilterAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKLowPassButterworthFilterAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF988D3F21A3F6BA000216146CBC39A9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CF013980DB58B6C9480085A350112EB0</string>
+				<string>BCC2518406AF126781B138489FB68C19</string>
+				<string>5DF3E0578BBE710D49069A6EF560AFA0</string>
+				<string>E21D8478193C1CAD7FF2D1D22C322F3A</string>
+				<string>E51E26C8E3DFF61193186816203F1EC2</string>
+				<string>9EA362C23B3ACB0A385AE9B6415E8172</string>
+				<string>BDC7B348775C666ABFB56335F2108B90</string>
+				<string>A22D54D34B75C0C232CC7AD219E6D9CC</string>
+				<string>50B0A929A931AD1FDDBD87CFCCFE18CD</string>
+				<string>90F7F95594C426430F6D290558F76ADF</string>
+				<string>E3EE5E64536E1896B89EF678095C49E0</string>
+				<string>F9CDDDFFE50912EC2192218FCF0B1D1D</string>
+				<string>E3142C309E9382E398987FE214B03370</string>
+				<string>B1ACF01DF006A3D58AC824D0F17FC3B0</string>
+				<string>30A03A52BDBCBB61B8423A3EE8584353</string>
+				<string>8A587EE7CDF7BA893579B169813D9F87</string>
+				<string>48B567B229628497365F1CC25F321AB2</string>
+				<string>067B0E5A25C5AB22A833C951460D81DC</string>
+				<string>C08FCEEF50A7C253E4D3356C42023B5C</string>
+				<string>167A59E3E4EA9454A8DCA7BAA82F5363</string>
+				<string>E17B2B4E5CB02E0EE13A546D492E22BE</string>
+				<string>BD4D6D74231203BB4AD8A7B352A79AFD</string>
+				<string>21F6F98997D530105E124AFF41221D2B</string>
+				<string>4EF6AFE5A792B22679FA7751FFFF6BBE</string>
+				<string>200C2443941A43AA83C374E0ACF7336B</string>
+				<string>D31A46CC37FE86F3891AE9D4CBAE4B72</string>
+				<string>8010402B04678C54FEED290213DD9C56</string>
+				<string>65AD905974B2DC9E7A3A2BE79BF0080A</string>
+				<string>DEC024D47D01B61D9F94CE9D905D90C0</string>
+				<string>BF0C171F51CACF185E3784F6B146FD11</string>
+				<string>1E1E53D962A36FFAD32102486EF474FC</string>
+				<string>159D32DC7D7C08FFCC850F2E2D729BD7</string>
+				<string>99C60DA8877B0015663C3B966C8D63F5</string>
+				<string>9BA62F593EEB9C084D0456ABCE542694</string>
+				<string>C218DE31334EA7ED0E8E97293499077F</string>
+				<string>6115B27786D7FD42D555F7709A1B1A8C</string>
+				<string>237A52BBF70538BB4CEAAE0B5ED4C154</string>
+				<string>9B595BB87B55FDE32AC4A0878D2919B1</string>
+				<string>B85737A00FE56831F8C88079F32CFBD0</string>
+				<string>059A9263AB167C1B460C978CC77330C4</string>
+				<string>E62EA9A8CC1BF5B2B17DB5FC7732D270</string>
+				<string>7E42AFC5E07CB83E5D9EAE36DDAB55CF</string>
+				<string>65BDA7C2E44BA932E11700B80671A7CA</string>
+				<string>B597F88BD35003825769FF5E509D7C79</string>
+				<string>F767D4C4A6261D33FE4AC39B4A9ED0E6</string>
+				<string>681AAF696D1CCFE1EBBE443C371DF556</string>
+				<string>72D1DAD12F8AE8A9DB0DE5DFB8883CC5</string>
+				<string>2852B14C6782181B60B534A497228526</string>
+				<string>2DDF174119B978AADE513E25455D80AF</string>
+				<string>0F8E630223AFADD06BE2F56638F0892D</string>
+				<string>1D63AAB848BC5961FD80A4C29C4A0247</string>
+				<string>55069AECBC00960486AEB8CDE25C0200</string>
+				<string>2B196A49E3817B8E2EC77C18BA0FA2C9</string>
+				<string>D21BFCACED299582260A9C447BD3AD93</string>
+				<string>A763BDC3DFAE275FB9117D17E014FBA3</string>
+				<string>A7E0F511533F7C06094616AC8DE8D495</string>
+				<string>F04B9F7935CFCC7AECF3F75C3FD9935E</string>
+				<string>5690854B84C1278E6F0472A9B69880E4</string>
+				<string>DCDF2E3B64F75601892269837A71D759</string>
+				<string>5D22E3F8BAFAE7CF77C1C2E3E8C3D408</string>
+				<string>47274ED947C361A0AF5539DB3AD58B92</string>
+				<string>C98BECFEAFDB1B9041D06C5B173FC2DA</string>
+				<string>3525D645A854A9BAF30436ED5291FB83</string>
+				<string>F2D968539765AC30A9DE609AD8A5994C</string>
+				<string>6E823B443CA73462E28487C4E10E5C17</string>
+				<string>62CF61F08C7F4F6B5A472FB1749DD098</string>
+				<string>CB4F4BBFAC9E13261A336578238B00FD</string>
+				<string>6DE3F0BE6FDA0BD13DB7573ABEB75F3C</string>
+				<string>C8A86AF0F2E41B8766F0DF6AEFB4CA94</string>
+				<string>B2C9C5F2BCE7CFC0A381C27AC6F73E58</string>
+				<string>2CE54FC4F7125149287E14195D396848</string>
+				<string>205F051D62EA6BA7DB8E8700C38DD725</string>
+				<string>4630F9738D3EC5FDB86DFEAC23F3EEC9</string>
+				<string>B25EA39FAE78BA1F6AE0C0065102FBDC</string>
+				<string>0AF23929B01D59C8BC04BDB0F91AC3D0</string>
+				<string>EA1944409DBEF15BCA8A00B9A082B670</string>
+				<string>39A1610DBD75950E0BD41EC333469ADB</string>
+				<string>BA0F41A34C0DD437CC6A4D0F56DD11F4</string>
+				<string>4A59240D5F348A0A85A9C30A7893E953</string>
+				<string>D009BE308BA81D8F8AA1D99AFA97E4B1</string>
+				<string>FA279A10EE9EA82C8C2D3762124F95FD</string>
+				<string>74588AB2FC45A89A9B5F109BE847B8D1</string>
+				<string>1569ED6D2904888907D21587F717D993</string>
+				<string>2037C7C604B46B199ACD524A4F731617</string>
+				<string>C321764404B5517826616DF84479C42B</string>
+				<string>22409983A5B3C08DC8AE15BC8DACAEE6</string>
+				<string>62277C3232B4AF579255E41AF61C0FE4</string>
+				<string>1090CEC61814EB8C90D5EBD27387E3C2</string>
+				<string>B2D11E51E9DFE06CFFA2549FF32604A1</string>
+				<string>DF9C5B6EA83697701316633CC55B9F15</string>
+				<string>79280DF48B60CAF1A46A4D361A94B894</string>
+				<string>44669BF4328159A4916A11AE5D39EB1C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>AudioKit</string>
+			<key>path</key>
+			<string>AudioKit</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C0528094A1B346683D04F06B4E19B399</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>B37E19CA872A7535725D1E1946E5C271</string>
+			<key>remoteInfo</key>
+			<string>CocoaAsyncSocket</string>
+		</dict>
+		<key>C08FCEEF50A7C253E4D3356C42023B5C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKDynamicRangeCompressorAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKDynamicRangeCompressorAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C0B4FFD2183204591862D7A1289551D4</key>
 		<dict>
 			<key>fileRef</key>
-			<string>3AA11D2CAF09AA2CBA77673688261FCA</string>
+			<string>1EA2B6A29CACBD37467C906D92C7E9B2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>C18AD7FBF4F2AE95C13FC67526A77D26</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>CCFCA5319BB1048F74EB5650B67D47F6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C218DE31334EA7ED0E8E97293499077F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKModalResonanceFilterAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKModalResonanceFilterAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C249E3FA17687AE40ED6A47C636EDCBF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OscPrintReceivedElements.h</string>
+			<key>path</key>
+			<string>OSCKit/oscpack/OscPrintReceivedElements.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C321764404B5517826616DF84479C42B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>EZAudioPlotGL.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/EZAudioPlotGL.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C46F4AC3DAB7F28C4C1FDE2666D43EE1</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>9A0BDF4D97F8A7CC7B250449620EAD22</string>
+			<key>remoteInfo</key>
+			<string>OSCKit</string>
+		</dict>
+		<key>C5FB2DEBF7FD13D3D7E6C2185BE657E9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E8F1138F7DF458880F29E1D71C6BFCA2</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>F1422190AFCA712633194960627CD5D7</key>
+		<key>C6CA0714FD644EB0DEEC411C848C6C50</key>
+		<dict>
+			<key>fileRef</key>
+			<string>06725557EF0DB5D75598C5E8952C63F0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>C70E01021D63EC048FF4CB33285A9AF1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76A9A693577224783FB22891F9E54DB5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>C8A86AF0F2E41B8766F0DF6AEFB4CA94</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKTubularBellsAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKTubularBellsAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C98BECFEAFDB1B9041D06C5B173FC2DA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKStringResonatorAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKStringResonatorAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB4F4BBFAC9E13261A336578238B00FD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKToneFilterAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKToneFilterAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CCFCA5319BB1048F74EB5650B67D47F6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4E4F643460501F692EC1BC97EBFA0C93</string>
+				<string>4983F4DEAD4A847F8E4CD5C1A210EA12</string>
+				<string>6248DEC1E1FE70B760194CF900A9317B</string>
+				<string>071B92DCEC46340ABB0CB6EDB5D69701</string>
+				<string>2DDE526FE78EFF7E0846525D12B8E7E5</string>
+				<string>4DBC9A1D9230580F18F6CF597D6F5CF8</string>
+				<string>013A64BEEA8296A35688AD4F4D24093F</string>
+				<string>A5E4F2AE777433C6523F4812E21AE76F</string>
+				<string>19BD33B885D7315B64AE499837B16291</string>
+				<string>5B496DA29814EFECF7F79EB740A29293</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-bounceOSCs</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-bounceOSCs</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CEFE28420773FC61D2DB4778ABDC12A1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E8D496FB53E280030B310506E3777C9A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>CF013980DB58B6C9480085A350112EB0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKAmplitudeEnvelopeAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKAmplitudeEnvelopeAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CF8DC3C4B18AFCCC1433E473C0888E4F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>GCDAsyncUdpSocket.h</string>
+			<key>path</key>
+			<string>Source/GCD/GCDAsyncUdpSocket.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D009BE308BA81D8F8AA1D99AFA97E4B1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>EZAudioFileMarker.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/EZAudioFileMarker.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D0565BAC039D21E469B8D76633A89BFE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6265898789815FB861836198195EFFA2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>D21BFCACED299582260A9C447BD3AD93</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKPWMOscillatorBankAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKPWMOscillatorBankAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D30FD88883C58C900C2EEFA2FED5EFD8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6EB3DB4B1D5799BA3BA801049D1576E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Project</string>
+				</array>
+			</dict>
+		</dict>
+		<key>D31A46CC37FE86F3891AE9D4CBAE4B72</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKFrequencyTrackerAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKFrequencyTrackerAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D3F0DEE18663EE485C5B267960107625</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OscOutboundPacketStream.h</string>
+			<key>path</key>
+			<string>OSCKit/oscpack/OscOutboundPacketStream.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0730</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>4CC746021AD578DA982AE4AC5CFEFD29</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>B37E19CA872A7535725D1E1946E5C271</string>
+				<string>9A0BDF4D97F8A7CC7B250449620EAD22</string>
+				<string>0106D0429A2E43BF8E7D983EF1309B86</string>
+			</array>
+		</dict>
+		<key>D4638F6CAE72857BADE4DB8DDE5BC466</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F9DF84F123721B5FB9C7D8ECE6A3D750</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D9A44696356E299F3C9A4BFF9E57343F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>43DC5451E119F35E78DEB0F129FD8C1E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DOS_OBJECT_USE_OBJC=0</string>
+			</dict>
+		</dict>
+		<key>DB7A42E2DF2B7DF5768083D9BBB39492</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>507CD590F2A9AD8D43BDD94EBD550397</string>
+				<string>FC45A88B6AA7E50D2EA9456EC6CE93EE</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>DCDF2E3B64F75601892269837A71D759</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKShakerAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKShakerAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DDC4EDF51A0E83C57D09B21508A9D588</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BF988D3F21A3F6BA000216146CBC39A9</string>
+				<string>66C8953FA4227B23D2AA99793B6A1610</string>
+				<string>5607F6528CEE6E8E47B7DD379768C6FF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DEC024D47D01B61D9F94CE9D905D90C0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKKorgLowPassFilterAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKKorgLowPassFilterAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF9C5B6EA83697701316633CC55B9F15</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>EZRecorder.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/EZRecorder.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DFE611DDA781CFAC00F5BFDF466F3841</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4578FFC352D4C1E0A6835D910A54EA8A</string>
+				<string>E8D496FB53E280030B310506E3777C9A</string>
+				<string>AC7790C102DCFE268B7488B0F5234BC0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E15A09B81763A473EB7495DCBD606B8F</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2720,23 +3293,96 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F201409FE105A6BF99611A557B2C7E3C</key>
+		<key>E17B2B4E5CB02E0EE13A546D492E22BE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKFlatFrequencyResponseReverbAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKFlatFrequencyResponseReverbAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E21D8478193C1CAD7FF2D1D22C322F3A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKAutoWahAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKAutoWahAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E3142C309E9382E398987FE214B03370</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKClipperAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKClipperAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E3EE5E64536E1896B89EF678095C49E0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKChowningReverbAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKChowningReverbAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E51E26C8E3DFF61193186816203F1EC2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKBalancerAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKBalancerAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E57D8BB42B7367E2EA1AB4BAF61E5D44</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>940DF1EC1445AF26B84A1A96F2C4DF37</string>
-				<string>9330668F878471FF28FC6EA03460640C</string>
-				<string>507F9DB5D16B575C65A727732C013D21</string>
-				<string>76089F81E87C72DE638C89028408F0C0</string>
+				<string>91BA6F6CCD385509DC9FF3B1ACE3E309</string>
+				<string>DFE611DDA781CFAC00F5BFDF466F3841</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>iOS</string>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F2771E6E6AD4FA3A70B2B43564B5A2FC</key>
+		<key>E62EA9A8CC1BF5B2B17DB5FC7732D270</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2745,61 +3391,54 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>name</key>
-			<string>OSCMessage.h</string>
+			<string>AKOperationGeneratorAudioUnit.h</string>
 			<key>path</key>
-			<string>OSCKit/OSCMessage.h</string>
+			<string>iOS/AudioKit.framework/Headers/AKOperationGeneratorAudioUnit.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F45B40DF0BF596BDCD96B2D85EF848FA</key>
+		<key>E6B8689D5C2D79CC12994D97901932F4</key>
 		<dict>
 			<key>fileRef</key>
-			<string>7EF9B9CF423BE4C16B8AD17FD81CBCBF</string>
+			<string>A5E4F2AE777433C6523F4812E21AE76F</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
-		<key>F4BE28E48BA9E3483D5E04ED3D21ADDD</key>
+		<key>E7361E51937BF6943872D2EE99A0F2AE</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>A1D309CB2409E0A83D524E3B381162E0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>E8D496FB53E280030B310506E3777C9A</key>
+		<dict>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>wrapper.framework</string>
 			<key>name</key>
-			<string>GCDAsyncUdpSocket.m</string>
+			<string>Foundation.framework</string>
 			<key>path</key>
-			<string>Source/GCD/GCDAsyncUdpSocket.m</string>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>DEVELOPER_DIR</string>
 		</dict>
-		<key>F54D6B3D961D0B330D1E53D2A763F5ED</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>OSCKit</string>
-			<key>target</key>
-			<string>9A0BDF4D97F8A7CC7B250449620EAD22</string>
-			<key>targetProxy</key>
-			<string>C07A5478DB84216C6B93FE8877257994</string>
-		</dict>
-		<key>F5CFB9E3A052F0DF6C4AD8F450D57882</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>OscReceivedElements.h</string>
-			<key>path</key>
-			<string>OSCKit/oscpack/OscReceivedElements.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F5F4F4A6FF27DD09D63964AEC5510D9B</key>
+		<key>E8F1138F7DF458880F29E1D71C6BFCA2</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2814,35 +3453,199 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F87F607CCD51536EC9CAD7F1488845C6</key>
+		<key>EA1944409DBEF15BCA8A00B9A082B670</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>EZAudioDevice.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/EZAudioDevice.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC0D490B80C4800D03118F56FB42975A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>OSCKit-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EE4AF45899ECCFAFD2C4EC4E5CD22F3F</key>
 		<dict>
 			<key>fileRef</key>
-			<string>76089F81E87C72DE638C89028408F0C0</string>
+			<string>19DAACB23E9C2111A645F027828E8024</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>F8AFF49E2B08951F850249EA350B8B91</key>
+		<key>EF46EF74A13C714ABA5BF37A5D310F68</key>
 		<dict>
-			<key>fileRef</key>
-			<string>2DDE526FE78EFF7E0846525D12B8E7E5</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>OSCServer.h</string>
+			<key>path</key>
+			<string>OSCKit/OSCServer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>F953D7419181AB0A2C67FC1ADF9E59EC</key>
+		<key>F04B9F7935CFCC7AECF3F75C3FD9935E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKRolandTB303FilterAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKRolandTB303FilterAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06721A25B85AC83321AA7767118546C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>path</key>
-			<string>MPIMotionKit.modulemap</string>
+			<string>CocoaAsyncSocket.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F06CCA6E0ADD7995E257B75B5DF5B4AB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>OscPrintReceivedElements.cpp</string>
+			<key>path</key>
+			<string>OSCKit/oscpack/OscPrintReceivedElements.cpp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F2D968539765AC30A9DE609AD8A5994C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKTesterAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKTesterAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F45B40DF0BF596BDCD96B2D85EF848FA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F9D4716748AEE0F29265723A96439D9F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F767D4C4A6261D33FE4AC39B4A9ED0E6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKPeakingParametricEqualizerFilterAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKPeakingParametricEqualizerFilterAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F87F607CCD51536EC9CAD7F1488845C6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AC7790C102DCFE268B7488B0F5234BC0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F9CDDDFFE50912EC2192218FCF0B1D1D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>AKClarinetAudioUnit.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/AKClarinetAudioUnit.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F9D4716748AEE0F29265723A96439D9F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CocoaAsyncSocket-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F9DF84F123721B5FB9C7D8ECE6A3D750</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>OSCProtocol.mm</string>
+			<key>path</key>
+			<string>OSCKit/OSCProtocol.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FA279A10EE9EA82C8C2D3762124F95FD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>EZAudioFloatConverter.h</string>
+			<key>path</key>
+			<string>iOS/AudioKit.framework/Headers/EZAudioFloatConverter.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>FC45A88B6AA7E50D2EA9456EC6CE93EE</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>965D02ECE920C125D26AFC92176FA9AB</string>
+			<string>B27C70FFD850A5E6FAD9A0DB27F34ED3</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
@@ -2902,7 +3705,7 @@
 		<key>FCB9B9EEE280C9DBEA275EF06A68802C</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C30725B1C763635E84CC0DA742BD8471</string>
+			<string>1727AF7B52CCF3ECC8D0727AC2E6A1CA</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -2913,10 +3716,21 @@
 				</array>
 			</dict>
 		</dict>
+		<key>FD721E17E2027DCE5673190375B9A0F7</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>CocoaAsyncSocket</string>
+			<key>target</key>
+			<string>B37E19CA872A7535725D1E1946E5C271</string>
+			<key>targetProxy</key>
+			<string>C0528094A1B346683D04F06B4E19B399</string>
+		</dict>
 		<key>FE5DA8CB481D8B5F69FCAFE882F0C425</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>8763777045D8E0F2D49B5CBB2C666878</string>
+			<string>15C9A9876C33747DE733C259C05AF94E</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>

@@ -14,21 +14,9 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Public Domain License
+			<string>The MIT License (MIT)
 
-The CocoaAsyncSocket project is in the public domain.
-
-The original TCP version (AsyncSocket) was created by Dustin Voss in January 2003.
-Updated and maintained by Deusty LLC and the Apple development community.
-</string>
-			<key>Title</key>
-			<string>CocoaAsyncSocket</string>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-		</dict>
-		<dict>
-			<key>FooterText</key>
-			<string>Copyright (c) 2015 Adam Ro&#769;z&#775;yn&#769;ski &lt;adam@micropixels.pl&gt;
+Copyright (c) 2016 Aurelius Prochazka
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -49,7 +37,21 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 </string>
 			<key>Title</key>
-			<string>MPIMotionKit</string>
+			<string>AudioKit</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Public Domain License
+
+The CocoaAsyncSocket project is in the public domain.
+
+The original TCP version (AsyncSocket) was created by Dustin Voss in January 2003.
+Updated and maintained by Deusty LLC and the Apple development community.
+</string>
+			<key>Title</key>
+			<string>CocoaAsyncSocket</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>

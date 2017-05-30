@@ -9,13 +9,15 @@
 import UIKit
 
 
-class FirstViewController: UIViewController {
+class FirstViewController: UIViewController, TransmitterProtocol {
 
     
+    @IBOutlet weak var levelView: UIProgressView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
+        levelView.layer.frame = levelView.layer.frame.insetBy(dx: 0, dy: -10.0)
+        
         let stA = SensorTransmitter(sensor: AttitudeSensor(), transmitter: OSCTransmitter())
         let stB = SensorTransmitter(sensor: AccelSensor(), transmitter: OSCTransmitter())
         let stC = SensorTransmitter(sensor: RotationRateSensor(), transmitter: OSCTransmitter())
@@ -24,6 +26,8 @@ class FirstViewController: UIViewController {
         stB.run(interval:0.03)
         stC.run(interval:0.03)
 
+        let stD = SensorTransmitter(sensor:AudioAmpSensor(), transmitter: self)
+        stD.run(interval:0.03)
 
     }
 
@@ -36,5 +40,11 @@ class FirstViewController: UIViewController {
     @IBAction func onConnectionTouchUp(_ sender: Any) {
 
     }
+    
+    func transmit(sensor: SensorProtocol){
+        
+        levelView.progress = Float(sensor.getData()[0]*100)
+    }
+
 }
 

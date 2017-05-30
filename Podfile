@@ -8,5 +8,6 @@ target 'bounceOSCs' do
   # Pods for bounceOSCs
 
 pod 'OSCKit'
-pod 'MPIMotionKit'
+pod 'AudioKit', '~> 3.7'
+
 end

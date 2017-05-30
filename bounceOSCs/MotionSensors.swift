@@ -20,7 +20,6 @@ class MotionSensor {
             motionManager.startDeviceMotionUpdates()
         }
     }
-    
 }
 
 class RotationRateSensor : MotionSensor, SensorProtocol {
