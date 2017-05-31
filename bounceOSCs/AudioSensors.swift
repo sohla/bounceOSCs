@@ -35,7 +35,7 @@ class AudioAmpSensor : AudioSensor, SensorProtocol {
     }
     
     func oscData() -> (String,Array<String>){
-        print("\(tracker.amplitude),\(tracker.threshold)")
+        //print("\(tracker.amplitude),\(tracker.threshold)")
         return ("TO",["DO"])
         
     }

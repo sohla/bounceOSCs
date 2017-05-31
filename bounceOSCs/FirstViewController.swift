@@ -43,7 +43,7 @@ class FirstViewController: UIViewController, TransmitterProtocol {
     
     func transmit(sensor: SensorProtocol){
         
-        levelView.progress = Float(sensor.getData()[0]*100)
+        levelView.progress = Float(sensor.getData()[0])
     }
 
 }
