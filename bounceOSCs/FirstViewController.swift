@@ -26,8 +26,10 @@ class FirstViewController: UIViewController, TransmitterProtocol {
         stB.run(interval:0.03)
         stC.run(interval:0.03)
 
-        let stD = SensorTransmitter(sensor:AudioAmpSensor(), transmitter: self)
-        stD.run(interval:0.03)
+//        let stD = SensorTransmitter(sensor:AudioAmpSensor(), transmitter: self)
+//        stD.run(interval:0.03)
+        let stE = SensorTransmitter(sensor:AudioAmpSensor(), transmitter: OSCTransmitter())
+        stE.run(interval:0.4)
 
     }
 

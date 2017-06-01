@@ -11,9 +11,9 @@ import AudioKit
 
 class AudioSensor {
     
-    var mic: AKMicrophone!
-    var tracker: AKAmplitudeTracker!
-    var silence: AKBooster!
+    let mic: AKMicrophone!
+    let tracker: AKAmplitudeTracker!
+    let silence: AKBooster!
 
     init() {
         AKSettings.audioInputEnabled = true
@@ -35,9 +35,7 @@ class AudioAmpSensor : AudioSensor, SensorProtocol {
     }
     
     func oscData() -> (String,Array<String>){
-        //print("\(tracker.amplitude),\(tracker.threshold)")
-        return ("TO",["DO"])
-        
+        return ("/gyrosc/amp",[String(tracker.amplitude)])
     }
     func midiData() -> String{ return "TODO"}
     
