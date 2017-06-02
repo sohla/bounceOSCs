@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MMLanScan.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>OSCKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +27,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0106D0429A2E43BF8E7D983EF1309B86</key>
+		<key>02793D4B5B57296D2559169B0E6A2965</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0ECDFC1369BECD22FB3E93F4E2E1CD22</key>
 		<dict>
 			<key>primary</key>
 			<true/>

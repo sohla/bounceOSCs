@@ -40,6 +40,7 @@
 		F0345E8E1EDC5C6D00D1038A /* TransmitterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransmitterProtocol.swift; sourceTree = "<group>"; };
 		F0345E901EDC5D5A00D1038A /* MotionSensors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionSensors.swift; sourceTree = "<group>"; };
 		F0345E951EDDAEF300D1038A /* AudioSensors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSensors.swift; sourceTree = "<group>"; };
+		F0938A5C1EE19CFB00B116E7 /* MMLanScan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMLanScan-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 				F0345E901EDC5D5A00D1038A /* MotionSensors.swift */,
 				F0345E951EDDAEF300D1038A /* AudioSensors.swift */,
 				F0345E8E1EDC5C6D00D1038A /* TransmitterProtocol.swift */,
+				F0938A5C1EE19CFB00B116E7 /* MMLanScan-Bridging-Header.h */,
 				F0345E771ED495CA00D1038A /* Main.storyboard */,
 				F0345E7A1ED495CA00D1038A /* Assets.xcassets */,
 				F0345E7C1ED495CA00D1038A /* LaunchScreen.storyboard */,

@@ -1,20 +1,21 @@
 PODS:
-  - CocoaAsyncSocket (7.5.0):
-    - CocoaAsyncSocket/GCD (= 7.5.0)
-  - CocoaAsyncSocket/GCD (7.5.0)
-  - MPIMotionKit (0.1.0.1)
+  - AudioKit (3.7)
+  - CocoaAsyncSocket (7.6.1)
+  - MMLanScan (2.1.2)
   - OSCKit (0.3.5):
     - CocoaAsyncSocket (~> 7.3)
 
 DEPENDENCIES:
-  - MPIMotionKit
+  - AudioKit (~> 3.7)
+  - MMLanScan
   - OSCKit
 
 SPEC CHECKSUMS:
-  CocoaAsyncSocket: 3baeb1ddd969f81cf9fca81053ae49ef2d1cbbfa
-  MPIMotionKit: 5bdf906ad6e2302c176e64057b81c8296a7bf2b7
+  AudioKit: 73c43705575e483623bf3cf306f823a8677aebdd
+  CocoaAsyncSocket: 7eadd3f59e1a6c84e2aefc93e9ff7b55156fe174
+  MMLanScan: dee389a3cc85166187f66a4037ff24dc88922d00
   OSCKit: 4470dbd30bc792dcf66dc4e7b5d1ec7174add33c
 
-PODFILE CHECKSUM: f1a4f9ec842983e2dee0b494575ca90d75e0ff08
+PODFILE CHECKSUM: 00b1de450cfebb434320677aa96622dbd630f0f7
 
 COCOAPODS: 1.0.1
