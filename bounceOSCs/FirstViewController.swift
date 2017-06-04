@@ -9,10 +9,9 @@
 import UIKit
 import MMLanScan
 
-class FirstViewController: UIViewController, TransmitterProtocol, MMLANScannerDelegate {
+class FirstViewController: UIViewController, MMLANScannerDelegate {
 
     
-    @IBOutlet weak var levelView: UIProgressView!
     
     var lanScanner : MMLANScanner!
     
@@ -25,8 +24,6 @@ class FirstViewController: UIViewController, TransmitterProtocol, MMLANScannerDe
         self.lanScanner = MMLANScanner(delegate:self)
         lanScanner.start()
         
-        levelView.layer.frame = levelView.layer.frame.insetBy(dx: 0, dy: -10.0)
-        
         let stA = SensorTransmitter(sensor: AttitudeSensor(), transmitter: OSCTransmitter())
         let stB = SensorTransmitter(sensor: AccelSensor(), transmitter: OSCTransmitter())
         let stC = SensorTransmitter(sensor: RotationRateSensor(), transmitter: OSCTransmitter())
@@ -35,8 +32,6 @@ class FirstViewController: UIViewController, TransmitterProtocol, MMLANScannerDe
         stB.run(interval:0.03)
         stC.run(interval:0.03)
 
-//        let stD = SensorTransmitter(sensor:AudioAmpSensor(), transmitter: self)
-//        stD.run(interval:0.03)
         let stE = SensorTransmitter(sensor:AudioAmpSensor(), transmitter: OSCTransmitter())
         stE.run(interval:0.4)
 
@@ -48,14 +43,7 @@ class FirstViewController: UIViewController, TransmitterProtocol, MMLANScannerDe
     }
 
 
-    @IBAction func onConnectionTouchUp(_ sender: Any) {
-
-    }
-    
-    func transmit(sensor: SensorProtocol){
-        
-        levelView.progress = Float(sensor.getData()[0])
-    }
+    //
     
     func lanScanDidFindNewDevice(_ device: Device!){
         
