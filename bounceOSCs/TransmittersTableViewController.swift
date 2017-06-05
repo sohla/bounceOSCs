@@ -1,5 +1,5 @@
 //
-//  TransmitterTableViewController.swift
+//  TransmittersTableViewController.swift
 //  bounceOSCs
 //
 //  Created by Stephen OHara on 2/6/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TransmitterTableViewController: UITableViewController {
+class TransmittersTableViewController: UITableViewController, SensorTableViewCellDelegate {
 
     let types:Array<String> = ["OSC","MIDI","BTLE"]
     
@@ -40,14 +40,16 @@ class TransmitterTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseID", for: indexPath)
-
-        // Configure the cell...
-        cell.textLabel?.text = types[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "sensorCell", for: indexPath) as! SensorTableViewCell
         
+        // Configure the cell...
+        cell.titleLabel?.text = types[indexPath.row]
+        cell.delegate = self
         return cell
     }
-    
+    func onOffSwitchDidChange(_ cell: SensorTableViewCell, state: Bool) {
+        print(cell.titleLabel.text, state)
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

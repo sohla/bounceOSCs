@@ -21,7 +21,9 @@
 		F0345E911EDC5D5A00D1038A /* MotionSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E901EDC5D5A00D1038A /* MotionSensors.swift */; };
 		F0345E961EDDAEF300D1038A /* AudioSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E951EDDAEF300D1038A /* AudioSensors.swift */; };
 		F06B0BAB1EE30F5D000388ED /* IPAddressTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BAA1EE30F5D000388ED /* IPAddressTableViewController.swift */; };
-		F0938A5E1EE1AAEE00B116E7 /* TransmitterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0938A5D1EE1AAEE00B116E7 /* TransmitterTableViewController.swift */; };
+		F06B0BAD1EE45BE1000388ED /* SensorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BAC1EE45BE1000388ED /* SensorsTableViewController.swift */; };
+		F06B0BB11EE59C8D000388ED /* SensorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BB01EE59C8D000388ED /* SensorTableViewCell.swift */; };
+		F0938A5E1EE1AAEE00B116E7 /* TransmittersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0938A5D1EE1AAEE00B116E7 /* TransmittersTableViewController.swift */; };
 		F0938A601EE2FB1600B116E7 /* OSCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0938A5F1EE2FB1600B116E7 /* OSCViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,8 +46,10 @@
 		F0345E901EDC5D5A00D1038A /* MotionSensors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionSensors.swift; sourceTree = "<group>"; };
 		F0345E951EDDAEF300D1038A /* AudioSensors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSensors.swift; sourceTree = "<group>"; };
 		F06B0BAA1EE30F5D000388ED /* IPAddressTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddressTableViewController.swift; sourceTree = "<group>"; };
+		F06B0BAC1EE45BE1000388ED /* SensorsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorsTableViewController.swift; sourceTree = "<group>"; };
+		F06B0BB01EE59C8D000388ED /* SensorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorTableViewCell.swift; sourceTree = "<group>"; };
 		F0938A5C1EE19CFB00B116E7 /* MMLanScan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMLanScan-Bridging-Header.h"; sourceTree = "<group>"; };
-		F0938A5D1EE1AAEE00B116E7 /* TransmitterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransmitterTableViewController.swift; sourceTree = "<group>"; };
+		F0938A5D1EE1AAEE00B116E7 /* TransmittersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransmittersTableViewController.swift; sourceTree = "<group>"; };
 		F0938A5F1EE2FB1600B116E7 /* OSCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,9 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				F0345E711ED495CA00D1038A /* AppDelegate.swift */,
-				F0938A5D1EE1AAEE00B116E7 /* TransmitterTableViewController.swift */,
+				F0938A5D1EE1AAEE00B116E7 /* TransmittersTableViewController.swift */,
 				F0938A5F1EE2FB1600B116E7 /* OSCViewController.swift */,
 				F06B0BAA1EE30F5D000388ED /* IPAddressTableViewController.swift */,
+				F06B0BAC1EE45BE1000388ED /* SensorsTableViewController.swift */,
+				F06B0BB01EE59C8D000388ED /* SensorTableViewCell.swift */,
 				F0345E731ED495CA00D1038A /* FirstViewController.swift */,
 				F0345E751ED495CA00D1038A /* SecondViewController.swift */,
 				F0345E881EDC5BE100D1038A /* SensorTransmitters.swift */,
@@ -250,13 +256,15 @@
 				F0345E891EDC5BE100D1038A /* SensorTransmitters.swift in Sources */,
 				F0345E721ED495CA00D1038A /* AppDelegate.swift in Sources */,
 				F0345E8D1EDC5C4C00D1038A /* SensorProtocol.swift in Sources */,
+				F06B0BB11EE59C8D000388ED /* SensorTableViewCell.swift in Sources */,
 				F0345E741ED495CA00D1038A /* FirstViewController.swift in Sources */,
 				F0345E961EDDAEF300D1038A /* AudioSensors.swift in Sources */,
 				F06B0BAB1EE30F5D000388ED /* IPAddressTableViewController.swift in Sources */,
 				F0938A601EE2FB1600B116E7 /* OSCViewController.swift in Sources */,
-				F0938A5E1EE1AAEE00B116E7 /* TransmitterTableViewController.swift in Sources */,
+				F0938A5E1EE1AAEE00B116E7 /* TransmittersTableViewController.swift in Sources */,
 				F0345E8F1EDC5C6D00D1038A /* TransmitterProtocol.swift in Sources */,
 				F0345E8B1EDC5C2700D1038A /* SensorTransmitter.swift in Sources */,
+				F06B0BAD1EE45BE1000388ED /* SensorsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

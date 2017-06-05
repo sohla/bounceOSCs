@@ -3,5 +3,6 @@
     <pages>
         <page name='Structure 2'/>
         <page name='Structure 1'/>
+        <page name='Enum'/>
     </pages>
 </playground>

@@ -31,6 +31,7 @@ class OSCViewController: UIViewController {
     func setipAddressTextField(_ s:String){
         ipAddressTextField.text = s
         //• save this update
+        //
     }
     /*
     // MARK: - Navigation
@@ -46,8 +47,6 @@ class OSCViewController: UIViewController {
     }
 
     
-    @IBAction func onOffButton(_ sender: Any) {
-    }
 }
 
 
