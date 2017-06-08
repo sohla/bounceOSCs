@@ -75,6 +75,8 @@ class SensorsTableViewController: UITableViewController, SensorTableViewCellDele
         // Configure the cell...
         cell.titleLabel?.text = rows[indexPath.section][indexPath.row]
         cell.delegate = self
+        cell.load(rows[indexPath.section][indexPath.row])
+
         return cell
     }
 

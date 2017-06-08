@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Pantry
 
 protocol SensorTableViewCellDelegate : class{
     func onOffSwitchDidChange(_ cell: SensorTableViewCell, state: Bool)
@@ -30,6 +31,14 @@ class SensorTableViewCell: UITableViewCell {
     }
 
     @IBAction func onOffSwitchChanged(_ sender: Any) {
-        delegate?.onOffSwitchDidChange(self, state: (sender as! UISwitch).isOn)
+        //delegate?.onOffSwitchDidChange(self, state: (sender as! UISwitch).isOn)
+        Pantry.pack(onOffSwitch.isOn, key: titleLabel.text!)
+        
+    }
+    
+    func load(_ s: String) {
+        if let state: Bool = Pantry.unpack(s) {
+            onOffSwitch.isOn = state
+        }
     }
 }

@@ -45,6 +45,8 @@ class TransmittersTableViewController: UITableViewController, SensorTableViewCel
         // Configure the cell...
         cell.titleLabel?.text = types[indexPath.row]
         cell.delegate = self
+        cell.load(types[indexPath.row])
+        
         return cell
     }
     func onOffSwitchDidChange(_ cell: SensorTableViewCell, state: Bool) {
