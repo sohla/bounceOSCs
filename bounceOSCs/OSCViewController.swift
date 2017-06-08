@@ -21,6 +21,7 @@ class OSCViewController: UIViewController {
 
         ipAddressTextField.delegate = ipAddressDelegate
         portTextField.delegate = portDelegate
+
     }
 
     override func didReceiveMemoryWarning() {

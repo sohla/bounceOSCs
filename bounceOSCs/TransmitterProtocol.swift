@@ -13,17 +13,27 @@ protocol TransmitterProtocol {
     func transmit(sensor: SensorProtocol)
 }
 
+struct NetAddress {
+    var address:String
+    var port:String
+    
+    func asString() -> String {
+        let head:String = "udp://";
+        return head+address+":"+port
+    }
+}
+
 struct OSCTransmitter : TransmitterProtocol {
    
-    static let client:OSCClient = OSCClient();
-
+    static let client:OSCClient = OSCClient()
+    var netAddress:NetAddress
+    
+    
+    
     func transmit(sensor: SensorProtocol){
         
-        let head:String = "udp://";
-        let address:String = "169.254.159.223";
-        let port:String = ":57120";
         
         let msg:OSCMessage = OSCMessage(address: sensor.oscData().0, arguments: sensor.oscData().1);
-        OSCTransmitter.client.send(msg, to: head+address+port);
+        OSCTransmitter.client.send(msg, to: netAddress.asString());
     }
 }
