@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Pantry
 
 class OSCViewController: UIViewController {
 
@@ -21,7 +22,10 @@ class OSCViewController: UIViewController {
 
         ipAddressTextField.delegate = ipAddressDelegate
         portTextField.delegate = portDelegate
-
+        
+        ipAddressTextField.text = Pantry.unpack("ip_address")
+        portTextField.text = Pantry.unpack("port")
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,8 +36,10 @@ class OSCViewController: UIViewController {
     func setipAddressTextField(_ s:String){
         ipAddressTextField.text = s
         //• save this update
-        //
+        ipAddressDelegate.save(s)
     }
+    
+    
     /*
     // MARK: - Navigation
 
@@ -49,9 +55,12 @@ class OSCViewController: UIViewController {
 
     
 }
+protocol Stored {
+    //func load() -> Any
+    func save(_ s: String)
+}
 
-
-class ipAddressTextFieldDelegate : NSObject, UITextFieldDelegate {
+class ipAddressTextFieldDelegate : NSObject, UITextFieldDelegate, Stored {
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         return true
@@ -72,7 +81,10 @@ class ipAddressTextFieldDelegate : NSObject, UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         //• save this update
-
+       // saveAddress()
+        if(isValidIP(s: textField.text!)){
+            save(textField.text!)
+        }
     }
     func isValidIP(s: String) -> Bool {
         let parts = s.components(separatedBy: ".")
@@ -80,6 +92,10 @@ class ipAddressTextFieldDelegate : NSObject, UITextFieldDelegate {
         return parts.count == 4 && nums.count == 4 && nums.filter { $0 >= 0 && $0 < 256}.count == 4
     }
     
+
+    func save(_ s: String) {
+        Pantry.pack(s, key: "ip_address")
+    }
 }
 
 
@@ -104,12 +120,17 @@ class portTextFieldDelegate : NSObject, UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         //• save this update
-
+        if(isValidPort(s: textField.text!)){
+            save(textField.text!)
+        }
     }
     func isValidPort(s: String) -> Bool {
         if let _ = UInt16(s) { return true }
         return false
     }
-    
+    func save(_ s: String) {
+        Pantry.pack(s, key: "port")
+    }
+  
 }
 

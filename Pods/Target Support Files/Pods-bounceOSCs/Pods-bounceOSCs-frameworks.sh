@@ -88,10 +88,12 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/CocoaAsyncSocket/CocoaAsyncSocket.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MMLanScan/MMLanScan.framework"
   install_framework "$BUILT_PRODUCTS_DIR/OSCKit/OSCKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Pantry/Pantry.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_ROOT}/AudioKit/iOS/AudioKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/CocoaAsyncSocket/CocoaAsyncSocket.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MMLanScan/MMLanScan.framework"
   install_framework "$BUILT_PRODUCTS_DIR/OSCKit/OSCKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Pantry/Pantry.framework"
 fi

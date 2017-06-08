@@ -48,7 +48,7 @@ class TransmittersTableViewController: UITableViewController, SensorTableViewCel
         return cell
     }
     func onOffSwitchDidChange(_ cell: SensorTableViewCell, state: Bool) {
-        print(cell.titleLabel.text, state)
+        print(cell.titleLabel.text ?? "-", state)
     }
     /*
     // Override to support conditional editing of the table view.
