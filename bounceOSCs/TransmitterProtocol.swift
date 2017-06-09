@@ -11,6 +11,7 @@ import OSCKit
 
 protocol TransmitterProtocol {
     var isOn: Bool {get set}
+    var netAddress:NetAddress {get set}
     func transmit(sensor: SensorProtocol)
 }
 

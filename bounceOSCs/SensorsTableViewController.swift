@@ -34,7 +34,7 @@ class SensorsTableViewController: UITableViewController {
 //    let types:Array<String> = ["OSC","MIDI","BTLE"]
     
     let sections = ["Motion","Audio"]
-    let rows = [["Gyroscope","Accelerometer","Magnetometer"], ["Amp","Pitch"]]
+    let rows = [["Gyroscope","Accelerometer","RotationRate"], ["Amp","Pitch"]]
     
     
     override func viewDidLoad() {

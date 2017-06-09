@@ -82,7 +82,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text=" 555.555.555.555" borderStyle="line" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="43r-TX-dZ3">
-                                <rect key="frame" x="20" y="122" width="284" height="44"/>
+                                <rect key="frame" x="20" y="122" width="304" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="w8r-aK-apV"/>
                                 </constraints>
@@ -97,10 +97,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGC-ag-fID">
-                                <rect key="frame" x="334" y="122" width="60" height="44"/>
+                                <rect key="frame" x="344" y="122" width="50" height="44"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="ioO-sD-qkN"/>
+                                    <constraint firstAttribute="width" constant="50" id="ioO-sD-qkN"/>
                                 </constraints>
                                 <state key="normal" title="Scan">
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -110,7 +110,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="57210" borderStyle="line" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="bnr-NJ-Mav">
-                                <rect key="frame" x="20" y="213" width="284" height="44"/>
+                                <rect key="frame" x="20" y="213" width="304" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="HS5-x8-brG"/>
                                 </constraints>
@@ -128,7 +128,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bnr-NJ-Mav" firstAttribute="top" secondItem="knI-Qx-UyR" secondAttribute="bottom" constant="8" symbolic="YES" id="1VY-dH-5b7"/>
-                            <constraint firstItem="UGC-ag-fID" firstAttribute="leading" secondItem="43r-TX-dZ3" secondAttribute="trailing" constant="30" id="1ls-b7-wZd"/>
+                            <constraint firstItem="UGC-ag-fID" firstAttribute="leading" secondItem="43r-TX-dZ3" secondAttribute="trailing" constant="20" id="1ls-b7-wZd"/>
                             <constraint firstItem="2ta-tt-BEk" firstAttribute="top" secondItem="XKL-MH-GDC" secondAttribute="bottom" constant="25" id="6kn-hQ-r2P"/>
                             <constraint firstItem="knI-Qx-UyR" firstAttribute="top" secondItem="43r-TX-dZ3" secondAttribute="bottom" constant="18" id="M7l-IF-cqa"/>
                             <constraint firstItem="2ta-tt-BEk" firstAttribute="leading" secondItem="wAg-HX-siK" secondAttribute="leadingMargin" id="UgA-fN-xrd"/>

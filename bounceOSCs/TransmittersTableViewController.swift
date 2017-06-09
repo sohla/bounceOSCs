@@ -15,9 +15,9 @@ class TransmittersTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "OSC_onOffChanged"), object: nil, queue: nil) { n in
-            print(n.userInfo!)
-        }
+//        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "OSC_onOffChanged"), object: nil, queue: nil) { n in
+//            print(n.userInfo!)
+//        }
 
         
         

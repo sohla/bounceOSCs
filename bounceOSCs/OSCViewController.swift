@@ -26,7 +26,8 @@ class OSCViewController: UIViewController {
         ipAddressTextField.text = Pantry.unpack("ip_address")
         portTextField.text = Pantry.unpack("port")
         
-        
+//        ipAddressTextField.keyboardType = UIKeyboardType.numberPad
+//        portTextField.keyboardType = UIKeyboardType.numberPad
     }
 
     override func didReceiveMemoryWarning() {
@@ -96,6 +97,11 @@ class ipAddressTextFieldDelegate : NSObject, UITextFieldDelegate, Stored {
 
     func save(_ s: String) {
         Pantry.pack(s, key: "ip_address")
+        NotificationCenter.default.post(
+            name: Notification.Name(rawValue: "ip_address"),
+            object: nil,
+            userInfo: ["value": s])
+        
     }
 }
 
@@ -131,6 +137,12 @@ class portTextFieldDelegate : NSObject, UITextFieldDelegate {
     }
     func save(_ s: String) {
         Pantry.pack(s, key: "port")
+        NotificationCenter.default.post(
+            name: Notification.Name(rawValue: "port"),
+            object: nil,
+            userInfo: ["value": s])
+        
+    
     }
   
 }
