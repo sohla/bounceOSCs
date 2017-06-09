@@ -16,25 +16,25 @@ extension CaseCountable where RawValue == Int {
         return i
     }
 }
-enum SensorTypes : Int , CaseCountable{
-    case Motion
-    case Audio
-}
+//enum SensorTypes : Int , CaseCountable{
+//    case Motion
+//    case Audio
+//}
+//
+//
+//enum MotionTypes : Int , CaseCountable{
+//    case Accel
+//    case Gyro
+//    case Gravity
+//    
+//}
 
-
-enum MotionTypes : Int , CaseCountable{
-    case Accel
-    case Gyro
-    case Gravity
-    
-}
-
-class SensorsTableViewController: UITableViewController, SensorTableViewCellDelegate {
+class SensorsTableViewController: UITableViewController {
 
 //    let types:Array<String> = ["OSC","MIDI","BTLE"]
     
     let sections = ["Motion","Audio"]
-    let rows = [["Accelerometer","Gyroscope","Magnetometer"], ["Amp","Pitch"]]
+    let rows = [["Gyroscope","Accelerometer","Magnetometer"], ["Amp","Pitch"]]
     
     
     override func viewDidLoad() {
@@ -74,15 +74,15 @@ class SensorsTableViewController: UITableViewController, SensorTableViewCellDele
 
         // Configure the cell...
         cell.titleLabel?.text = rows[indexPath.section][indexPath.row]
-        cell.delegate = self
+        //cell.delegate = self
         cell.load(rows[indexPath.section][indexPath.row])
 
         return cell
     }
 
-    func onOffSwitchDidChange(_ cell: SensorTableViewCell, state: Bool) {
-        print(cell.titleLabel.text ?? "-", state)
-    }
+//    func onOffSwitchDidChange(_ cell: SensorTableViewCell, state: Bool) {
+//        print(cell.titleLabel.text ?? "-", state)
+//    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

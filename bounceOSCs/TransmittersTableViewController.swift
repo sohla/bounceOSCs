@@ -8,13 +8,20 @@
 
 import UIKit
 
-class TransmittersTableViewController: UITableViewController, SensorTableViewCellDelegate {
+class TransmittersTableViewController: UITableViewController {
 
     let types:Array<String> = ["OSC","MIDI","BTLE"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "OSC_onOffChanged"), object: nil, queue: nil) { n in
+            print(n.userInfo!)
+        }
+
+        
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -44,14 +51,14 @@ class TransmittersTableViewController: UITableViewController, SensorTableViewCel
         
         // Configure the cell...
         cell.titleLabel?.text = types[indexPath.row]
-        cell.delegate = self
+//        cell.delegate = self
         cell.load(types[indexPath.row])
         
         return cell
     }
-    func onOffSwitchDidChange(_ cell: SensorTableViewCell, state: Bool) {
-        print(cell.titleLabel.text ?? "-", state)
-    }
+//    func onOffSwitchDidChange(_ cell: SensorTableViewCell, state: Bool) {
+//        print(cell.titleLabel.text ?? "-", state)
+//    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

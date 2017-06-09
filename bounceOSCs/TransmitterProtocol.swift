@@ -10,6 +10,7 @@ import Foundation
 import OSCKit
 
 protocol TransmitterProtocol {
+    var isOn: Bool {get set}
     func transmit(sensor: SensorProtocol)
 }
 
@@ -27,13 +28,12 @@ struct OSCTransmitter : TransmitterProtocol {
    
     static let client:OSCClient = OSCClient()
     var netAddress:NetAddress
-    
-    
+    var isOn: Bool
     
     func transmit(sensor: SensorProtocol){
-        
-        
-        let msg:OSCMessage = OSCMessage(address: sensor.oscData().0, arguments: sensor.oscData().1);
-        OSCTransmitter.client.send(msg, to: netAddress.asString());
+        if(isOn){
+            let msg:OSCMessage = OSCMessage(address: sensor.oscData().0, arguments: sensor.oscData().1)
+            OSCTransmitter.client.send(msg, to: netAddress.asString())
+        }
     }
 }
