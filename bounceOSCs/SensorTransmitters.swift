@@ -91,9 +91,9 @@ class SensorTransmitters {
             let value = n.userInfo?["value"] as? Bool
             
             if(value!){
-                self.attitudeOSC.run(interval: 0.3)
-                self.accelOSC.run(interval: 0.3)
-                self.rotationOSC.run(interval: 0.3)
+                self.attitudeOSC.run(interval: 0.03)
+                self.accelOSC.run(interval: 0.03)
+                self.rotationOSC.run(interval: 0.03)
                 self.ampOSC.run(interval: 0.3)
             }else{
                 self.attitudeOSC.stop()
@@ -107,6 +107,7 @@ class SensorTransmitters {
         NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "Gyroscope_onOffChanged"), object: nil, queue: nil) { n in
             let value = n.userInfo?["value"] as? Bool
             self.attitudeOSC.transmitter?.isOn = value!
+            //if value! {(self.attitudeOSC.sensor as! MotionSensor).reset()}
         }
 
         NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "Accelerometer_onOffChanged"), object: nil, queue: nil) { n in

@@ -13,13 +13,18 @@ import CoreMotion
 let motionManager: CMMotionManager = CMMotionManager()
 
 class MotionSensor {
+    
+    
     init() {
+        
         motionManager.deviceMotionUpdateInterval = 0.03
         
         if(motionManager.isDeviceMotionAvailable){
             motionManager.startDeviceMotionUpdates()
         }
+        
     }
+    
 }
 
 class RotationRateSensor : MotionSensor, SensorProtocol {
@@ -41,7 +46,6 @@ class RotationRateSensor : MotionSensor, SensorProtocol {
     func midiData() -> String{ return "cc51:1 \(getData()[0]) cc51:2 \(getData()[1])"}
     
 }
-
 
 class AttitudeSensor : MotionSensor, SensorProtocol {
     

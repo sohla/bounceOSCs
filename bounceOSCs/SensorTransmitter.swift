@@ -23,7 +23,7 @@ class SensorTransmitter {
     @objc func next(){
         transmitter?.transmit(sensor: sensor!)
     }
-    func run(interval:Double = 1.0) {
+    func run(interval:Double = 0.03) {
         timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(next), userInfo: nil, repeats: true)
     }
     
