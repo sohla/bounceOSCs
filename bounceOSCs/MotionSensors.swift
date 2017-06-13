@@ -21,6 +21,7 @@ class MotionSensor {
         
         if(motionManager.isDeviceMotionAvailable){
             motionManager.startDeviceMotionUpdates()
+            
         }
         
     }
@@ -53,6 +54,8 @@ class AttitudeSensor : MotionSensor, SensorProtocol {
         
         if((motionManager.deviceMotion) != nil){
             let attitude: CMAttitude = (motionManager.deviceMotion?.attitude)!
+
+            //print([attitude.pitch,attitude.roll,attitude.yaw].map{$0 * (180.0 / Double.pi) + 180.0})
             return [attitude.pitch,attitude.roll,attitude.yaw]
         }
         return [0]
@@ -64,6 +67,32 @@ class AttitudeSensor : MotionSensor, SensorProtocol {
     
     }
     func midiData() -> String{ return "cc51:1 \(getData()[0]) cc51:2 \(getData()[1])"}
+    
+}
+
+class RotationMatrixSensor : MotionSensor, SensorProtocol {
+    
+    func getData() -> Array<Double> {
+        
+        if((motionManager.deviceMotion) != nil){
+            let attitude: CMAttitude = (motionManager.deviceMotion?.attitude)!
+            let m: CMRotationMatrix = attitude.rotationMatrix
+            //print([attitude.pitch,attitude.roll,attitude.yaw].map{$0 * (180.0 / Double.pi) + 180.0})
+            return([m.m11,m.m12,m.m13,0,
+                    m.m21,m.m22,m.m23,0,
+                    m.m31,m.m32,m.m33,0,
+                    0,0,0,1
+                ])
+        }
+        return [0]
+    }
+    
+    func oscData() -> (String,Array<String>){
+        let arrayString: Array<String> = getData().flatMap { String($0) }
+        return ("/gyrosc/rotmat",arrayString)
+        
+    }
+    func midiData() -> String{ return "TO \(getData()[0]) DO \(getData()[1])"}
     
 }
 

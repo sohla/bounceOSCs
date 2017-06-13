@@ -16,7 +16,12 @@ class SensorTransmitters {
         sensor: AttitudeSensor(),
         transmitter: OSCTransmitter(
             netAddress: NetAddress(address: "127.0.0.1", port: "9000"), isOn: false))
-    
+
+    let rotationMatrixOSC = SensorTransmitter(
+        sensor: RotationMatrixSensor(),
+        transmitter: OSCTransmitter(
+            netAddress: NetAddress(address: "127.0.0.1", port: "9000"), isOn: false))
+
     let accelOSC = SensorTransmitter(
         sensor: AccelSensor(),
         transmitter: OSCTransmitter(
@@ -42,7 +47,8 @@ class SensorTransmitters {
             
                 let na = NetAddress(address: ipAddress, port: port)
             
-                self.attitudeOSC.transmitter = OSCTransmitter(netAddress: na, isOn: isOn)
+            self.attitudeOSC.transmitter = OSCTransmitter(netAddress: na, isOn: isOn)
+            self.rotationMatrixOSC.transmitter = OSCTransmitter(netAddress: na, isOn: isOn)
                 self.accelOSC.transmitter = OSCTransmitter(netAddress: na, isOn: isOn)
                 self.rotationOSC.transmitter = OSCTransmitter(netAddress: na, isOn: isOn)
                 self.ampOSC.transmitter = OSCTransmitter(netAddress: na, isOn: isOn)
@@ -50,6 +56,10 @@ class SensorTransmitters {
         
         if let on: Bool = Pantry.unpack("Gyroscope") {
             self.attitudeOSC.transmitter?.isOn = on
+        }
+
+        if let on: Bool = Pantry.unpack("RotationMatrix") {
+            self.rotationMatrixOSC.transmitter?.isOn = on
         }
 
         if let on: Bool = Pantry.unpack("Accelerometer") {
@@ -68,6 +78,7 @@ class SensorTransmitters {
             let ip = n.userInfo?["value"] as? String
 
             self.attitudeOSC.transmitter?.netAddress.address = ip!
+            self.rotationMatrixOSC.transmitter?.netAddress.address = ip!
             self.accelOSC.transmitter?.netAddress.address = ip!
             self.rotationOSC.transmitter?.netAddress.address = ip!
             self.ampOSC.transmitter?.netAddress.address = ip!
@@ -76,6 +87,7 @@ class SensorTransmitters {
             let port = n.userInfo?["value"] as? String
 
             self.attitudeOSC.transmitter?.netAddress.port = port!
+            self.rotationMatrixOSC.transmitter?.netAddress.port = port!
             self.accelOSC.transmitter?.netAddress.port = port!
             self.rotationOSC.transmitter?.netAddress.port = port!
             self.ampOSC.transmitter?.netAddress.port = port!
@@ -92,11 +104,13 @@ class SensorTransmitters {
             
             if(value!){
                 self.attitudeOSC.run(interval: 0.03)
+                self.rotationMatrixOSC.run(interval: 0.03)
                 self.accelOSC.run(interval: 0.03)
                 self.rotationOSC.run(interval: 0.03)
                 self.ampOSC.run(interval: 0.3)
             }else{
                 self.attitudeOSC.stop()
+                self.rotationMatrixOSC.stop()
                 self.accelOSC.stop()
                 self.rotationOSC.stop()
                 self.ampOSC.stop()
@@ -107,6 +121,12 @@ class SensorTransmitters {
         NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "Gyroscope_onOffChanged"), object: nil, queue: nil) { n in
             let value = n.userInfo?["value"] as? Bool
             self.attitudeOSC.transmitter?.isOn = value!
+            //if value! {(self.attitudeOSC.sensor as! MotionSensor).reset()}
+        }
+
+        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "RotationMatrix_onOffChanged"), object: nil, queue: nil) { n in
+            let value = n.userInfo?["value"] as? Bool
+            self.rotationMatrixOSC.transmitter?.isOn = value!
             //if value! {(self.attitudeOSC.sensor as! MotionSensor).reset()}
         }
 

@@ -51,6 +51,8 @@ let a:Array<String> = ["A","B"]
 
 print(a)
 
+let b = [1,2,3,4].map { $0 * 2 }
+b
 //(types.first?.value as! Array)
 
 
