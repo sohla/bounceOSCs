@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TouchTableViewCell: UITableViewCell {
+class ButtonTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     override func awakeFromNib() {

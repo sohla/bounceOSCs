@@ -25,7 +25,7 @@
 		F06B0BB11EE59C8D000388ED /* SensorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BB01EE59C8D000388ED /* SensorTableViewCell.swift */; };
 		F0938A5E1EE1AAEE00B116E7 /* TransmittersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0938A5D1EE1AAEE00B116E7 /* TransmittersTableViewController.swift */; };
 		F0938A601EE2FB1600B116E7 /* OSCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0938A5F1EE2FB1600B116E7 /* OSCViewController.swift */; };
-		F0C57DA11EF186AB0099B5B7 /* TouchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA01EF186AB0099B5B7 /* TouchTableViewCell.swift */; };
+		F0C57DA11EF186AB0099B5B7 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA01EF186AB0099B5B7 /* ButtonTableViewCell.swift */; };
 		F0C57DA31EF190060099B5B7 /* TouchSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA21EF190060099B5B7 /* TouchSensors.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +53,7 @@
 		F0938A5C1EE19CFB00B116E7 /* MMLanScan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMLanScan-Bridging-Header.h"; sourceTree = "<group>"; };
 		F0938A5D1EE1AAEE00B116E7 /* TransmittersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransmittersTableViewController.swift; sourceTree = "<group>"; };
 		F0938A5F1EE2FB1600B116E7 /* OSCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCViewController.swift; sourceTree = "<group>"; };
-		F0C57DA01EF186AB0099B5B7 /* TouchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchTableViewCell.swift; sourceTree = "<group>"; };
+		F0C57DA01EF186AB0099B5B7 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		F0C57DA21EF190060099B5B7 /* TouchSensors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchSensors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +113,7 @@
 				F06B0BAA1EE30F5D000388ED /* IPAddressTableViewController.swift */,
 				F06B0BAC1EE45BE1000388ED /* SensorsTableViewController.swift */,
 				F06B0BB01EE59C8D000388ED /* SensorTableViewCell.swift */,
-				F0C57DA01EF186AB0099B5B7 /* TouchTableViewCell.swift */,
+				F0C57DA01EF186AB0099B5B7 /* ButtonTableViewCell.swift */,
 				F0345E731ED495CA00D1038A /* FirstViewController.swift */,
 				F0345E751ED495CA00D1038A /* SecondViewController.swift */,
 				F0345E881EDC5BE100D1038A /* SensorTransmitters.swift */,
@@ -257,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0C57DA11EF186AB0099B5B7 /* TouchTableViewCell.swift in Sources */,
+				F0C57DA11EF186AB0099B5B7 /* ButtonTableViewCell.swift in Sources */,
 				F0345E761ED495CA00D1038A /* SecondViewController.swift in Sources */,
 				F0345E911EDC5D5A00D1038A /* MotionSensors.swift in Sources */,
 				F0345E891EDC5BE100D1038A /* SensorTransmitters.swift in Sources */,

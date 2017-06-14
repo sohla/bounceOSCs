@@ -261,7 +261,7 @@
                                     <outlet property="titleLabel" destination="ksh-3F-Hbm" id="HsT-dS-2t4"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="touchCell" rowHeight="77" id="VcA-3S-n5t" userLabel="touchCell" customClass="TouchTableViewCell" customModule="bounceOSCs" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="buttonCell" rowHeight="77" id="VcA-3S-n5t" userLabel="buttonCell" customClass="ButtonTableViewCell" customModule="bounceOSCs" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="132.5" width="414" height="77"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VcA-3S-n5t" id="mrl-DX-7Ip">
@@ -281,8 +281,8 @@
                                                 <constraint firstAttribute="width" constant="46" id="MlN-Vl-M4g"/>
                                             </constraints>
                                             <connections>
-                                                <action selector="onTouchDownButton:" destination="VcA-3S-n5t" eventType="touchDown" id="2xt-bJ-TzK"/>
-                                                <action selector="onTouchUpButton:" destination="VcA-3S-n5t" eventType="touchUpInside" id="cB5-61-zyM"/>
+                                                <action selector="onTouchDownButton:" destination="VcA-3S-n5t" eventType="touchDown" id="8PP-Cu-ddc"/>
+                                                <action selector="onTouchUpButton:" destination="VcA-3S-n5t" eventType="touchUpInside" id="5bn-0Y-JoP"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -294,8 +294,34 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="titleLabel" destination="iX4-Ab-DiO" id="vOB-kM-Qch"/>
+                                    <outlet property="titleLabel" destination="iX4-Ab-DiO" id="rta-nf-3c5"/>
                                 </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sliderCell" rowHeight="77" id="xMz-sx-iaT" userLabel="sliderCell">
+                                <rect key="frame" x="0.0" y="210" width="414" height="77"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xMz-sx-iaT" id="mSt-7M-rS3">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="76.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94l-1x-Otl">
+                                            <rect key="frame" x="21" y="24" width="48" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iTQ-6M-XOs">
+                                            <rect key="frame" x="117" y="24" width="270" height="31"/>
+                                        </slider>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="iTQ-6M-XOs" firstAttribute="leading" secondItem="94l-1x-Otl" secondAttribute="trailing" constant="50" id="EF4-sq-SI1"/>
+                                        <constraint firstItem="94l-1x-Otl" firstAttribute="centerY" secondItem="mSt-7M-rS3" secondAttribute="centerY" id="PdR-4f-ZL6"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="iTQ-6M-XOs" secondAttribute="trailing" constant="21" id="jtt-aR-xEu"/>
+                                        <constraint firstItem="iTQ-6M-XOs" firstAttribute="top" secondItem="94l-1x-Otl" secondAttribute="top" id="krw-yD-cmB"/>
+                                        <constraint firstItem="94l-1x-Otl" firstAttribute="leading" secondItem="mSt-7M-rS3" secondAttribute="leadingMargin" constant="13" id="zue-xy-Yvp"/>
+                                    </constraints>
+                                </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>

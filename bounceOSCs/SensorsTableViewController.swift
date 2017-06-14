@@ -34,7 +34,7 @@ class SensorsTableViewController: UITableViewController {
 //    let types:Array<String> = ["OSC","MIDI","BTLE"]
     
     let sections = ["Motion","Audio","Touch"]
-    let rows = [["Gyroscope","RotationMatrix","Accelerometer","RotationRate"], ["Amp","Pitch"], ["Button"]]
+    let rows = [["Gyroscope","RotationMatrix","Accelerometer","RotationRate"], ["Amp","Pitch"], ["Button","Slider"]]
     
     
     override func viewDidLoad() {
@@ -74,11 +74,18 @@ class SensorsTableViewController: UITableViewController {
         //TouchTableViewCell
         if( rows[indexPath.section][indexPath.row] == "Button" ){
 
-            let cell = tableView.dequeueReusableCell(withIdentifier: "touchCell", for: indexPath) as! TouchTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "buttonCell", for: indexPath) as! ButtonTableViewCell
             // Configure the cell...
             cell.titleLabel?.text = rows[indexPath.section][indexPath.row]
             
             return cell
+        }else if( rows[indexPath.section][indexPath.row] == "Slider" ){
+                
+                let cell = tableView.dequeueReusableCell(withIdentifier: "sliderCell", for: indexPath) //as! ButtonTableViewCell
+                // Configure the cell...
+                //cell.titleLabel?.text = rows[indexPath.section][indexPath.row]
+                
+                return cell
 
         }else{
 
