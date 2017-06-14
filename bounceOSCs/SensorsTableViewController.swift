@@ -33,8 +33,8 @@ class SensorsTableViewController: UITableViewController {
 
 //    let types:Array<String> = ["OSC","MIDI","BTLE"]
     
-    let sections = ["Motion","Audio"]
-    let rows = [["Gyroscope","RotationMatrix","Accelerometer","RotationRate"], ["Amp","Pitch"]]
+    let sections = ["Motion","Audio","Touch"]
+    let rows = [["Gyroscope","RotationMatrix","Accelerometer","RotationRate"], ["Amp","Pitch"], ["Button"]]
     
     
     override func viewDidLoad() {
@@ -70,14 +70,28 @@ class SensorsTableViewController: UITableViewController {
     
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "sensorCell", for: indexPath) as! SensorTableViewCell
+        
+        //TouchTableViewCell
+        if( rows[indexPath.section][indexPath.row] == "Button" ){
 
-        // Configure the cell...
-        cell.titleLabel?.text = rows[indexPath.section][indexPath.row]
-        //cell.delegate = self
-        cell.load(rows[indexPath.section][indexPath.row])
+            let cell = tableView.dequeueReusableCell(withIdentifier: "touchCell", for: indexPath) as! TouchTableViewCell
+            // Configure the cell...
+            cell.titleLabel?.text = rows[indexPath.section][indexPath.row]
+            
+            return cell
 
-        return cell
+        }else{
+
+            let cell = tableView.dequeueReusableCell(withIdentifier: "sensorCell", for: indexPath) as! SensorTableViewCell
+            // Configure the cell...
+            cell.titleLabel?.text = rows[indexPath.section][indexPath.row]
+            cell.load(rows[indexPath.section][indexPath.row])
+            
+            return cell
+
+        }
+        
+
     }
 
 //    func onOffSwitchDidChange(_ cell: SensorTableViewCell, state: Bool) {

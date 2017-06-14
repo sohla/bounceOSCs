@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -155,7 +155,6 @@
         <!--Address Table View Controller-->
         <scene sceneID="48e-2n-GWn">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BaX-XL-cm3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="Mhc-ZI-344" customClass="IPAddressTableViewController" customModule="bounceOSCs" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="YoT-Ih-DRR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -180,6 +179,7 @@
                         </connections>
                     </tableView>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BaX-XL-cm3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3310" y="-1510"/>
         </scene>
@@ -241,7 +241,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DCk-MF-cjt">
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DCk-MF-cjt">
                                             <rect key="frame" x="335" y="23" width="51" height="31"/>
                                             <connections>
                                                 <action selector="onOffSwitchChanged:" destination="3uD-Ly-MJe" eventType="valueChanged" id="jmf-IL-zHx"/>
@@ -259,6 +259,42 @@
                                 <connections>
                                     <outlet property="onOffSwitch" destination="DCk-MF-cjt" id="X3W-m7-T9w"/>
                                     <outlet property="titleLabel" destination="ksh-3F-Hbm" id="HsT-dS-2t4"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="touchCell" rowHeight="77" id="VcA-3S-n5t" userLabel="touchCell" customClass="TouchTableViewCell" customModule="bounceOSCs" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="132.5" width="414" height="77"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VcA-3S-n5t" id="mrl-DX-7Ip">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="77"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iX4-Ab-DiO">
+                                            <rect key="frame" x="21" y="24" width="48" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8E-r2-xD1">
+                                            <rect key="frame" x="339" y="24" width="46" height="30"/>
+                                            <color key="backgroundColor" red="0.29853495959999998" green="0.84600949290000005" blue="0.39043116570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="46" id="MlN-Vl-M4g"/>
+                                            </constraints>
+                                            <connections>
+                                                <action selector="onTouchDownButton:" destination="VcA-3S-n5t" eventType="touchDown" id="2xt-bJ-TzK"/>
+                                                <action selector="onTouchUpButton:" destination="VcA-3S-n5t" eventType="touchUpInside" id="cB5-61-zyM"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="x8E-r2-xD1" secondAttribute="trailing" constant="21" id="JYA-8M-Hgo"/>
+                                        <constraint firstItem="iX4-Ab-DiO" firstAttribute="leading" secondItem="mrl-DX-7Ip" secondAttribute="leadingMargin" constant="13" id="fKa-Az-HiT"/>
+                                        <constraint firstItem="x8E-r2-xD1" firstAttribute="top" secondItem="iX4-Ab-DiO" secondAttribute="top" id="iYY-G2-ZbF"/>
+                                        <constraint firstItem="iX4-Ab-DiO" firstAttribute="centerY" secondItem="mrl-DX-7Ip" secondAttribute="centerY" id="nZh-kK-5ds"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleLabel" destination="iX4-Ab-DiO" id="vOB-kM-Qch"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

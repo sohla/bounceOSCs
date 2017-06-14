@@ -37,6 +37,11 @@ class SensorTransmitters {
         transmitter: OSCTransmitter(
             netAddress: NetAddress(address: "127.0.0.1", port: "9000"), isOn: false))
 
+    let buttonOSC = SensorTransmitter(
+        sensor: ButtonSensor(),
+        transmitter: OSCTransmitter(
+            netAddress: NetAddress(address: "127.0.0.1", port: "9000"), isOn: false))
+
     
     
     init() {
@@ -51,7 +56,8 @@ class SensorTransmitters {
             self.rotationMatrixOSC.transmitter = OSCTransmitter(netAddress: na, isOn: isOn)
                 self.accelOSC.transmitter = OSCTransmitter(netAddress: na, isOn: isOn)
                 self.rotationOSC.transmitter = OSCTransmitter(netAddress: na, isOn: isOn)
-                self.ampOSC.transmitter = OSCTransmitter(netAddress: na, isOn: isOn)
+            self.ampOSC.transmitter = OSCTransmitter(netAddress: na, isOn: isOn)
+            self.buttonOSC.transmitter = OSCTransmitter(netAddress: na, isOn: isOn)
         }
         
         if let on: Bool = Pantry.unpack("Gyroscope") {
@@ -82,6 +88,7 @@ class SensorTransmitters {
             self.accelOSC.transmitter?.netAddress.address = ip!
             self.rotationOSC.transmitter?.netAddress.address = ip!
             self.ampOSC.transmitter?.netAddress.address = ip!
+            self.buttonOSC.transmitter?.netAddress.address = ip!
         }
         NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "port"), object: nil, queue: nil) { n in
             let port = n.userInfo?["value"] as? String
@@ -91,6 +98,7 @@ class SensorTransmitters {
             self.accelOSC.transmitter?.netAddress.port = port!
             self.rotationOSC.transmitter?.netAddress.port = port!
             self.ampOSC.transmitter?.netAddress.port = port!
+            self.buttonOSC.transmitter?.netAddress.port = port!
         }
 
         
@@ -108,6 +116,9 @@ class SensorTransmitters {
                 self.accelOSC.run(interval: 0.03)
                 self.rotationOSC.run(interval: 0.03)
                 self.ampOSC.run(interval: 0.3)
+                
+                // if we want to poll use run
+                //self.buttonOSC.run(interval: 0.3)
             }else{
                 self.attitudeOSC.stop()
                 self.rotationMatrixOSC.stop()
@@ -143,6 +154,13 @@ class SensorTransmitters {
         NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "Amp_onOffChanged"), object: nil, queue: nil) { n in
             let value = n.userInfo?["value"] as? Bool
             self.ampOSC.transmitter?.isOn = value!
+        }
+
+        
+        
+        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "Button_touched"), object: nil, queue: nil) { n in
+            // if we don't want to poll, respond via notification and send once
+            self.buttonOSC.next()
         }
 
         
