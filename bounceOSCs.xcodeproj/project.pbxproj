@@ -27,6 +27,7 @@
 		F0938A601EE2FB1600B116E7 /* OSCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0938A5F1EE2FB1600B116E7 /* OSCViewController.swift */; };
 		F0C57DA11EF186AB0099B5B7 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA01EF186AB0099B5B7 /* ButtonTableViewCell.swift */; };
 		F0C57DA31EF190060099B5B7 /* TouchSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA21EF190060099B5B7 /* TouchSensors.swift */; };
+		F0C57DA51EF3BED10099B5B7 /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA41EF3BED10099B5B7 /* SliderTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		F0938A5F1EE2FB1600B116E7 /* OSCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCViewController.swift; sourceTree = "<group>"; };
 		F0C57DA01EF186AB0099B5B7 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		F0C57DA21EF190060099B5B7 /* TouchSensors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchSensors.swift; sourceTree = "<group>"; };
+		F0C57DA41EF3BED10099B5B7 /* SliderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				F06B0BAC1EE45BE1000388ED /* SensorsTableViewController.swift */,
 				F06B0BB01EE59C8D000388ED /* SensorTableViewCell.swift */,
 				F0C57DA01EF186AB0099B5B7 /* ButtonTableViewCell.swift */,
+				F0C57DA41EF3BED10099B5B7 /* SliderTableViewCell.swift */,
 				F0345E731ED495CA00D1038A /* FirstViewController.swift */,
 				F0345E751ED495CA00D1038A /* SecondViewController.swift */,
 				F0345E881EDC5BE100D1038A /* SensorTransmitters.swift */,
@@ -268,6 +271,7 @@
 				F0345E961EDDAEF300D1038A /* AudioSensors.swift in Sources */,
 				F06B0BAB1EE30F5D000388ED /* IPAddressTableViewController.swift in Sources */,
 				F0938A601EE2FB1600B116E7 /* OSCViewController.swift in Sources */,
+				F0C57DA51EF3BED10099B5B7 /* SliderTableViewCell.swift in Sources */,
 				F0938A5E1EE1AAEE00B116E7 /* TransmittersTableViewController.swift in Sources */,
 				F0345E8F1EDC5C6D00D1038A /* TransmitterProtocol.swift in Sources */,
 				F0C57DA31EF190060099B5B7 /* TouchSensors.swift in Sources */,

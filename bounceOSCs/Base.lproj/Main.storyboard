@@ -297,31 +297,41 @@
                                     <outlet property="titleLabel" destination="iX4-Ab-DiO" id="rta-nf-3c5"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sliderCell" rowHeight="77" id="xMz-sx-iaT" userLabel="sliderCell">
-                                <rect key="frame" x="0.0" y="210" width="414" height="77"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="sliderCell" rowHeight="140" id="xMz-sx-iaT" userLabel="sliderCell" customClass="SliderTableViewCell" customModule="bounceOSCs" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="209" width="414" height="140"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xMz-sx-iaT" id="mSt-7M-rS3">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="76.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94l-1x-Otl">
-                                            <rect key="frame" x="21" y="24" width="48" height="30"/>
+                                            <rect key="frame" x="21" y="24" width="178" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="178" id="gxB-a5-M0Q"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iTQ-6M-XOs">
-                                            <rect key="frame" x="117" y="24" width="270" height="31"/>
+                                            <rect key="frame" x="19" y="75" width="366" height="31"/>
+                                            <color key="minimumTrackTintColor" red="0.29853495959999998" green="0.84600949290000005" blue="0.39043116570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="onSliderChanged:" destination="xMz-sx-iaT" eventType="valueChanged" id="xbZ-6Q-cMu"/>
+                                            </connections>
                                         </slider>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="iTQ-6M-XOs" firstAttribute="leading" secondItem="94l-1x-Otl" secondAttribute="trailing" constant="50" id="EF4-sq-SI1"/>
-                                        <constraint firstItem="94l-1x-Otl" firstAttribute="centerY" secondItem="mSt-7M-rS3" secondAttribute="centerY" id="PdR-4f-ZL6"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="iTQ-6M-XOs" secondAttribute="trailing" constant="21" id="jtt-aR-xEu"/>
-                                        <constraint firstItem="iTQ-6M-XOs" firstAttribute="top" secondItem="94l-1x-Otl" secondAttribute="top" id="krw-yD-cmB"/>
-                                        <constraint firstItem="94l-1x-Otl" firstAttribute="leading" secondItem="mSt-7M-rS3" secondAttribute="leadingMargin" constant="13" id="zue-xy-Yvp"/>
+                                        <constraint firstItem="94l-1x-Otl" firstAttribute="top" secondItem="mSt-7M-rS3" secondAttribute="topMargin" constant="16" id="Fed-Hz-KgR"/>
+                                        <constraint firstItem="94l-1x-Otl" firstAttribute="leading" secondItem="mSt-7M-rS3" secondAttribute="leadingMargin" constant="13" id="HaT-ul-i3S"/>
+                                        <constraint firstItem="94l-1x-Otl" firstAttribute="leading" secondItem="iTQ-6M-XOs" secondAttribute="leading" id="YgE-go-hTK"/>
+                                        <constraint firstItem="iTQ-6M-XOs" firstAttribute="top" secondItem="94l-1x-Otl" secondAttribute="bottom" constant="21" id="a3y-5C-tnt"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="iTQ-6M-XOs" secondAttribute="trailing" constant="23" id="tHV-C2-xWZ"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleLabel" destination="94l-1x-Otl" id="1Y2-SM-0dK"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
