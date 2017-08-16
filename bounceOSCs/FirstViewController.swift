@@ -60,7 +60,7 @@ class FirstViewController: UIViewController, MMLANScannerDelegate {
 
     //
     
-    func lanScanDidFindNewDevice(_ device: Device!){
+    func lanScanDidFindNewDevice(_ device: MMDevice!){
         
         print("new device found at : \(device.ipAddress)")
         

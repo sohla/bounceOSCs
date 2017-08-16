@@ -12,13 +12,13 @@ import MMLanScan
 class IPAddressTableViewController: UITableViewController, MMLANScannerDelegate {
 
     var lanScanner : MMLANScanner!
-    var connectedDevices : [Device]!
+    var connectedDevices : [MMDevice]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.lanScanner = MMLANScanner(delegate:self)
-        self.connectedDevices = [Device]()
+        self.connectedDevices = [MMDevice]()
         
         self.title = "scanning..."
     }
@@ -105,7 +105,7 @@ class IPAddressTableViewController: UITableViewController, MMLANScannerDelegate 
 
     //
     
-    func lanScanDidFindNewDevice(_ device: Device!){
+    func lanScanDidFindNewDevice(_ device: MMDevice!){
         print("new device found at : \(device.ipAddress)")
 
         connectedDevices?.append(device)

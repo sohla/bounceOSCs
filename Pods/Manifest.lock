@@ -1,7 +1,7 @@
 PODS:
-  - AudioKit (3.7)
+  - AudioKit (3.7.1)
   - CocoaAsyncSocket (7.6.1)
-  - MMLanScan (2.1.2)
+  - MMLanScan (2.2.0)
   - OSCKit (0.3.5):
     - CocoaAsyncSocket (~> 7.3)
   - Pantry (0.3)
@@ -13,12 +13,12 @@ DEPENDENCIES:
   - Pantry
 
 SPEC CHECKSUMS:
-  AudioKit: 73c43705575e483623bf3cf306f823a8677aebdd
+  AudioKit: e04d3282bf904cdf7121965edb067177c6d1c7d1
   CocoaAsyncSocket: 7eadd3f59e1a6c84e2aefc93e9ff7b55156fe174
-  MMLanScan: dee389a3cc85166187f66a4037ff24dc88922d00
+  MMLanScan: cdbaf0ed7498793c384b0ad98193e8bcbc3938b9
   OSCKit: 4470dbd30bc792dcf66dc4e7b5d1ec7174add33c
   Pantry: 98481849be65d2b2cb9658976533e84ebd266192
 
 PODFILE CHECKSUM: 327cb5942cd0d05e5bc55c464b9c492f6bc6d625
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.2.1
