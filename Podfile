@@ -8,7 +8,7 @@ target 'bounceOSCs' do
   # Pods for bounceOSCs
 
 pod 'OSCKit'
-pod 'AudioKit', '~> 3.7'
+pod 'AudioKit'
 pod 'MMLanScan'
 pod 'Pantry'
 

@@ -19,7 +19,6 @@
 		F0345E8D1EDC5C4C00D1038A /* SensorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E8C1EDC5C4C00D1038A /* SensorProtocol.swift */; };
 		F0345E8F1EDC5C6D00D1038A /* TransmitterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E8E1EDC5C6D00D1038A /* TransmitterProtocol.swift */; };
 		F0345E911EDC5D5A00D1038A /* MotionSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E901EDC5D5A00D1038A /* MotionSensors.swift */; };
-		F0345E961EDDAEF300D1038A /* AudioSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E951EDDAEF300D1038A /* AudioSensors.swift */; };
 		F06B0BAB1EE30F5D000388ED /* IPAddressTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BAA1EE30F5D000388ED /* IPAddressTableViewController.swift */; };
 		F06B0BAD1EE45BE1000388ED /* SensorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BAC1EE45BE1000388ED /* SensorsTableViewController.swift */; };
 		F06B0BB11EE59C8D000388ED /* SensorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BB01EE59C8D000388ED /* SensorTableViewCell.swift */; };
@@ -234,13 +233,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bounceOSCs-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D89839BD6967FCA14ED54CC2 /* [CP] Embed Pods Frameworks */ = {
@@ -249,9 +251,22 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-bounceOSCs/Pods-bounceOSCs-frameworks.sh",
+				"${PODS_ROOT}/AudioKit/iOS/AudioKit.framework",
+				"${PODS_ROOT}/AudioKit/iOS/AudioKitUI.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/MMLanScan/MMLanScan.framework",
+				"${BUILT_PRODUCTS_DIR}/OSCKit/OSCKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Pantry/Pantry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AudioKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AudioKitUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMLanScan.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OSCKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pantry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -273,7 +288,6 @@
 				F0345E8D1EDC5C4C00D1038A /* SensorProtocol.swift in Sources */,
 				F06B0BB11EE59C8D000388ED /* SensorTableViewCell.swift in Sources */,
 				F0345E741ED495CA00D1038A /* FirstViewController.swift in Sources */,
-				F0345E961EDDAEF300D1038A /* AudioSensors.swift in Sources */,
 				F06B0BAB1EE30F5D000388ED /* IPAddressTableViewController.swift in Sources */,
 				F0938A601EE2FB1600B116E7 /* OSCViewController.swift in Sources */,
 				F0C57DA51EF3BED10099B5B7 /* SliderTableViewCell.swift in Sources */,
@@ -415,7 +429,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sohla.bounceOSCs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -430,7 +444,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sohla.bounceOSCs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
