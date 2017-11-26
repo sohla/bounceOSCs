@@ -68,17 +68,14 @@ class SensorsTableViewController: UITableViewController {
         return sections[section]
     }
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
-        
         var h: CGFloat = 77.0
-        
         if(indexPath.section == 2 && indexPath.row == 1) {h = 140.0}
-        
         return h
     }
 
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+
         //TouchTableViewCell
         if( rows[indexPath.section][indexPath.row] == "Button" ){
 

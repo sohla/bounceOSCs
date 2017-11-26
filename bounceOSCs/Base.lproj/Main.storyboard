@@ -60,9 +60,10 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Transmitters" id="KcB-KD-hte"/>
                     <connections>
-                        <segue destination="jwc-hb-SV0" kind="show" identifier="OSCVC" id="NuA-om-9DD"/>
+                        <segue destination="jwc-hb-SV0" kind="show" identifier="TX OSCVC" id="NuA-om-9DD"/>
                         <segue destination="uxq-nJ-cy4" kind="show" identifier="MIDIVC" id="w4P-he-idy"/>
                         <segue destination="u6y-Sx-gdj" kind="show" identifier="BTLEVC" id="0DO-Zk-Y0A"/>
+                        <segue destination="UB4-fG-Bra" kind="show" identifier="RX OSCVC" id="v0o-Hl-nbq"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d5a-L8-oja" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -150,7 +151,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUg-kg-qYZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="T8l-ug-cVD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2505.7971014492755" y="-1498.3695652173915"/>
+            <point key="canvasLocation" x="2680" y="-1511"/>
         </scene>
         <!--Address Table View Controller-->
         <scene sceneID="48e-2n-GWn">
@@ -371,7 +372,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F6n-eO-emQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2506" y="-810"/>
+            <point key="canvasLocation" x="2680" y="-795"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gdG-kG-YH2">
@@ -398,7 +399,70 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IBb-tp-2wu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2486" y="-152"/>
+            <point key="canvasLocation" x="2680" y="-91"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dre-0O-Hz4">
+            <objects>
+                <viewController id="UB4-fG-Bra" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jnr-xH-nYx"/>
+                        <viewControllerLayoutGuide type="bottom" id="YQ0-Hm-E9r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9zM-Vg-yJf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="9001" borderStyle="line" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="V31-QL-TFc">
+                                <rect key="frame" x="20" y="105" width="304" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="QnZ-UP-pPF"/>
+                                    <constraint firstAttribute="width" constant="304" id="maw-08-Kch"/>
+                                    <constraint firstAttribute="height" constant="44" id="phi-RJ-4p8"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Port" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSL-SQ-ine">
+                                <rect key="frame" x="20" y="72" width="33" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="LUV-1v-mjX"/>
+                                    <constraint firstAttribute="width" constant="33" id="p6e-tG-R2v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V31-QL-TFc" firstAttribute="leading" secondItem="9zM-Vg-yJf" secondAttribute="leadingMargin" id="15a-gR-yiq"/>
+                            <constraint firstItem="V31-QL-TFc" firstAttribute="top" secondItem="9zM-Vg-yJf" secondAttribute="top" constant="105" id="60n-mg-fP2"/>
+                            <constraint firstItem="V31-QL-TFc" firstAttribute="top" secondItem="jSL-SQ-ine" secondAttribute="bottom" constant="12" id="9kt-xT-faU"/>
+                            <constraint firstItem="YQ0-Hm-E9r" firstAttribute="top" secondItem="V31-QL-TFc" secondAttribute="bottom" constant="538" id="BvX-Ew-K93"/>
+                            <constraint firstItem="jSL-SQ-ine" firstAttribute="leading" secondItem="9zM-Vg-yJf" secondAttribute="leading" constant="20" id="GeO-M6-Ml2"/>
+                            <constraint firstItem="V31-QL-TFc" firstAttribute="top" secondItem="9zM-Vg-yJf" secondAttribute="top" constant="105" id="Hlq-Xk-Vj6"/>
+                            <constraint firstItem="jSL-SQ-ine" firstAttribute="leading" secondItem="V31-QL-TFc" secondAttribute="leading" id="I78-Wv-5lt"/>
+                            <constraint firstItem="V31-QL-TFc" firstAttribute="leading" secondItem="9zM-Vg-yJf" secondAttribute="leading" constant="20" id="LzY-Z3-3My"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V31-QL-TFc" secondAttribute="trailing" constant="70" id="MgF-oT-Q3E"/>
+                            <constraint firstItem="jSL-SQ-ine" firstAttribute="leading" secondItem="9zM-Vg-yJf" secondAttribute="leadingMargin" id="TY8-uH-LZV"/>
+                            <constraint firstItem="V31-QL-TFc" firstAttribute="leading" secondItem="9zM-Vg-yJf" secondAttribute="leadingMargin" id="Uan-aW-VuV"/>
+                            <constraint firstItem="jSL-SQ-ine" firstAttribute="top" secondItem="9zM-Vg-yJf" secondAttribute="top" constant="72" id="VU4-YB-jPf"/>
+                            <constraint firstItem="jSL-SQ-ine" firstAttribute="leading" secondItem="9zM-Vg-yJf" secondAttribute="leading" constant="20" id="akx-fU-Agm"/>
+                            <constraint firstItem="jSL-SQ-ine" firstAttribute="top" secondItem="jnr-xH-nYx" secondAttribute="bottom" constant="8" symbolic="YES" id="bhB-pg-3v7"/>
+                            <constraint firstItem="V31-QL-TFc" firstAttribute="leading" secondItem="9zM-Vg-yJf" secondAttribute="leading" constant="20" id="cYh-5m-WpB"/>
+                            <constraint firstItem="jSL-SQ-ine" firstAttribute="top" secondItem="jnr-xH-nYx" secondAttribute="bottom" constant="8" id="fsk-f6-tRW"/>
+                            <constraint firstItem="jSL-SQ-ine" firstAttribute="top" secondItem="9zM-Vg-yJf" secondAttribute="top" constant="72" id="gxt-lK-45R"/>
+                            <constraint firstItem="V31-QL-TFc" firstAttribute="top" secondItem="jSL-SQ-ine" secondAttribute="bottom" constant="12" id="p8a-rx-eXC"/>
+                            <constraint firstItem="jSL-SQ-ine" firstAttribute="leading" secondItem="9zM-Vg-yJf" secondAttribute="leadingMargin" id="qY8-fu-bh0"/>
+                            <constraint firstItem="V31-QL-TFc" firstAttribute="leading" secondItem="jSL-SQ-ine" secondAttribute="leading" id="xOO-iS-oXk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Cu-Kg-VyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2680" y="613"/>
         </scene>
     </scenes>
     <resources>

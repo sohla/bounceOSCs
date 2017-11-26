@@ -10,23 +10,12 @@ import UIKit
 
 class TransmittersTableViewController: UITableViewController {
 
-    let types:Array<String> = ["OSC","MIDI","BTLE"]
-    
+//    let types:Array<String> = ["OSC","MIDI","BTLE"]
+    let types:Array<String> = ["TX OSC", "RX OSC"]
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "OSC_onOffChanged"), object: nil, queue: nil) { n in
-//            print(n.userInfo!)
-//        }
-
-        
-        
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,9 +45,7 @@ class TransmittersTableViewController: UITableViewController {
         
         return cell
     }
-//    func onOffSwitchDidChange(_ cell: SensorTableViewCell, state: Bool) {
-//        print(cell.titleLabel.text ?? "-", state)
-//    }
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
