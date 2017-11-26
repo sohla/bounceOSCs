@@ -404,7 +404,7 @@
         <!--View Controller-->
         <scene sceneID="dre-0O-Hz4">
             <objects>
-                <viewController id="UB4-fG-Bra" sceneMemberID="viewController">
+                <viewController id="UB4-fG-Bra" customClass="RXOSCViewController" customModule="bounceOSCs" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jnr-xH-nYx"/>
                         <viewControllerLayoutGuide type="bottom" id="YQ0-Hm-E9r"/>
@@ -459,6 +459,9 @@
                             <constraint firstItem="V31-QL-TFc" firstAttribute="leading" secondItem="jSL-SQ-ine" secondAttribute="leading" id="xOO-iS-oXk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="rxportTextField" destination="V31-QL-TFc" id="AcZ-Kd-nz1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Cu-Kg-VyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
