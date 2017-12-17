@@ -55,7 +55,7 @@ class AttitudeSensor : MotionSensor, SensorProtocol {
         if((motionManager.deviceMotion) != nil){
             let attitude: CMAttitude = (motionManager.deviceMotion?.attitude)!
 
-            print([attitude.pitch,attitude.roll,attitude.yaw].map{$0 * (180.0 / Double.pi) + 180.0})
+            //print([attitude.pitch,attitude.roll,attitude.yaw].map{$0 * (180.0 / Double.pi) + 180.0})
             return [attitude.pitch,attitude.roll,attitude.yaw]
         }
         return [0]

@@ -24,10 +24,12 @@ class SensorTransmitter {
         transmitter?.transmit(sensor: sensor!)
     }
     func run(interval:Double = 0.03) {
+        //transmitter?.isOn = true//•URGH
         timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(next), userInfo: nil, repeats: true)
     }
     
     func stop() {
+        transmitter?.isOn = false//•URGH
         timer?.invalidate()
     }
     

@@ -13,21 +13,21 @@ import OSCKit
 class AppDelegate: UIResponder, UIApplicationDelegate ,OSCServerDelegate{
 
     var window: UIWindow?
-    let server: OSCServer = OSCServer.init()
+//    let server: OSCServer = OSCServer.init()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         let _:SensorTransmitters = SensorTransmitters()
-        server.delegate = self
-        server.listen(9001)
+//        server.delegate = self
+//        server.listen(9001)
         
         return true
     }
     func handle(_ message: OSCMessage!) {
         
-        print([message.address,message.arguments])
+        //print([message.address,message.arguments])
     }
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
