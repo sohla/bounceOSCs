@@ -51,7 +51,7 @@ class SensorTransmitters {
     init() {
 
         if let ipAddress: String = Pantry.unpack("ip_address"),
-            let port: String = Pantry.unpack("port") {
+            let port: String = Pantry.unpack("txport") {
             
             let na = NetAddress(address: ipAddress, port: port)
             
@@ -95,7 +95,7 @@ class SensorTransmitters {
             self.buttonOSC.transmitter?.netAddress.address = ip!
             self.sliderOSC.transmitter?.netAddress.address = ip!
         }
-        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "port"), object: nil, queue: nil) { n in
+        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "txport"), object: nil, queue: nil) { n in
             let port = n.userInfo?["value"] as? String
 
             self.attitudeOSC.transmitter?.netAddress.port = port!

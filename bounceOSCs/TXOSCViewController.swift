@@ -24,7 +24,7 @@ class TXOSCViewController: UIViewController {
         portTextField.delegate = portDelegate
         
         ipAddressTextField.text = Pantry.unpack("ip_address")
-        portTextField.text = Pantry.unpack("port")
+        portTextField.text = Pantry.unpack("txport")
         
 //        ipAddressTextField.keyboardType = UIKeyboardType.numberPad
 //        portTextField.keyboardType = UIKeyboardType.numberPad
@@ -136,9 +136,9 @@ class portTextFieldDelegate : NSObject, UITextFieldDelegate {
         return false
     }
     func save(_ s: String) {
-        Pantry.pack(s, key: "port")
+        Pantry.pack(s, key: "txport")
         NotificationCenter.default.post(
-            name: Notification.Name(rawValue: "port"),
+            name: Notification.Name(rawValue: "txport"),
             object: nil,
             userInfo: ["value": s])
         
