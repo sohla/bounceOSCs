@@ -107,11 +107,7 @@ class SensorTransmitters {
             self.sliderOSC.transmitter?.netAddress.port = port!
         }
 
-        
-        
-        
-        
-        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "TX OSC_onOffChanged"), object: nil, queue: nil) { n in
+         NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "TX OSC_onOffChanged"), object: nil, queue: nil) { n in
             print(n.userInfo!)
             
             let value = n.userInfo?["value"] as? Bool
@@ -125,12 +121,18 @@ class SensorTransmitters {
                 
                 // if we want to poll use run
                 //self.buttonOSC.run(interval: 0.3)
+                
+                self.buttonOSC.transmitter?.isOn = true
+                self.sliderOSC.transmitter?.isOn = true
+                
             }else{
                 self.attitudeOSC.stop()
                 self.rotationMatrixOSC.stop()
                 self.accelOSC.stop()
                 self.rotationOSC.stop()
                 //self.ampOSC.stop()
+                self.buttonOSC.transmitter?.isOn = false
+                self.sliderOSC.transmitter?.isOn = false
             }
             
         }
