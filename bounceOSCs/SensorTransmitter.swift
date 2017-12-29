@@ -29,7 +29,7 @@ class SensorTransmitter {
     }
     
     func stop() {
-        transmitter?.isOn = false//•URGH
+        //transmitter?.isOn = false//•URGH
         timer?.invalidate()
     }
     

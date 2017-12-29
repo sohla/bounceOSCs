@@ -51,18 +51,17 @@ class SensorTransmitters {
     init() {
 
         if let ipAddress: String = Pantry.unpack("ip_address"),
-            let port: String = Pantry.unpack("port"),
-            let isOn: Bool = Pantry.unpack("OSC") {
+            let port: String = Pantry.unpack("port") {
             
-                let na = NetAddress(address: ipAddress, port: port)
+            let na = NetAddress(address: ipAddress, port: port)
             
-            self.attitudeOSC.transmitter = OSCTransmitter(netAddress: na, isOn: isOn)
-            self.rotationMatrixOSC.transmitter = OSCTransmitter(netAddress: na, isOn: isOn)
-                self.accelOSC.transmitter = OSCTransmitter(netAddress: na, isOn: isOn)
-                self.rotationOSC.transmitter = OSCTransmitter(netAddress: na, isOn: isOn)
-//            self.ampOSC.transmitter = OSCTransmitter(netAddress: na, isOn: isOn)
-            self.buttonOSC.transmitter = OSCTransmitter(netAddress: na, isOn: isOn)
-            self.sliderOSC.transmitter = OSCTransmitter(netAddress: na, isOn: isOn)
+            self.attitudeOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
+            self.rotationMatrixOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
+            self.accelOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
+            self.rotationOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
+//            self.ampOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
+            self.buttonOSC.transmitter = OSCTransmitter(netAddress: na, isOn: true)
+            self.sliderOSC.transmitter = OSCTransmitter(netAddress: na, isOn: true)
         }
         
         if let on: Bool = Pantry.unpack("Gyroscope") {
