@@ -60,7 +60,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Transmitters" id="KcB-KD-hte"/>
                     <connections>
-                        <segue destination="jwc-hb-SV0" kind="show" identifier="OSCVC" id="NuA-om-9DD"/>
+                        <segue destination="jwc-hb-SV0" kind="show" identifier="TX OSCVC" id="NuA-om-9DD"/>
                         <segue destination="uxq-nJ-cy4" kind="show" identifier="MIDIVC" id="w4P-he-idy"/>
                         <segue destination="u6y-Sx-gdj" kind="show" identifier="BTLEVC" id="0DO-Zk-Y0A"/>
                         <segue destination="UB4-fG-Bra" kind="show" identifier="RX OSCVC" id="v0o-Hl-nbq"/>

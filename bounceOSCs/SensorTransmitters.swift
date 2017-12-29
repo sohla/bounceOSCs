@@ -111,7 +111,7 @@ class SensorTransmitters {
         
         
         
-        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "OSC_onOffChanged"), object: nil, queue: nil) { n in
+        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "TX OSC_onOffChanged"), object: nil, queue: nil) { n in
             print(n.userInfo!)
             
             let value = n.userInfo?["value"] as? Bool
