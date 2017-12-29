@@ -73,7 +73,7 @@
         <!--OSCVC-->
         <scene sceneID="Gun-Me-vFQ">
             <objects>
-                <viewController id="jwc-hb-SV0" userLabel="OSCVC" customClass="OSCViewController" customModule="bounceOSCs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jwc-hb-SV0" userLabel="OSCVC" customClass="TXOSCViewController" customModule="bounceOSCs" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XKL-MH-GDC"/>
                         <viewControllerLayoutGuide type="bottom" id="bSq-J9-AhY"/>

@@ -97,7 +97,7 @@ class IPAddressTableViewController: UITableViewController, MMLANScannerDelegate 
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
-        let vc = segue.destination as! OSCViewController
+        let vc = segue.destination as! TXOSCViewController
         let cell = sender as! UITableViewCell
         vc.setipAddressTextField((cell.textLabel?.text)!)
     }

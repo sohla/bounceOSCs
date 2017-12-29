@@ -9,7 +9,7 @@
 import UIKit
 import Pantry
 
-class OSCViewController: UIViewController {
+class TXOSCViewController: UIViewController {
 
     @IBOutlet weak var portTextField: UITextField!
     @IBOutlet weak var ipAddressTextField: UITextField!

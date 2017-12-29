@@ -23,7 +23,7 @@
 		F06B0BAD1EE45BE1000388ED /* SensorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BAC1EE45BE1000388ED /* SensorsTableViewController.swift */; };
 		F06B0BB11EE59C8D000388ED /* SensorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BB01EE59C8D000388ED /* SensorTableViewCell.swift */; };
 		F0938A5E1EE1AAEE00B116E7 /* TransmittersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0938A5D1EE1AAEE00B116E7 /* TransmittersTableViewController.swift */; };
-		F0938A601EE2FB1600B116E7 /* OSCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0938A5F1EE2FB1600B116E7 /* OSCViewController.swift */; };
+		F0938A601EE2FB1600B116E7 /* TXOSCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0938A5F1EE2FB1600B116E7 /* TXOSCViewController.swift */; };
 		F0BD2B6A1FCB474E001A73F1 /* RXOSCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BD2B691FCB474E001A73F1 /* RXOSCViewController.swift */; };
 		F0C57DA11EF186AB0099B5B7 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA01EF186AB0099B5B7 /* ButtonTableViewCell.swift */; };
 		F0C57DA31EF190060099B5B7 /* TouchSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA21EF190060099B5B7 /* TouchSensors.swift */; };
@@ -54,7 +54,7 @@
 		F06B0BB01EE59C8D000388ED /* SensorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorTableViewCell.swift; sourceTree = "<group>"; };
 		F0938A5C1EE19CFB00B116E7 /* MMLanScan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMLanScan-Bridging-Header.h"; sourceTree = "<group>"; };
 		F0938A5D1EE1AAEE00B116E7 /* TransmittersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransmittersTableViewController.swift; sourceTree = "<group>"; };
-		F0938A5F1EE2FB1600B116E7 /* OSCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSCViewController.swift; sourceTree = "<group>"; };
+		F0938A5F1EE2FB1600B116E7 /* TXOSCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TXOSCViewController.swift; sourceTree = "<group>"; };
 		F0BD2B691FCB474E001A73F1 /* RXOSCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXOSCViewController.swift; sourceTree = "<group>"; };
 		F0C57DA01EF186AB0099B5B7 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		F0C57DA21EF190060099B5B7 /* TouchSensors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchSensors.swift; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 			children = (
 				F0345E711ED495CA00D1038A /* AppDelegate.swift */,
 				F0938A5D1EE1AAEE00B116E7 /* TransmittersTableViewController.swift */,
-				F0938A5F1EE2FB1600B116E7 /* OSCViewController.swift */,
+				F0938A5F1EE2FB1600B116E7 /* TXOSCViewController.swift */,
 				F0BD2B691FCB474E001A73F1 /* RXOSCViewController.swift */,
 				F06B0BAA1EE30F5D000388ED /* IPAddressTableViewController.swift */,
 				F06B0BAC1EE45BE1000388ED /* SensorsTableViewController.swift */,
@@ -295,7 +295,7 @@
 				F06B0BB11EE59C8D000388ED /* SensorTableViewCell.swift in Sources */,
 				F0345E741ED495CA00D1038A /* FirstViewController.swift in Sources */,
 				F06B0BAB1EE30F5D000388ED /* IPAddressTableViewController.swift in Sources */,
-				F0938A601EE2FB1600B116E7 /* OSCViewController.swift in Sources */,
+				F0938A601EE2FB1600B116E7 /* TXOSCViewController.swift in Sources */,
 				F0C57DA51EF3BED10099B5B7 /* SliderTableViewCell.swift in Sources */,
 				F0938A5E1EE1AAEE00B116E7 /* TransmittersTableViewController.swift in Sources */,
 				F0345E8F1EDC5C6D00D1038A /* TransmitterProtocol.swift in Sources */,
