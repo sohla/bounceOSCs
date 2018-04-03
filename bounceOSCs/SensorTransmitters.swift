@@ -80,7 +80,7 @@ class SensorTransmitters {
             self.rotationOSC.transmitter?.isOn = on
         }
 
-        if let on: Bool = Pantry.unpack("Amp") {
+        if let _: Bool = Pantry.unpack("Amp") {
         //    self.ampOSC.transmitter?.isOn = on
         }
 

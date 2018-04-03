@@ -23,7 +23,7 @@ class ButtonSensor :  SensorProtocol {
     }
     
     func oscData() -> (String,Array<String>){
-        let arrayString: Array<String> = getData().flatMap { String($0) }
+        let arrayString: Array<String> = getData().compactMap { String($0) }
         return ("/gyrosc/button",arrayString)
         
     }
@@ -45,7 +45,7 @@ class SliderSensor :  SensorProtocol {
     }
     
     func oscData() -> (String,Array<String>){
-        let arrayString: Array<String> = getData().flatMap { String($0) }
+        let arrayString: Array<String> = getData().compactMap { String($0) }
         return ("/gyrosc/slider",arrayString)
         
     }

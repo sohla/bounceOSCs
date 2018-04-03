@@ -40,7 +40,7 @@ class RotationRateSensor : MotionSensor, SensorProtocol {
     }
     
     func oscData() -> (String,Array<String>){
-        let arrayString: Array<String> = getData().flatMap { String($0) }
+        let arrayString: Array<String> = getData().compactMap { String($0) }
         return ("/gyrosc/rrate",arrayString)
         
     }
@@ -62,7 +62,7 @@ class AttitudeSensor : MotionSensor, SensorProtocol {
     }
     
     func oscData() -> (String,Array<String>){
-        let arrayString: Array<String> = getData().flatMap { String($0) }
+        let arrayString: Array<String> = getData().compactMap { String($0) }
         return ("/gyrosc/gyro",arrayString)
     
     }
@@ -88,7 +88,7 @@ class RotationMatrixSensor : MotionSensor, SensorProtocol {
     }
     
     func oscData() -> (String,Array<String>){
-        let arrayString: Array<String> = getData().flatMap { String($0) }
+        let arrayString: Array<String> = getData().compactMap { String($0) }
         return ("/gyrosc/rotmat",arrayString)
         
     }
@@ -108,7 +108,7 @@ class AccelSensor : MotionSensor, SensorProtocol {
     }
     
     func oscData() -> (String,Array<String>){
-        let arrayString: Array<String> = getData().flatMap { String($0) }
+        let arrayString: Array<String> = getData().compactMap { String($0) }
         return ("/gyrosc/accel",arrayString)
         
     }
