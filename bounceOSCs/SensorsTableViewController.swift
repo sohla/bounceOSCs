@@ -32,7 +32,7 @@ extension CaseCountable where RawValue == Int {
 class SensorsTableViewController: UITableViewController {
 
     let sections = ["Motion","Audio","Touch"]
-    let rows = [["Gyroscope","RotationMatrix","Accelerometer","RotationRate"], ["Amp","Pitch"], ["Button","Slider"]]
+    let rows = [["Gyroscope","RotationMatrix","Accelerometer","RotationRate","Quaternion"], ["Amp","Pitch"], ["Button","Slider"]]
     
     
     override func viewDidLoad() {

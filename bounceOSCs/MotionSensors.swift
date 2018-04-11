@@ -14,18 +14,13 @@ let motionManager: CMMotionManager = CMMotionManager()
 
 class MotionSensor {
     
-    
     init() {
         
-        motionManager.deviceMotionUpdateInterval = 0.03
-        
         if(motionManager.isDeviceMotionAvailable){
+            motionManager.deviceMotionUpdateInterval = 0.03
             motionManager.startDeviceMotionUpdates()
-            
         }
-        
     }
-    
 }
 
 class RotationRateSensor : MotionSensor, SensorProtocol {
@@ -44,7 +39,7 @@ class RotationRateSensor : MotionSensor, SensorProtocol {
         return ("/gyrosc/rrate",arrayString)
         
     }
-    func midiData() -> String{ return "cc51:1 \(getData()[0]) cc51:2 \(getData()[1])"}
+    func midiData() -> String{ return "cc51:1 \(getData()[0]) cc51:2 \(getData()[1])"}//•
     
 }
 
@@ -66,7 +61,7 @@ class AttitudeSensor : MotionSensor, SensorProtocol {
         return ("/gyrosc/gyro",arrayString)
     
     }
-    func midiData() -> String{ return "cc51:1 \(getData()[0]) cc51:2 \(getData()[1])"}
+    func midiData() -> String{ return "cc51:1 \(getData()[0]) cc51:2 \(getData()[1])"}//•
     
 }
 
@@ -92,7 +87,7 @@ class RotationMatrixSensor : MotionSensor, SensorProtocol {
         return ("/gyrosc/rotmat",arrayString)
         
     }
-    func midiData() -> String{ return "TO \(getData()[0]) DO \(getData()[1])"}
+    func midiData() -> String{ return "TO \(getData()[0]) DO \(getData()[1])"}//•
     
 }
 
@@ -112,10 +107,31 @@ class AccelSensor : MotionSensor, SensorProtocol {
         return ("/gyrosc/accel",arrayString)
         
     }
-    func midiData() -> String{ return "cc51:1 \(getData()[0]) cc51:2 \(getData()[1])"}
+    func midiData() -> String{ return "cc51:1 \(getData()[0]) cc51:2 \(getData()[1])"}//•
     
 }
 
+
+class QuaternionSensor : MotionSensor, SensorProtocol {
+    
+    func getData() -> Array<Double> {
+        
+        if((motionManager.deviceMotion) != nil){
+            let attitude: CMAttitude = (motionManager.deviceMotion?.attitude)!
+            let q: CMQuaternion = attitude.quaternion
+            return [q.w,q.x,q.y,q.z]
+        }
+        return [0]
+    }
+    
+    func oscData() -> (String,Array<String>){
+        let arrayString: Array<String> = getData().compactMap { String($0) }
+        return ("/gyrosc/quat",arrayString)
+        
+    }
+    func midiData() -> String{ return "cc51:1 \(getData()[0]) cc51:2 \(getData()[1])"}//•
+    
+}
 
 //struct Gyro : SensorProtocol {
 //    

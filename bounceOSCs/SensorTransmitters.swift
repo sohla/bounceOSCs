@@ -32,6 +32,11 @@ class SensorTransmitters {
         transmitter: OSCTransmitter(
             netAddress: NetAddress(address: "127.0.0.1", port: "9000"), isOn: false))
 
+    let quaternionOSC = SensorTransmitter(
+        sensor: QuaternionSensor(),
+        transmitter: OSCTransmitter(
+            netAddress: NetAddress(address: "127.0.0.1", port: "9000"), isOn: false))
+
 //    let ampOSC = SensorTransmitter(
 //        sensor: AudioAmpSensor(),
 //        transmitter: OSCTransmitter(
@@ -59,6 +64,7 @@ class SensorTransmitters {
             self.rotationMatrixOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
             self.accelOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
             self.rotationOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
+            self.quaternionOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
 //            self.ampOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
             self.buttonOSC.transmitter = OSCTransmitter(netAddress: na, isOn: true)
             self.sliderOSC.transmitter = OSCTransmitter(netAddress: na, isOn: true)
@@ -79,6 +85,9 @@ class SensorTransmitters {
         if let on: Bool = Pantry.unpack("RotationRate") {
             self.rotationOSC.transmitter?.isOn = on
         }
+        if let on: Bool = Pantry.unpack("Quaternion") {
+            self.quaternionOSC.transmitter?.isOn = on
+        }
 
         if let _: Bool = Pantry.unpack("Amp") {
         //    self.ampOSC.transmitter?.isOn = on
@@ -91,6 +100,7 @@ class SensorTransmitters {
             self.rotationMatrixOSC.transmitter?.netAddress.address = ip!
             self.accelOSC.transmitter?.netAddress.address = ip!
             self.rotationOSC.transmitter?.netAddress.address = ip!
+            self.quaternionOSC.transmitter?.netAddress.address = ip!
             //self.ampOSC.transmitter?.netAddress.address = ip!
             self.buttonOSC.transmitter?.netAddress.address = ip!
             self.sliderOSC.transmitter?.netAddress.address = ip!
@@ -102,6 +112,7 @@ class SensorTransmitters {
             self.rotationMatrixOSC.transmitter?.netAddress.port = port!
             self.accelOSC.transmitter?.netAddress.port = port!
             self.rotationOSC.transmitter?.netAddress.port = port!
+            self.quaternionOSC.transmitter?.netAddress.port = port!
            // self.ampOSC.transmitter?.netAddress.port = port!
             self.buttonOSC.transmitter?.netAddress.port = port!
             self.sliderOSC.transmitter?.netAddress.port = port!
@@ -117,6 +128,7 @@ class SensorTransmitters {
                 self.rotationMatrixOSC.run(interval: 0.03)
                 self.accelOSC.run(interval: 0.03)
                 self.rotationOSC.run(interval: 0.03)
+                self.quaternionOSC.run(interval: 0.03)
                 //self.ampOSC.run(interval: 0.3)
                 
                 // if we want to poll use run
@@ -130,6 +142,7 @@ class SensorTransmitters {
                 self.rotationMatrixOSC.stop()
                 self.accelOSC.stop()
                 self.rotationOSC.stop()
+                self.quaternionOSC.stop()
                 //self.ampOSC.stop()
                 self.buttonOSC.transmitter?.isOn = false
                 self.sliderOSC.transmitter?.isOn = false
@@ -157,6 +170,11 @@ class SensorTransmitters {
         NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "RotationRate_onOffChanged"), object: nil, queue: nil) { n in
             let value = n.userInfo?["value"] as? Bool
             self.rotationOSC.transmitter?.isOn = value!
+        }
+
+        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "Quaternion_onOffChanged"), object: nil, queue: nil) { n in
+            let value = n.userInfo?["value"] as? Bool
+            self.quaternionOSC.transmitter?.isOn = value!
         }
 
 //        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "Amp_onOffChanged"), object: nil, queue: nil) { n in

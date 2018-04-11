@@ -1,0 +1,227 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Storable"
+- "StorageExpiry"
+- "StorableDefaultType"
+- "StorableRawEnum"
+provides-nominal:
+- "6Pantry8StorableP"
+- "6Pantry13StorageExpiryO"
+- "6Pantry19StorableDefaultTypeP"
+- "Sb"
+- "SS"
+- "Si"
+- "Sf"
+- "Sd"
+- "10Foundation4DateV"
+- "6Pantry15StorableRawEnumP"
+provides-member:
+- ["6Pantry8StorableP", ""]
+- ["6Pantry13StorageExpiryO", ""]
+- ["6Pantry19StorableDefaultTypeP", ""]
+- ["Sb", ""]
+- ["SS", ""]
+- ["Si", ""]
+- ["Sf", ""]
+- ["Sd", ""]
+- ["10Foundation4DateV", ""]
+- ["6Pantry15StorableRawEnumP", ""]
+- ["6Pantry8StorableP", "toDictionary"]
+- ["6Pantry15StorableRawEnumP", "init"]
+- ["6Pantry15StorableRawEnumP", "toDictionary"]
+provides-dynamic-lookup:
+depends-top-level:
+- "Bool"
+- "CastingPrecedence"
+- "Date"
+- "Double"
+- "Float"
+- "Foundation"
+- "Int"
+- !private "Mirror"
+- "Storable"
+- "StorableDefaultType"
+- "StorableRawEnum"
+- "StorageExpiry"
+- "String"
+- !private "StringLiteralType"
+- "TimeInterval"
+- "Warehouseable"
+depends-member:
+- !private ["s23BidirectionalCollectionP", "init"]
+- ["Sb", "deinit"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "distantFuture"]
+- ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "timeIntervalSince1970"]
+- ["s10ComparableP", "toDictionary"]
+- !private ["s28CustomDebugStringConvertibleP", "distantFuture"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "timeIntervalSince1970"]
+- ["s28CustomDebugStringConvertibleP", "toDictionary"]
+- !private ["s29CustomPlaygroundQuickLookableP", "distantFuture"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "timeIntervalSince1970"]
+- ["s29CustomPlaygroundQuickLookableP", "toDictionary"]
+- !private ["s17CustomReflectableP", "distantFuture"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "timeIntervalSince1970"]
+- ["s17CustomReflectableP", "toDictionary"]
+- !private ["s23CustomStringConvertibleP", "distantFuture"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "timeIntervalSince1970"]
+- ["s23CustomStringConvertibleP", "toDictionary"]
+- ["10Foundation4DateV", "String"]
+- !private ["10Foundation4DateV", "TimeInterval"]
+- ["10Foundation4DateV", "Warehouseable"]
+- ["10Foundation4DateV", "deinit"]
+- !private ["10Foundation4DateV", "distantFuture"]
+- ["10Foundation4DateV", "init"]
+- !private ["10Foundation4DateV", "timeIntervalSince1970"]
+- ["10Foundation4DateV", "toDictionary"]
+- !private ["s9DecodableP", "distantFuture"]
+- ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "timeIntervalSince1970"]
+- ["s9DecodableP", "toDictionary"]
+- ["Sd", "deinit"]
+- !private ["s9EncodableP", "distantFuture"]
+- ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "timeIntervalSince1970"]
+- ["s9EncodableP", "toDictionary"]
+- !private ["s9EquatableP", "distantFuture"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "timeIntervalSince1970"]
+- ["s9EquatableP", "toDictionary"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["Sf", "deinit"]
+- !private ["s8HashableP", "distantFuture"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "timeIntervalSince1970"]
+- ["s8HashableP", "toDictionary"]
+- ["Si", "deinit"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s6MirrorV", "init"]
+- !private ["s6MirrorV", "toDictionary"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "distantFuture"]
+- ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "timeIntervalSince1970"]
+- ["10Foundation20ReferenceConvertibleP", "toDictionary"]
+- !private ["s8SequenceP", "init"]
+- !private ["6Pantry8StorableP", "Mirror"]
+- ["6Pantry8StorableP", "StorableDefaultType"]
+- ["6Pantry8StorableP", "StorableRawType"]
+- ["6Pantry8StorableP", "String"]
+- ["6Pantry8StorableP", "Warehouseable"]
+- ["6Pantry8StorableP", ""]
+- !private ["6Pantry8StorableP", "distantFuture"]
+- ["6Pantry8StorableP", "init"]
+- !private ["6Pantry8StorableP", "rawValue"]
+- !private ["6Pantry8StorableP", "timeIntervalSince1970"]
+- ["6Pantry8StorableP", "toDictionary"]
+- ["6Pantry19StorableDefaultTypeP", ""]
+- !private ["6Pantry19StorableDefaultTypeP", "init"]
+- ["6Pantry15StorableRawEnumP", "StorableDefaultType"]
+- ["6Pantry15StorableRawEnumP", "StorableRawType"]
+- ["6Pantry15StorableRawEnumP", "String"]
+- ["6Pantry15StorableRawEnumP", "Warehouseable"]
+- ["6Pantry15StorableRawEnumP", "init"]
+- ["6Pantry15StorableRawEnumP", "rawValue"]
+- ["6Pantry15StorableRawEnumP", "toDictionary"]
+- ["6Pantry13StorageExpiryO", "Foundation"]
+- ["6Pantry13StorageExpiryO", "TimeInterval"]
+- ["6Pantry13StorageExpiryO", "date"]
+- ["6Pantry13StorageExpiryO", "never"]
+- ["6Pantry13StorageExpiryO", "seconds"]
+- ["6Pantry13StorageExpiryO", "toDate"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["6Pantry13WarehouseableP", "get"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "distantFuture"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "timeIntervalSince1970"]
+- ["s21_ObjectiveCBridgeableP", "toDictionary"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "s23BidirectionalCollectionP"
+- "Sb"
+- !private "s7CVarArgP"
+- !private "s10CollectionP"
+- "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "10Foundation4DateV"
+- "s9DecodableP"
+- "Sd"
+- "s9EncodableP"
+- "s9EquatableP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "Sf"
+- "s8HashableP"
+- "Si"
+- !private "s25LosslessStringConvertibleP"
+- !private "s6MirrorV"
+- !private "s10MirrorPathP"
+- !private "s26RangeReplaceableCollectionP"
+- "10Foundation20ReferenceConvertibleP"
+- !private "s8SequenceP"
+- "6Pantry8StorableP"
+- "6Pantry19StorableDefaultTypeP"
+- "6Pantry15StorableRawEnumP"
+- "6Pantry13StorageExpiryO"
+- "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "6Pantry13WarehouseableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- "s21_ObjectiveCBridgeableP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/Target Support Files/Pantry/Pantry-umbrella.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Pods.build/Debug-iphonesimulator/Pantry.build/unextended-module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "05e875a4f8c936c353b0d5d52e1caa75"
