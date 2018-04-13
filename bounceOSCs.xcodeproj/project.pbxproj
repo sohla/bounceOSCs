@@ -22,6 +22,7 @@
 		F06B0BAB1EE30F5D000388ED /* IPAddressTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BAA1EE30F5D000388ED /* IPAddressTableViewController.swift */; };
 		F06B0BAD1EE45BE1000388ED /* SensorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BAC1EE45BE1000388ED /* SensorsTableViewController.swift */; };
 		F06B0BB11EE59C8D000388ED /* SensorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BB01EE59C8D000388ED /* SensorTableViewCell.swift */; };
+		F090B4B12080372000C64B53 /* MotionHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F090B4B02080372000C64B53 /* MotionHeaderTableViewCell.swift */; };
 		F0938A5E1EE1AAEE00B116E7 /* TransmittersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0938A5D1EE1AAEE00B116E7 /* TransmittersTableViewController.swift */; };
 		F0938A601EE2FB1600B116E7 /* TXOSCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0938A5F1EE2FB1600B116E7 /* TXOSCViewController.swift */; };
 		F0BD2B6A1FCB474E001A73F1 /* RXOSCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BD2B691FCB474E001A73F1 /* RXOSCViewController.swift */; };
@@ -52,6 +53,7 @@
 		F06B0BAA1EE30F5D000388ED /* IPAddressTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddressTableViewController.swift; sourceTree = "<group>"; };
 		F06B0BAC1EE45BE1000388ED /* SensorsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorsTableViewController.swift; sourceTree = "<group>"; };
 		F06B0BB01EE59C8D000388ED /* SensorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorTableViewCell.swift; sourceTree = "<group>"; };
+		F090B4B02080372000C64B53 /* MotionHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		F0938A5C1EE19CFB00B116E7 /* MMLanScan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMLanScan-Bridging-Header.h"; sourceTree = "<group>"; };
 		F0938A5D1EE1AAEE00B116E7 /* TransmittersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransmittersTableViewController.swift; sourceTree = "<group>"; };
 		F0938A5F1EE2FB1600B116E7 /* TXOSCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TXOSCViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				F0BD2B691FCB474E001A73F1 /* RXOSCViewController.swift */,
 				F06B0BAA1EE30F5D000388ED /* IPAddressTableViewController.swift */,
 				F06B0BAC1EE45BE1000388ED /* SensorsTableViewController.swift */,
+				F090B4B02080372000C64B53 /* MotionHeaderTableViewCell.swift */,
 				F06B0BB01EE59C8D000388ED /* SensorTableViewCell.swift */,
 				F0C57DA01EF186AB0099B5B7 /* ButtonTableViewCell.swift */,
 				F0C57DA41EF3BED10099B5B7 /* SliderTableViewCell.swift */,
@@ -286,6 +289,7 @@
 			files = (
 				F0C57DA11EF186AB0099B5B7 /* ButtonTableViewCell.swift in Sources */,
 				F0345E761ED495CA00D1038A /* SecondViewController.swift in Sources */,
+				F090B4B12080372000C64B53 /* MotionHeaderTableViewCell.swift in Sources */,
 				F0345E911EDC5D5A00D1038A /* MotionSensors.swift in Sources */,
 				F0345E891EDC5BE100D1038A /* SensorTransmitters.swift in Sources */,
 				F0BD2B6A1FCB474E001A73F1 /* RXOSCViewController.swift in Sources */,

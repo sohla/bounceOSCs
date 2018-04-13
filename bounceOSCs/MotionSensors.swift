@@ -14,16 +14,15 @@ let motionManager: CMMotionManager = CMMotionManager()
 var referenceAttitude: CMAttitude? = nil
 
 class MotionSensor {
-    
+
     init() {
-        
+
         if(motionManager.isDeviceMotionAvailable){
             motionManager.deviceMotionUpdateInterval = 0.03
             motionManager.startDeviceMotionUpdates()
             setReference()
         }
     }
-    
     func setReference() {
         
         // block and wait for device to wake up
@@ -31,16 +30,18 @@ class MotionSensor {
             print("waiting for device..")
         }
         referenceAttitude = motionManager.deviceMotion?.attitude
+        print("device reference attitude \(referenceAttitude?.quaternion) set.")
     }
     
     func getAttitude() -> CMAttitude? {
         
-        if let lref = referenceAttitude {
-            motionManager.deviceMotion?.attitude.multiply(byInverseOf: lref)
+        if(referenceAttitude != nil) {
+            motionManager.deviceMotion?.attitude.multiply(byInverseOf: referenceAttitude!)
         }
         return motionManager.deviceMotion?.attitude
     }
 }
+
 
 class RotationRateSensor : MotionSensor, SensorProtocol {
     
@@ -63,6 +64,7 @@ class RotationRateSensor : MotionSensor, SensorProtocol {
 }
 
 class AttitudeSensor : MotionSensor, SensorProtocol {
+    
     
     func getData() -> Array<Double> {
         
@@ -131,6 +133,15 @@ class AccelSensor : MotionSensor, SensorProtocol {
 
 class QuaternionSensor : MotionSensor, SensorProtocol {
     
+    override init() {
+        super.init()
+        
+        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "motionReset"), object: nil, queue: nil) { n in
+            self.setReference()
+        }
+        
+    }
+
     func getData() -> Array<Double> {
         
         if((motionManager.deviceMotion) != nil){

@@ -26,6 +26,7 @@ depends-top-level:
 - "CastingPrecedence"
 - "IndexPath"
 - "Int"
+- !private "MotionHeaderTableViewCell"
 - "RawRepresentable"
 - !private "SensorTableViewCell"
 - "SensorsTableViewController"
@@ -35,6 +36,7 @@ depends-top-level:
 - "UITableView"
 - "UITableViewCell"
 - "UITableViewController"
+- "UIView"
 depends-member:
 - !private ["Sa", "count"]
 - !private ["Sa", "subscript"]
@@ -167,6 +169,7 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
+- !private ["10bounceOSCs25MotionHeaderTableViewCellC", "titleLabel"]
 - !private ["s17MutableCollectionP", "count"]
 - !private ["s17MutableCollectionP", "row"]
 - !private ["s17MutableCollectionP", "section"]
@@ -191,11 +194,13 @@ depends-member:
 - ["So8NSObjectC", "CGFloat"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "MotionHeaderTableViewCell"]
 - !private ["So8NSObjectC", "SensorTableViewCell"]
 - !private ["So8NSObjectC", "SliderTableViewCell"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "UITableView"]
 - ["So8NSObjectC", "UITableViewCell"]
+- ["So8NSObjectC", "UIView"]
 - !private ["So8NSObjectC", "dequeueReusableCell"]
 - ["So8NSObjectC", "didReceiveMemoryWarning"]
 - ["So8NSObjectC", "init"]
@@ -240,11 +245,13 @@ depends-member:
 - ["10bounceOSCs26SensorsTableViewControllerC", "CGFloat"]
 - ["10bounceOSCs26SensorsTableViewControllerC", "IndexPath"]
 - ["10bounceOSCs26SensorsTableViewControllerC", "Int"]
+- !private ["10bounceOSCs26SensorsTableViewControllerC", "MotionHeaderTableViewCell"]
 - !private ["10bounceOSCs26SensorsTableViewControllerC", "SensorTableViewCell"]
 - !private ["10bounceOSCs26SensorsTableViewControllerC", "SliderTableViewCell"]
 - ["10bounceOSCs26SensorsTableViewControllerC", "String"]
 - ["10bounceOSCs26SensorsTableViewControllerC", "UITableView"]
 - ["10bounceOSCs26SensorsTableViewControllerC", "UITableViewCell"]
+- ["10bounceOSCs26SensorsTableViewControllerC", "UIView"]
 - ["10bounceOSCs26SensorsTableViewControllerC", "deinit"]
 - ["10bounceOSCs26SensorsTableViewControllerC", "didReceiveMemoryWarning"]
 - ["10bounceOSCs26SensorsTableViewControllerC", "init"]
@@ -330,11 +337,13 @@ depends-member:
 - ["So11UIResponderC", "CGFloat"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
+- !private ["So11UIResponderC", "MotionHeaderTableViewCell"]
 - !private ["So11UIResponderC", "SensorTableViewCell"]
 - !private ["So11UIResponderC", "SliderTableViewCell"]
 - ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "UITableView"]
 - ["So11UIResponderC", "UITableViewCell"]
+- ["So11UIResponderC", "UIView"]
 - !private ["So11UIResponderC", "dequeueReusableCell"]
 - ["So11UIResponderC", "didReceiveMemoryWarning"]
 - ["So11UIResponderC", "init"]
@@ -377,11 +386,13 @@ depends-member:
 - ["So21UITableViewControllerC", "CGFloat"]
 - ["So21UITableViewControllerC", "IndexPath"]
 - ["So21UITableViewControllerC", "Int"]
+- !private ["So21UITableViewControllerC", "MotionHeaderTableViewCell"]
 - !private ["So21UITableViewControllerC", "SensorTableViewCell"]
 - !private ["So21UITableViewControllerC", "SliderTableViewCell"]
 - ["So21UITableViewControllerC", "String"]
 - ["So21UITableViewControllerC", "UITableView"]
 - ["So21UITableViewControllerC", "UITableViewCell"]
+- ["So21UITableViewControllerC", "UIView"]
 - ["So21UITableViewControllerC", ""]
 - ["So21UITableViewControllerC", "didReceiveMemoryWarning"]
 - ["So21UITableViewControllerC", "init"]
@@ -420,11 +431,13 @@ depends-member:
 - ["So16UIViewControllerC", "CGFloat"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
+- !private ["So16UIViewControllerC", "MotionHeaderTableViewCell"]
 - !private ["So16UIViewControllerC", "SensorTableViewCell"]
 - !private ["So16UIViewControllerC", "SliderTableViewCell"]
 - ["So16UIViewControllerC", "String"]
 - ["So16UIViewControllerC", "UITableView"]
 - ["So16UIViewControllerC", "UITableViewCell"]
+- ["So16UIViewControllerC", "UIView"]
 - ["So16UIViewControllerC", "didReceiveMemoryWarning"]
 - ["So16UIViewControllerC", "init"]
 - ["So16UIViewControllerC", "numberOfSections"]
@@ -490,6 +503,7 @@ depends-nominal:
 - !private "10Foundation9IndexPathV"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
+- !private "10bounceOSCs25MotionHeaderTableViewCellC"
 - !private "s17MutableCollectionP"
 - "So8NSCodingP"
 - "So26NSExtensionRequestHandlingP"
@@ -736,4 +750,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-interface-hash: "e82e1e9428e75405b229f59d4a5d8bba"
+interface-hash: "2af4c05894c27b07ca7f109652149b3f"

@@ -65,13 +65,21 @@ class SensorsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sections[section]
     }
+
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         var h: CGFloat = 77.0
         if(indexPath.section == 2 && indexPath.row == 1) {h = 140.0}
         return h
     }
 
-    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let header = tableView.dequeueReusableCell(withIdentifier: "motionHeaderCell") as! MotionHeaderTableViewCell
+
+        header.titleLabel.text = sections[section]
+        
+        return header
+    }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         //TouchTableViewCell
