@@ -11,7 +11,7 @@ import CoreMotion
 
 //• argh for now global
 let motionManager: CMMotionManager = CMMotionManager()
-var referenceAttitude: CMAttitude? = CMAttitude()
+var referenceAttitude: CMAttitude? = nil
 
 class MotionSensor {
     
@@ -25,17 +25,19 @@ class MotionSensor {
     }
     
     func setReference() {
-        if((motionManager.deviceMotion) != nil){
-            referenceAttitude = motionManager.deviceMotion?.attitude
+        
+        // block and wait for device to wake up
+        while((motionManager.deviceMotion) == nil){
+            print("waiting for device..")
         }
+        referenceAttitude = motionManager.deviceMotion?.attitude
     }
     
     func getAttitude() -> CMAttitude? {
         
-//        if (referenceAttitude != nil) {
-////            motionManager.deviceMotion?.attitude.multiply(byInverseOf: referenceAttitude)
-//            print(referenceAttitude ?? 0)
-//        }
+        if let lref = referenceAttitude {
+            motionManager.deviceMotion?.attitude.multiply(byInverseOf: lref)
+        }
         return motionManager.deviceMotion?.attitude
     }
 }

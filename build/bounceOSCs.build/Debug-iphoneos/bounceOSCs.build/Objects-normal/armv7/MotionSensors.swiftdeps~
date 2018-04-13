@@ -25,7 +25,7 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "!="
-- !private "??"
+- !private "=="
 - "AccelSensor"
 - "Array"
 - "AssignmentPrecedence"
@@ -78,7 +78,7 @@ depends-member:
 - !private ["SC14CMAccelerationV", "x"]
 - !private ["SC14CMAccelerationV", "y"]
 - !private ["SC14CMAccelerationV", "z"]
-- ["So10CMAttitudeC", "init"]
+- !private ["So10CMAttitudeC", "multiply"]
 - !private ["So10CMAttitudeC", "pitch"]
 - !private ["So10CMAttitudeC", "quaternion"]
 - !private ["So10CMAttitudeC", "roll"]
@@ -118,6 +118,7 @@ depends-member:
 - !private ["s7CVarArgP", "deviceMotionUpdateInterval"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isDeviceMotionAvailable"]
+- !private ["s7CVarArgP", "multiply"]
 - !private ["s7CVarArgP", "pitch"]
 - !private ["s7CVarArgP", "quaternion"]
 - !private ["s7CVarArgP", "roll"]
@@ -137,6 +138,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "deviceMotionUpdateInterval"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isDeviceMotionAvailable"]
+- !private ["s28CustomDebugStringConvertibleP", "multiply"]
 - !private ["s28CustomDebugStringConvertibleP", "pitch"]
 - !private ["s28CustomDebugStringConvertibleP", "quaternion"]
 - !private ["s28CustomDebugStringConvertibleP", "roll"]
@@ -159,6 +161,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "deviceMotionUpdateInterval"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isDeviceMotionAvailable"]
+- !private ["s23CustomStringConvertibleP", "multiply"]
 - !private ["s23CustomStringConvertibleP", "pitch"]
 - !private ["s23CustomStringConvertibleP", "quaternion"]
 - !private ["s23CustomStringConvertibleP", "roll"]
@@ -183,6 +186,7 @@ depends-member:
 - !private ["s9EquatableP", "deviceMotionUpdateInterval"]
 - ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "isDeviceMotionAvailable"]
+- !private ["s9EquatableP", "multiply"]
 - !private ["s9EquatableP", "pitch"]
 - !private ["s9EquatableP", "quaternion"]
 - !private ["s9EquatableP", "roll"]
@@ -204,6 +208,7 @@ depends-member:
 - !private ["s8HashableP", "deviceMotionUpdateInterval"]
 - ["s8HashableP", "init"]
 - !private ["s8HashableP", "isDeviceMotionAvailable"]
+- !private ["s8HashableP", "multiply"]
 - !private ["s8HashableP", "pitch"]
 - !private ["s8HashableP", "quaternion"]
 - !private ["s8HashableP", "roll"]
@@ -237,7 +242,7 @@ depends-member:
 - !private ["s17MutableCollectionP", "compactMap"]
 - !private ["s17MutableCollectionP", "subscript"]
 - !private ["So8NSCodingP", "attitude"]
-- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "multiply"]
 - !private ["So8NSCodingP", "pitch"]
 - !private ["So8NSCodingP", "quaternion"]
 - !private ["So8NSCodingP", "roll"]
@@ -246,7 +251,7 @@ depends-member:
 - !private ["So8NSCodingP", "userAcceleration"]
 - !private ["So8NSCodingP", "yaw"]
 - !private ["So9NSCopyingP", "attitude"]
-- ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "multiply"]
 - !private ["So9NSCopyingP", "pitch"]
 - !private ["So9NSCopyingP", "quaternion"]
 - !private ["So9NSCopyingP", "roll"]
@@ -259,6 +264,7 @@ depends-member:
 - !private ["So8NSObjectC", "deviceMotionUpdateInterval"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "isDeviceMotionAvailable"]
+- !private ["So8NSObjectC", "multiply"]
 - !private ["So8NSObjectC", "pitch"]
 - !private ["So8NSObjectC", "quaternion"]
 - !private ["So8NSObjectC", "roll"]
@@ -272,6 +278,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "deviceMotionUpdateInterval"]
 - ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "isDeviceMotionAvailable"]
+- !private ["So16NSObjectProtocolP", "multiply"]
 - !private ["So16NSObjectProtocolP", "pitch"]
 - !private ["So16NSObjectProtocolP", "quaternion"]
 - !private ["So16NSObjectProtocolP", "roll"]
@@ -281,7 +288,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "userAcceleration"]
 - !private ["So16NSObjectProtocolP", "yaw"]
 - !private ["So14NSSecureCodingP", "attitude"]
-- ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "multiply"]
 - !private ["So14NSSecureCodingP", "pitch"]
 - !private ["So14NSSecureCodingP", "quaternion"]
 - !private ["So14NSSecureCodingP", "roll"]
@@ -362,6 +369,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "deviceMotionUpdateInterval"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isDeviceMotionAvailable"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "multiply"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "pitch"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "quaternion"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "roll"]
@@ -382,7 +390,7 @@ depends-nominal:
 - !private "s23BidirectionalCollectionP"
 - !private "Sb"
 - !private "SC14CMAccelerationV"
-- "So10CMAttitudeC"
+- !private "So10CMAttitudeC"
 - !private "So14CMDeviceMotionC"
 - !private "So9CMLogItemC"
 - "So15CMMotionManagerC"
@@ -409,11 +417,11 @@ depends-nominal:
 - !private "s10MirrorPathP"
 - "10bounceOSCs12MotionSensorC"
 - !private "s17MutableCollectionP"
-- "So8NSCodingP"
-- "So9NSCopyingP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
-- "So14NSSecureCodingP"
+- !private "So14NSSecureCodingP"
 - !private "8AudioKit10OccupiableP"
 - "10bounceOSCs16QuaternionSensorC"
 - !private "s22RandomAccessCollectionP"
@@ -626,4 +634,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-interface-hash: "1a7a92c93285a51a16209cd5a808ecc6"
+interface-hash: "b3286624c1c74b79981b8c533185a9a8"
