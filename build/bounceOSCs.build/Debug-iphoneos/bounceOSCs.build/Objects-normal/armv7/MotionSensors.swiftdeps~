@@ -80,6 +80,7 @@ depends-member:
 - !private ["SC14CMAccelerationV", "x"]
 - !private ["SC14CMAccelerationV", "y"]
 - !private ["SC14CMAccelerationV", "z"]
+- !private ["So10CMAttitudeC", "multiply"]
 - !private ["So10CMAttitudeC", "pitch"]
 - !private ["So10CMAttitudeC", "quaternion"]
 - !private ["So10CMAttitudeC", "roll"]
@@ -93,9 +94,10 @@ depends-member:
 - !private ["So9CMLogItemC", "userAcceleration"]
 - !private ["So15CMMotionManagerC", "deviceMotion"]
 - !private ["So15CMMotionManagerC", "deviceMotionUpdateInterval"]
-- ["So15CMMotionManagerC", "init"]
+- !private ["So15CMMotionManagerC", "init"]
 - !private ["So15CMMotionManagerC", "isDeviceMotionAvailable"]
 - !private ["So15CMMotionManagerC", "startDeviceMotionUpdates"]
+- !private ["So15CMMotionManagerC", "stopDeviceMotionUpdates"]
 - !private ["SC12CMQuaternionV", "w"]
 - !private ["SC12CMQuaternionV", "x"]
 - !private ["SC12CMQuaternionV", "y"]
@@ -119,14 +121,16 @@ depends-member:
 - !private ["s7CVarArgP", "default"]
 - !private ["s7CVarArgP", "deviceMotion"]
 - !private ["s7CVarArgP", "deviceMotionUpdateInterval"]
-- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isDeviceMotionAvailable"]
+- !private ["s7CVarArgP", "multiply"]
 - !private ["s7CVarArgP", "pitch"]
 - !private ["s7CVarArgP", "quaternion"]
 - !private ["s7CVarArgP", "roll"]
 - !private ["s7CVarArgP", "rotationMatrix"]
 - !private ["s7CVarArgP", "rotationRate"]
 - !private ["s7CVarArgP", "startDeviceMotionUpdates"]
+- !private ["s7CVarArgP", "stopDeviceMotionUpdates"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "userAcceleration"]
 - !private ["s7CVarArgP", "yaw"]
@@ -141,14 +145,16 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "default"]
 - !private ["s28CustomDebugStringConvertibleP", "deviceMotion"]
 - !private ["s28CustomDebugStringConvertibleP", "deviceMotionUpdateInterval"]
-- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isDeviceMotionAvailable"]
+- !private ["s28CustomDebugStringConvertibleP", "multiply"]
 - !private ["s28CustomDebugStringConvertibleP", "pitch"]
 - !private ["s28CustomDebugStringConvertibleP", "quaternion"]
 - !private ["s28CustomDebugStringConvertibleP", "roll"]
 - !private ["s28CustomDebugStringConvertibleP", "rotationMatrix"]
 - !private ["s28CustomDebugStringConvertibleP", "rotationRate"]
 - !private ["s28CustomDebugStringConvertibleP", "startDeviceMotionUpdates"]
+- !private ["s28CustomDebugStringConvertibleP", "stopDeviceMotionUpdates"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "userAcceleration"]
 - !private ["s28CustomDebugStringConvertibleP", "yaw"]
@@ -167,14 +173,16 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "default"]
 - !private ["s23CustomStringConvertibleP", "deviceMotion"]
 - !private ["s23CustomStringConvertibleP", "deviceMotionUpdateInterval"]
-- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isDeviceMotionAvailable"]
+- !private ["s23CustomStringConvertibleP", "multiply"]
 - !private ["s23CustomStringConvertibleP", "pitch"]
 - !private ["s23CustomStringConvertibleP", "quaternion"]
 - !private ["s23CustomStringConvertibleP", "roll"]
 - !private ["s23CustomStringConvertibleP", "rotationMatrix"]
 - !private ["s23CustomStringConvertibleP", "rotationRate"]
 - !private ["s23CustomStringConvertibleP", "startDeviceMotionUpdates"]
+- !private ["s23CustomStringConvertibleP", "stopDeviceMotionUpdates"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "userAcceleration"]
 - !private ["s23CustomStringConvertibleP", "yaw"]
@@ -194,14 +202,16 @@ depends-member:
 - !private ["s9EquatableP", "default"]
 - !private ["s9EquatableP", "deviceMotion"]
 - !private ["s9EquatableP", "deviceMotionUpdateInterval"]
-- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "isDeviceMotionAvailable"]
+- !private ["s9EquatableP", "multiply"]
 - !private ["s9EquatableP", "pitch"]
 - !private ["s9EquatableP", "quaternion"]
 - !private ["s9EquatableP", "roll"]
 - !private ["s9EquatableP", "rotationMatrix"]
 - !private ["s9EquatableP", "rotationRate"]
 - !private ["s9EquatableP", "startDeviceMotionUpdates"]
+- !private ["s9EquatableP", "stopDeviceMotionUpdates"]
 - !private ["s9EquatableP", "subscript"]
 - !private ["s9EquatableP", "userAcceleration"]
 - !private ["s9EquatableP", "yaw"]
@@ -218,14 +228,16 @@ depends-member:
 - !private ["s8HashableP", "default"]
 - !private ["s8HashableP", "deviceMotion"]
 - !private ["s8HashableP", "deviceMotionUpdateInterval"]
-- ["s8HashableP", "init"]
+- !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "isDeviceMotionAvailable"]
+- !private ["s8HashableP", "multiply"]
 - !private ["s8HashableP", "pitch"]
 - !private ["s8HashableP", "quaternion"]
 - !private ["s8HashableP", "roll"]
 - !private ["s8HashableP", "rotationMatrix"]
 - !private ["s8HashableP", "rotationRate"]
 - !private ["s8HashableP", "startDeviceMotionUpdates"]
+- !private ["s8HashableP", "stopDeviceMotionUpdates"]
 - !private ["s8HashableP", "userAcceleration"]
 - !private ["s8HashableP", "yaw"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
@@ -234,6 +246,7 @@ depends-member:
 - ["10bounceOSCs12MotionSensorC", "Array"]
 - !private ["10bounceOSCs12MotionSensorC", "CMAcceleration"]
 - ["10bounceOSCs12MotionSensorC", "CMAttitude"]
+- !private ["10bounceOSCs12MotionSensorC", "CMMotionManager"]
 - !private ["10bounceOSCs12MotionSensorC", "CMQuaternion"]
 - !private ["10bounceOSCs12MotionSensorC", "CMRotationMatrix"]
 - !private ["10bounceOSCs12MotionSensorC", "CMRotationRate"]
@@ -242,10 +255,12 @@ depends-member:
 - !private ["10bounceOSCs12MotionSensorC", "NotificationCenter"]
 - ["10bounceOSCs12MotionSensorC", "String"]
 - ["10bounceOSCs12MotionSensorC", ""]
+- ["10bounceOSCs12MotionSensorC", "bootMotionManager"]
 - ["10bounceOSCs12MotionSensorC", "deinit"]
 - ["10bounceOSCs12MotionSensorC", "getAttitude"]
 - ["10bounceOSCs12MotionSensorC", "getData"]
 - ["10bounceOSCs12MotionSensorC", "init"]
+- ["10bounceOSCs12MotionSensorC", "killMotionManager"]
 - ["10bounceOSCs12MotionSensorC", "midiData"]
 - !private ["10bounceOSCs12MotionSensorC", "motionManager"]
 - ["10bounceOSCs12MotionSensorC", "oscData"]
@@ -255,6 +270,7 @@ depends-member:
 - !private ["s17MutableCollectionP", "compactMap"]
 - !private ["s17MutableCollectionP", "subscript"]
 - !private ["So8NSCodingP", "attitude"]
+- !private ["So8NSCodingP", "multiply"]
 - !private ["So8NSCodingP", "pitch"]
 - !private ["So8NSCodingP", "quaternion"]
 - !private ["So8NSCodingP", "roll"]
@@ -263,6 +279,7 @@ depends-member:
 - !private ["So8NSCodingP", "userAcceleration"]
 - !private ["So8NSCodingP", "yaw"]
 - !private ["So9NSCopyingP", "attitude"]
+- !private ["So9NSCopyingP", "multiply"]
 - !private ["So9NSCopyingP", "pitch"]
 - !private ["So9NSCopyingP", "quaternion"]
 - !private ["So9NSCopyingP", "roll"]
@@ -275,14 +292,16 @@ depends-member:
 - !private ["So8NSObjectC", "default"]
 - !private ["So8NSObjectC", "deviceMotion"]
 - !private ["So8NSObjectC", "deviceMotionUpdateInterval"]
-- ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "isDeviceMotionAvailable"]
+- !private ["So8NSObjectC", "multiply"]
 - !private ["So8NSObjectC", "pitch"]
 - !private ["So8NSObjectC", "quaternion"]
 - !private ["So8NSObjectC", "roll"]
 - !private ["So8NSObjectC", "rotationMatrix"]
 - !private ["So8NSObjectC", "rotationRate"]
 - !private ["So8NSObjectC", "startDeviceMotionUpdates"]
+- !private ["So8NSObjectC", "stopDeviceMotionUpdates"]
 - !private ["So8NSObjectC", "userAcceleration"]
 - !private ["So8NSObjectC", "yaw"]
 - !private ["So16NSObjectProtocolP", "addObserver"]
@@ -290,17 +309,20 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "default"]
 - !private ["So16NSObjectProtocolP", "deviceMotion"]
 - !private ["So16NSObjectProtocolP", "deviceMotionUpdateInterval"]
-- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "isDeviceMotionAvailable"]
+- !private ["So16NSObjectProtocolP", "multiply"]
 - !private ["So16NSObjectProtocolP", "pitch"]
 - !private ["So16NSObjectProtocolP", "quaternion"]
 - !private ["So16NSObjectProtocolP", "roll"]
 - !private ["So16NSObjectProtocolP", "rotationMatrix"]
 - !private ["So16NSObjectProtocolP", "rotationRate"]
 - !private ["So16NSObjectProtocolP", "startDeviceMotionUpdates"]
+- !private ["So16NSObjectProtocolP", "stopDeviceMotionUpdates"]
 - !private ["So16NSObjectProtocolP", "userAcceleration"]
 - !private ["So16NSObjectProtocolP", "yaw"]
 - !private ["So14NSSecureCodingP", "attitude"]
+- !private ["So14NSSecureCodingP", "multiply"]
 - !private ["So14NSSecureCodingP", "pitch"]
 - !private ["So14NSSecureCodingP", "quaternion"]
 - !private ["So14NSSecureCodingP", "roll"]
@@ -393,14 +415,16 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "deviceMotion"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "deviceMotionUpdateInterval"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isDeviceMotionAvailable"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "multiply"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "pitch"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "quaternion"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "roll"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rotationMatrix"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rotationRate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "startDeviceMotionUpdates"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "stopDeviceMotionUpdates"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "userAcceleration"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "yaw"]
 - !private ["s21_ObjectiveCBridgeableP", "Name"]
@@ -420,34 +444,34 @@ depends-nominal:
 - !private "So10CMAttitudeC"
 - !private "So14CMDeviceMotionC"
 - !private "So9CMLogItemC"
-- "So15CMMotionManagerC"
+- !private "So15CMMotionManagerC"
 - !private "SC12CMQuaternionV"
 - !private "SC16CMRotationMatrixV"
 - !private "SC14CMRotationRateV"
-- "s7CVarArgP"
+- !private "s7CVarArgP"
 - !private "s10CollectionP"
 - !private "s10ComparableP"
-- "s28CustomDebugStringConvertibleP"
+- !private "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
-- "s23CustomStringConvertibleP"
+- !private "s23CustomStringConvertibleP"
 - !private "s9DecodableP"
 - !private "s9EncodableP"
-- "s9EquatableP"
+- !private "s9EquatableP"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- "s8HashableP"
+- !private "s8HashableP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - "10bounceOSCs12MotionSensorC"
 - !private "s17MutableCollectionP"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
-- "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- !private "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
 - !private "So14NSNotificationC4NameV"
 - !private "10Foundation12NotificationV"
@@ -475,7 +499,7 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s20_SwiftNewtypeWrapperP"
 - !private "s16_SwiftStringViewP"
@@ -667,4 +691,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-interface-hash: "5ff3b9b5b663723a87aad68d35655d17"
+interface-hash: "4f9a2e3ab6398985fa53556ea73179fd"

@@ -10,35 +10,59 @@ import Foundation
 import CoreMotion
 
 //• argh for now global
-let motionManager: CMMotionManager = CMMotionManager()
-var referenceAttitude: CMAttitude? = nil
+var motionManager: CMMotionManager?
+var referenceAttitude: CMAttitude?
 
 class MotionSensor {
 
     init() {
 
-        if(motionManager.isDeviceMotionAvailable){
-            motionManager.deviceMotionUpdateInterval = 0.03
-            motionManager.startDeviceMotionUpdates()
-            setReference()
+        reset()
+        
+    }
+    func bootMotionManager() {
+        
+        if motionManager == nil {
+            motionManager = CMMotionManager()
+        }
+
+        motionManager?.deviceMotionUpdateInterval = 0.03
+        motionManager?.startDeviceMotionUpdates()
+
+    }
+    
+    func killMotionManager(){
+
+        referenceAttitude = nil
+        
+        if motionManager != nil {
+            motionManager?.stopDeviceMotionUpdates()
+            motionManager = nil
         }
     }
-    func setReference() {
+    func reset() {
         
+        killMotionManager()
+
+        bootMotionManager()
+
         // block and wait for device to wake up
-        while((motionManager.deviceMotion) == nil){
+        while((motionManager?.deviceMotion) == nil){
             print("waiting for device..")
         }
-        referenceAttitude = motionManager.deviceMotion?.attitude
+        referenceAttitude = motionManager?.deviceMotion?.attitude
         print("device reference attitude \(referenceAttitude?.quaternion) set.")
+    
     }
     
     func getAttitude() -> CMAttitude? {
         
         if(referenceAttitude != nil) {
-            motionManager.deviceMotion?.attitude.multiply(byInverseOf: referenceAttitude!)
+            motionManager?.deviceMotion?.attitude.multiply(byInverseOf: referenceAttitude!)
         }
-        return motionManager.deviceMotion?.attitude
+        print(referenceAttitude)
+        print(motionManager?.deviceMotion?.attitude)
+        return motionManager?.deviceMotion?.attitude
     }
 }
 
@@ -47,8 +71,8 @@ class RotationRateSensor : MotionSensor, SensorProtocol {
     
     func getData() -> Array<Double> {
         
-        if((motionManager.deviceMotion) != nil){
-            let rotationRate: CMRotationRate = (motionManager.deviceMotion?.rotationRate)!
+        if((motionManager?.deviceMotion) != nil){
+            let rotationRate: CMRotationRate = (motionManager!.deviceMotion?.rotationRate)!
             return [rotationRate.x,rotationRate.y,rotationRate.z]
         }
         return [0]
@@ -68,7 +92,7 @@ class AttitudeSensor : MotionSensor, SensorProtocol {
     
     func getData() -> Array<Double> {
         
-        if((motionManager.deviceMotion) != nil){
+        if((motionManager?.deviceMotion) != nil){
             let attitude: CMAttitude = getAttitude()!//(motionManager.deviceMotion?.attitude)!
             return [attitude.pitch,attitude.roll,attitude.yaw]
         }
@@ -88,7 +112,7 @@ class RotationMatrixSensor : MotionSensor, SensorProtocol {
     
     func getData() -> Array<Double> {
         
-        if((motionManager.deviceMotion) != nil){
+        if((motionManager?.deviceMotion) != nil){
             let attitude: CMAttitude = getAttitude()!//(motionManager.deviceMotion?.attitude)!
             let m: CMRotationMatrix = attitude.rotationMatrix
             //print([attitude.pitch,attitude.roll,attitude.yaw].map{$0 * (180.0 / Double.pi) + 180.0})
@@ -114,8 +138,8 @@ class AccelSensor : MotionSensor, SensorProtocol {
     
     func getData() -> Array<Double> {
         
-        if((motionManager.deviceMotion) != nil){
-            let accel: CMAcceleration = (motionManager.deviceMotion?.userAcceleration)!
+        if((motionManager?.deviceMotion) != nil){
+            let accel: CMAcceleration = (motionManager!.deviceMotion?.userAcceleration)!
             return [accel.x,accel.y,accel.z]
         }
         return [0]
@@ -137,14 +161,14 @@ class QuaternionSensor : MotionSensor, SensorProtocol {
         super.init()
         
         NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "motionReset"), object: nil, queue: nil) { n in
-            self.setReference()
+            self.reset()
         }
         
     }
 
     func getData() -> Array<Double> {
         
-        if((motionManager.deviceMotion) != nil){
+        if((motionManager?.deviceMotion) != nil){
             let attitude: CMAttitude = getAttitude()!//(motionManager.deviceMotion?.attitude)!
             let q: CMQuaternion = attitude.quaternion
             return [q.w,q.x,q.y,q.z]
