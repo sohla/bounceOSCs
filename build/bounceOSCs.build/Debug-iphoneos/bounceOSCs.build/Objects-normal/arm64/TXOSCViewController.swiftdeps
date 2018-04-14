@@ -1,0 +1,1053 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TXOSCViewController"
+- "Stored"
+- "ipAddressTextFieldDelegate"
+- "portTextFieldDelegate"
+provides-nominal:
+- "10bounceOSCs19TXOSCViewControllerC"
+- "10bounceOSCs6StoredP"
+- "10bounceOSCs26ipAddressTextFieldDelegateC"
+- "10bounceOSCs21portTextFieldDelegateC"
+provides-member:
+- ["10bounceOSCs19TXOSCViewControllerC", ""]
+- ["10bounceOSCs6StoredP", ""]
+- ["10bounceOSCs26ipAddressTextFieldDelegateC", ""]
+- ["10bounceOSCs21portTextFieldDelegateC", ""]
+provides-dynamic-lookup:
+- "didReceiveMemoryWarning"
+- "ipAddressTextField"
+- "portTextField"
+- "textFieldDidEndEditing"
+- "textFieldShouldBeginEditing"
+- "textFieldShouldEndEditing"
+- "textFieldShouldReturn"
+- "unwindFromModalViewController"
+- "viewDidLoad"
+depends-top-level:
+- !private "&&"
+- !private "<"
+- !private "=="
+- !private ">="
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "Dictionary"
+- !private "Int"
+- "NSObject"
+- !private "Notification"
+- !private "NotificationCenter"
+- !private "Pantry"
+- "Stored"
+- "String"
+- !private "StringLiteralType"
+- "TXOSCViewController"
+- "UIStoryboardSegue"
+- "UITextField"
+- "UITextFieldDelegate"
+- "UIViewController"
+- !private "UInt16"
+- !private "UnicodeScalarType"
+- "ipAddressTextFieldDelegate"
+- "portTextFieldDelegate"
+depends-member:
+- !private ["8AudioKit11AKParameterP", "init"]
+- !private ["Sa", "compactMap"]
+- !private ["Sa", "count"]
+- !private ["Sa", "filter"]
+- !private ["s23BidirectionalCollectionP", "compactMap"]
+- !private ["s23BidirectionalCollectionP", "components"]
+- !private ["s23BidirectionalCollectionP", "count"]
+- !private ["s23BidirectionalCollectionP", "filter"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s13BinaryIntegerP", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "delegate"]
+- !private ["So15CALayerDelegateP", "resignFirstResponder"]
+- !private ["So15CALayerDelegateP", "text"]
+- !private ["s7CVarArgP", "Int"]
+- !private ["s7CVarArgP", "Notification"]
+- !private ["s7CVarArgP", "NotificationCenter"]
+- !private ["s7CVarArgP", "Pantry"]
+- !private ["s7CVarArgP", "UInt16"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "compactMap"]
+- !private ["s7CVarArgP", "components"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "didReceiveMemoryWarning"]
+- !private ["s7CVarArgP", "filter"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "ipAddressDelegate"]
+- !private ["s7CVarArgP", "ipAddressTextField"]
+- ["s7CVarArgP", "ipAddressTextFieldDelegate"]
+- !private ["s7CVarArgP", "isValidIP"]
+- !private ["s7CVarArgP", "isValidPort"]
+- !private ["s7CVarArgP", "portDelegate"]
+- !private ["s7CVarArgP", "portTextField"]
+- ["s7CVarArgP", "portTextFieldDelegate"]
+- !private ["s7CVarArgP", "post"]
+- !private ["s7CVarArgP", "resignFirstResponder"]
+- ["s7CVarArgP", "save"]
+- !private ["s7CVarArgP", "text"]
+- ["s7CVarArgP", "textField"]
+- ["s7CVarArgP", "textFieldDidBeginEditing"]
+- ["s7CVarArgP", "textFieldDidEndEditing"]
+- ["s7CVarArgP", "textFieldShouldBeginEditing"]
+- ["s7CVarArgP", "textFieldShouldClear"]
+- ["s7CVarArgP", "textFieldShouldEndEditing"]
+- ["s7CVarArgP", "textFieldShouldReturn"]
+- !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s10CollectionP", "compactMap"]
+- !private ["s10CollectionP", "components"]
+- !private ["s10CollectionP", "count"]
+- !private ["s10CollectionP", "filter"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10ComparableP", "components"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Int"]
+- !private ["s28CustomDebugStringConvertibleP", "Name"]
+- !private ["s28CustomDebugStringConvertibleP", "Notification"]
+- !private ["s28CustomDebugStringConvertibleP", "NotificationCenter"]
+- !private ["s28CustomDebugStringConvertibleP", "Pantry"]
+- !private ["s28CustomDebugStringConvertibleP", "UInt16"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "compactMap"]
+- !private ["s28CustomDebugStringConvertibleP", "components"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s28CustomDebugStringConvertibleP", "filter"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "ipAddressDelegate"]
+- !private ["s28CustomDebugStringConvertibleP", "ipAddressTextField"]
+- ["s28CustomDebugStringConvertibleP", "ipAddressTextFieldDelegate"]
+- !private ["s28CustomDebugStringConvertibleP", "isValidIP"]
+- !private ["s28CustomDebugStringConvertibleP", "isValidPort"]
+- !private ["s28CustomDebugStringConvertibleP", "portDelegate"]
+- !private ["s28CustomDebugStringConvertibleP", "portTextField"]
+- ["s28CustomDebugStringConvertibleP", "portTextFieldDelegate"]
+- !private ["s28CustomDebugStringConvertibleP", "post"]
+- !private ["s28CustomDebugStringConvertibleP", "resignFirstResponder"]
+- ["s28CustomDebugStringConvertibleP", "save"]
+- !private ["s28CustomDebugStringConvertibleP", "text"]
+- ["s28CustomDebugStringConvertibleP", "textField"]
+- ["s28CustomDebugStringConvertibleP", "textFieldDidBeginEditing"]
+- ["s28CustomDebugStringConvertibleP", "textFieldDidEndEditing"]
+- ["s28CustomDebugStringConvertibleP", "textFieldShouldBeginEditing"]
+- ["s28CustomDebugStringConvertibleP", "textFieldShouldClear"]
+- ["s28CustomDebugStringConvertibleP", "textFieldShouldEndEditing"]
+- ["s28CustomDebugStringConvertibleP", "textFieldShouldReturn"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "components"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "Name"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "compactMap"]
+- !private ["s17CustomReflectableP", "components"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "filter"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "Int"]
+- !private ["s23CustomStringConvertibleP", "Name"]
+- !private ["s23CustomStringConvertibleP", "Notification"]
+- !private ["s23CustomStringConvertibleP", "NotificationCenter"]
+- !private ["s23CustomStringConvertibleP", "Pantry"]
+- !private ["s23CustomStringConvertibleP", "UInt16"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "compactMap"]
+- !private ["s23CustomStringConvertibleP", "components"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
+- !private ["s23CustomStringConvertibleP", "filter"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "ipAddressDelegate"]
+- !private ["s23CustomStringConvertibleP", "ipAddressTextField"]
+- ["s23CustomStringConvertibleP", "ipAddressTextFieldDelegate"]
+- !private ["s23CustomStringConvertibleP", "isValidIP"]
+- !private ["s23CustomStringConvertibleP", "isValidPort"]
+- !private ["s23CustomStringConvertibleP", "portDelegate"]
+- !private ["s23CustomStringConvertibleP", "portTextField"]
+- ["s23CustomStringConvertibleP", "portTextFieldDelegate"]
+- !private ["s23CustomStringConvertibleP", "post"]
+- !private ["s23CustomStringConvertibleP", "resignFirstResponder"]
+- ["s23CustomStringConvertibleP", "save"]
+- !private ["s23CustomStringConvertibleP", "text"]
+- ["s23CustomStringConvertibleP", "textField"]
+- ["s23CustomStringConvertibleP", "textFieldDidBeginEditing"]
+- ["s23CustomStringConvertibleP", "textFieldDidEndEditing"]
+- ["s23CustomStringConvertibleP", "textFieldShouldBeginEditing"]
+- ["s23CustomStringConvertibleP", "textFieldShouldClear"]
+- ["s23CustomStringConvertibleP", "textFieldShouldEndEditing"]
+- ["s23CustomStringConvertibleP", "textFieldShouldReturn"]
+- !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "compactMap"]
+- !private ["s9DecodableP", "components"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "filter"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "compactMap"]
+- !private ["s9EncodableP", "components"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "filter"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EquatableP", "Int"]
+- !private ["s9EquatableP", "Name"]
+- !private ["s9EquatableP", "Notification"]
+- !private ["s9EquatableP", "NotificationCenter"]
+- !private ["s9EquatableP", "Pantry"]
+- !private ["s9EquatableP", "UInt16"]
+- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "compactMap"]
+- !private ["s9EquatableP", "components"]
+- !private ["s9EquatableP", "count"]
+- !private ["s9EquatableP", "default"]
+- !private ["s9EquatableP", "delegate"]
+- !private ["s9EquatableP", "didReceiveMemoryWarning"]
+- !private ["s9EquatableP", "filter"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "ipAddressDelegate"]
+- !private ["s9EquatableP", "ipAddressTextField"]
+- ["s9EquatableP", "ipAddressTextFieldDelegate"]
+- !private ["s9EquatableP", "isValidIP"]
+- !private ["s9EquatableP", "isValidPort"]
+- !private ["s9EquatableP", "portDelegate"]
+- !private ["s9EquatableP", "portTextField"]
+- ["s9EquatableP", "portTextFieldDelegate"]
+- !private ["s9EquatableP", "post"]
+- !private ["s9EquatableP", "resignFirstResponder"]
+- ["s9EquatableP", "save"]
+- !private ["s9EquatableP", "text"]
+- ["s9EquatableP", "textField"]
+- ["s9EquatableP", "textFieldDidBeginEditing"]
+- ["s9EquatableP", "textFieldDidEndEditing"]
+- ["s9EquatableP", "textFieldShouldBeginEditing"]
+- ["s9EquatableP", "textFieldShouldClear"]
+- ["s9EquatableP", "textFieldShouldEndEditing"]
+- ["s9EquatableP", "textFieldShouldReturn"]
+- !private ["s9EquatableP", "viewDidLoad"]
+- !private ["s25ExpressibleByArrayLiteralP", "compactMap"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "filter"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "components"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "components"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "components"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["s8HashableP", "Int"]
+- !private ["s8HashableP", "Name"]
+- !private ["s8HashableP", "Notification"]
+- !private ["s8HashableP", "NotificationCenter"]
+- !private ["s8HashableP", "Pantry"]
+- !private ["s8HashableP", "UInt16"]
+- ["s8HashableP", ""]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "components"]
+- !private ["s8HashableP", "default"]
+- !private ["s8HashableP", "delegate"]
+- !private ["s8HashableP", "didReceiveMemoryWarning"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "ipAddressDelegate"]
+- !private ["s8HashableP", "ipAddressTextField"]
+- ["s8HashableP", "ipAddressTextFieldDelegate"]
+- !private ["s8HashableP", "isValidIP"]
+- !private ["s8HashableP", "isValidPort"]
+- !private ["s8HashableP", "portDelegate"]
+- !private ["s8HashableP", "portTextField"]
+- ["s8HashableP", "portTextFieldDelegate"]
+- !private ["s8HashableP", "post"]
+- !private ["s8HashableP", "resignFirstResponder"]
+- ["s8HashableP", "save"]
+- !private ["s8HashableP", "text"]
+- ["s8HashableP", "textField"]
+- ["s8HashableP", "textFieldDidBeginEditing"]
+- ["s8HashableP", "textFieldDidEndEditing"]
+- ["s8HashableP", "textFieldShouldBeginEditing"]
+- ["s8HashableP", "textFieldShouldClear"]
+- ["s8HashableP", "textFieldShouldEndEditing"]
+- ["s8HashableP", "textFieldShouldReturn"]
+- !private ["s8HashableP", "viewDidLoad"]
+- !private ["Si", "init"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "components"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "components"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "compactMap"]
+- !private ["s17MutableCollectionP", "count"]
+- !private ["s17MutableCollectionP", "filter"]
+- !private ["So8NSCodingP", "Pantry"]
+- ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "components"]
+- !private ["So8NSCodingP", "delegate"]
+- !private ["So8NSCodingP", "didReceiveMemoryWarning"]
+- !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "ipAddressDelegate"]
+- !private ["So8NSCodingP", "ipAddressTextField"]
+- ["So8NSCodingP", "ipAddressTextFieldDelegate"]
+- !private ["So8NSCodingP", "portDelegate"]
+- !private ["So8NSCodingP", "portTextField"]
+- ["So8NSCodingP", "portTextFieldDelegate"]
+- !private ["So8NSCodingP", "resignFirstResponder"]
+- !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So9NSCopyingP", "components"]
+- !private ["So26NSExtensionRequestHandlingP", "Pantry"]
+- ["So26NSExtensionRequestHandlingP", ""]
+- !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
+- !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "ipAddressDelegate"]
+- !private ["So26NSExtensionRequestHandlingP", "ipAddressTextField"]
+- ["So26NSExtensionRequestHandlingP", "ipAddressTextFieldDelegate"]
+- !private ["So26NSExtensionRequestHandlingP", "portDelegate"]
+- !private ["So26NSExtensionRequestHandlingP", "portTextField"]
+- ["So26NSExtensionRequestHandlingP", "portTextFieldDelegate"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
+- !private ["So21NSItemProviderReadingP", "components"]
+- !private ["So21NSItemProviderWritingP", "components"]
+- !private ["So16NSMutableCopyingP", "components"]
+- ["So8NSObjectC", "Bool"]
+- !private ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "Notification"]
+- !private ["So8NSObjectC", "NotificationCenter"]
+- !private ["So8NSObjectC", "Pantry"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "UIStoryboardSegue"]
+- ["So8NSObjectC", "UITextField"]
+- !private ["So8NSObjectC", "UInt16"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "components"]
+- !private ["So8NSObjectC", "default"]
+- !private ["So8NSObjectC", "delegate"]
+- ["So8NSObjectC", "didReceiveMemoryWarning"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "ipAddressDelegate"]
+- ["So8NSObjectC", "ipAddressTextField"]
+- ["So8NSObjectC", "ipAddressTextFieldDelegate"]
+- ["So8NSObjectC", "isValidIP"]
+- ["So8NSObjectC", "isValidPort"]
+- ["So8NSObjectC", "portDelegate"]
+- ["So8NSObjectC", "portTextField"]
+- ["So8NSObjectC", "portTextFieldDelegate"]
+- !private ["So8NSObjectC", "post"]
+- !private ["So8NSObjectC", "resignFirstResponder"]
+- ["So8NSObjectC", "save"]
+- ["So8NSObjectC", "setipAddressTextField"]
+- !private ["So8NSObjectC", "text"]
+- ["So8NSObjectC", "textField"]
+- ["So8NSObjectC", "textFieldDidBeginEditing"]
+- ["So8NSObjectC", "textFieldDidEndEditing"]
+- ["So8NSObjectC", "textFieldShouldBeginEditing"]
+- ["So8NSObjectC", "textFieldShouldClear"]
+- ["So8NSObjectC", "textFieldShouldEndEditing"]
+- ["So8NSObjectC", "textFieldShouldReturn"]
+- ["So8NSObjectC", "unwindFromModalViewController"]
+- ["So8NSObjectC", "viewDidLoad"]
+- !private ["So16NSObjectProtocolP", "Int"]
+- !private ["So16NSObjectProtocolP", "Notification"]
+- !private ["So16NSObjectProtocolP", "NotificationCenter"]
+- !private ["So16NSObjectProtocolP", "Pantry"]
+- !private ["So16NSObjectProtocolP", "UInt16"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["So16NSObjectProtocolP", "components"]
+- !private ["So16NSObjectProtocolP", "default"]
+- !private ["So16NSObjectProtocolP", "delegate"]
+- !private ["So16NSObjectProtocolP", "didReceiveMemoryWarning"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "ipAddressDelegate"]
+- !private ["So16NSObjectProtocolP", "ipAddressTextField"]
+- ["So16NSObjectProtocolP", "ipAddressTextFieldDelegate"]
+- !private ["So16NSObjectProtocolP", "isValidIP"]
+- !private ["So16NSObjectProtocolP", "isValidPort"]
+- !private ["So16NSObjectProtocolP", "portDelegate"]
+- !private ["So16NSObjectProtocolP", "portTextField"]
+- ["So16NSObjectProtocolP", "portTextFieldDelegate"]
+- !private ["So16NSObjectProtocolP", "post"]
+- !private ["So16NSObjectProtocolP", "resignFirstResponder"]
+- ["So16NSObjectProtocolP", "save"]
+- !private ["So16NSObjectProtocolP", "text"]
+- ["So16NSObjectProtocolP", "textField"]
+- ["So16NSObjectProtocolP", "textFieldDidBeginEditing"]
+- ["So16NSObjectProtocolP", "textFieldDidEndEditing"]
+- ["So16NSObjectProtocolP", "textFieldShouldBeginEditing"]
+- ["So16NSObjectProtocolP", "textFieldShouldClear"]
+- ["So16NSObjectProtocolP", "textFieldShouldEndEditing"]
+- ["So16NSObjectProtocolP", "textFieldShouldReturn"]
+- !private ["So16NSObjectProtocolP", "viewDidLoad"]
+- !private ["So14NSSecureCodingP", "components"]
+- !private ["So8NSStringC", "components"]
+- !private ["So14NSNotificationC4NameV", "init"]
+- !private ["10Foundation12NotificationV", "Name"]
+- !private ["So18NotificationCenterC", "default"]
+- !private ["So18NotificationCenterC", "post"]
+- !private ["8AudioKit7NumericP", "init"]
+- !private ["s7NumericP", "init"]
+- !private ["8AudioKit10OccupiableP", "compactMap"]
+- !private ["8AudioKit10OccupiableP", "components"]
+- !private ["8AudioKit10OccupiableP", "count"]
+- !private ["8AudioKit10OccupiableP", "filter"]
+- !private ["8AudioKit10OccupiableP", "init"]
+- !private ["6PantryAAC", "pack"]
+- !private ["6PantryAAC", "unpack"]
+- !private ["s22RandomAccessCollectionP", "compactMap"]
+- !private ["s22RandomAccessCollectionP", "count"]
+- !private ["s22RandomAccessCollectionP", "filter"]
+- !private ["s26RangeReplaceableCollectionP", "compactMap"]
+- !private ["s26RangeReplaceableCollectionP", "components"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "filter"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s16RawRepresentableP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "Name"]
+- !private ["s8SequenceP", "compactMap"]
+- !private ["s8SequenceP", "components"]
+- !private ["s8SequenceP", "count"]
+- !private ["s8SequenceP", "filter"]
+- !private ["s8SequenceP", "init"]
+- !private ["s13SignedIntegerP", "init"]
+- !private ["s13SignedNumericP", "init"]
+- !private ["6Pantry19StorableDefaultTypeP", "_getBuiltinLogicValue"]
+- !private ["6Pantry19StorableDefaultTypeP", "components"]
+- !private ["6Pantry19StorableDefaultTypeP", "init"]
+- !private ["10bounceOSCs6StoredP", "Int"]
+- !private ["10bounceOSCs6StoredP", "Notification"]
+- !private ["10bounceOSCs6StoredP", "NotificationCenter"]
+- !private ["10bounceOSCs6StoredP", "Pantry"]
+- ["10bounceOSCs6StoredP", "String"]
+- ["10bounceOSCs6StoredP", ""]
+- ["10bounceOSCs6StoredP", "init"]
+- !private ["10bounceOSCs6StoredP", "isValidIP"]
+- ["10bounceOSCs6StoredP", "save"]
+- ["10bounceOSCs6StoredP", "textField"]
+- ["10bounceOSCs6StoredP", "textFieldDidBeginEditing"]
+- ["10bounceOSCs6StoredP", "textFieldDidEndEditing"]
+- ["10bounceOSCs6StoredP", "textFieldShouldBeginEditing"]
+- ["10bounceOSCs6StoredP", "textFieldShouldClear"]
+- ["10bounceOSCs6StoredP", "textFieldShouldEndEditing"]
+- ["10bounceOSCs6StoredP", "textFieldShouldReturn"]
+- !private ["s10StrideableP", "init"]
+- !private ["SS", "components"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "components"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["10bounceOSCs19TXOSCViewControllerC", "Pantry"]
+- ["10bounceOSCs19TXOSCViewControllerC", "String"]
+- ["10bounceOSCs19TXOSCViewControllerC", "UIStoryboardSegue"]
+- ["10bounceOSCs19TXOSCViewControllerC", "UITextField"]
+- ["10bounceOSCs19TXOSCViewControllerC", "deinit"]
+- ["10bounceOSCs19TXOSCViewControllerC", "didReceiveMemoryWarning"]
+- ["10bounceOSCs19TXOSCViewControllerC", "init"]
+- ["10bounceOSCs19TXOSCViewControllerC", "ipAddressDelegate"]
+- ["10bounceOSCs19TXOSCViewControllerC", "ipAddressTextField"]
+- ["10bounceOSCs19TXOSCViewControllerC", "ipAddressTextFieldDelegate"]
+- ["10bounceOSCs19TXOSCViewControllerC", "portDelegate"]
+- ["10bounceOSCs19TXOSCViewControllerC", "portTextField"]
+- ["10bounceOSCs19TXOSCViewControllerC", "portTextFieldDelegate"]
+- ["10bounceOSCs19TXOSCViewControllerC", "setipAddressTextField"]
+- ["10bounceOSCs19TXOSCViewControllerC", "unwindFromModalViewController"]
+- ["10bounceOSCs19TXOSCViewControllerC", "viewDidLoad"]
+- !private ["s16TextOutputStreamP", "components"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "components"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "delegate"]
+- !private ["So29UIAccessibilityIdentificationP", "resignFirstResponder"]
+- !private ["So29UIAccessibilityIdentificationP", "text"]
+- !private ["So12UIAppearanceP", "delegate"]
+- !private ["So12UIAppearanceP", "resignFirstResponder"]
+- !private ["So12UIAppearanceP", "text"]
+- !private ["So21UIAppearanceContainerP", "Pantry"]
+- ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "delegate"]
+- !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
+- !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "ipAddressDelegate"]
+- !private ["So21UIAppearanceContainerP", "ipAddressTextField"]
+- ["So21UIAppearanceContainerP", "ipAddressTextFieldDelegate"]
+- !private ["So21UIAppearanceContainerP", "portDelegate"]
+- !private ["So21UIAppearanceContainerP", "portTextField"]
+- ["So21UIAppearanceContainerP", "portTextFieldDelegate"]
+- !private ["So21UIAppearanceContainerP", "resignFirstResponder"]
+- !private ["So21UIAppearanceContainerP", "text"]
+- !private ["So21UIAppearanceContainerP", "viewDidLoad"]
+- !private ["So18UIContentContainerP", "Pantry"]
+- ["So18UIContentContainerP", ""]
+- !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
+- !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "ipAddressDelegate"]
+- !private ["So18UIContentContainerP", "ipAddressTextField"]
+- ["So18UIContentContainerP", "ipAddressTextFieldDelegate"]
+- !private ["So18UIContentContainerP", "portDelegate"]
+- !private ["So18UIContentContainerP", "portTextField"]
+- ["So18UIContentContainerP", "portTextFieldDelegate"]
+- !private ["So18UIContentContainerP", "viewDidLoad"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "delegate"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "resignFirstResponder"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "delegate"]
+- !private ["So9UIControlC", "resignFirstResponder"]
+- !private ["So9UIControlC", "text"]
+- !private ["So17UICoordinateSpaceP", "delegate"]
+- !private ["So17UICoordinateSpaceP", "resignFirstResponder"]
+- !private ["So17UICoordinateSpaceP", "text"]
+- !private ["So13UIDynamicItemP", "delegate"]
+- !private ["So13UIDynamicItemP", "resignFirstResponder"]
+- !private ["So13UIDynamicItemP", "text"]
+- !private ["So18UIFocusEnvironmentP", "Pantry"]
+- ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "delegate"]
+- !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "ipAddressDelegate"]
+- !private ["So18UIFocusEnvironmentP", "ipAddressTextField"]
+- ["So18UIFocusEnvironmentP", "ipAddressTextFieldDelegate"]
+- !private ["So18UIFocusEnvironmentP", "portDelegate"]
+- !private ["So18UIFocusEnvironmentP", "portTextField"]
+- ["So18UIFocusEnvironmentP", "portTextFieldDelegate"]
+- !private ["So18UIFocusEnvironmentP", "resignFirstResponder"]
+- !private ["So18UIFocusEnvironmentP", "text"]
+- !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
+- !private ["So11UIFocusItemP", "delegate"]
+- !private ["So11UIFocusItemP", "resignFirstResponder"]
+- !private ["So11UIFocusItemP", "text"]
+- !private ["So10UIKeyInputP", "delegate"]
+- !private ["So10UIKeyInputP", "resignFirstResponder"]
+- !private ["So10UIKeyInputP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "Pantry"]
+- ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
+- !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "ipAddressDelegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "ipAddressTextField"]
+- ["So30UIPasteConfigurationSupportingP", "ipAddressTextFieldDelegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "portDelegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "portTextField"]
+- ["So30UIPasteConfigurationSupportingP", "portTextFieldDelegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "resignFirstResponder"]
+- !private ["So30UIPasteConfigurationSupportingP", "text"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
+- !private ["So11UIResponderC", "Pantry"]
+- ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "UIStoryboardSegue"]
+- ["So11UIResponderC", "UITextField"]
+- !private ["So11UIResponderC", "delegate"]
+- ["So11UIResponderC", "didReceiveMemoryWarning"]
+- ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "ipAddressDelegate"]
+- ["So11UIResponderC", "ipAddressTextField"]
+- ["So11UIResponderC", "ipAddressTextFieldDelegate"]
+- ["So11UIResponderC", "portDelegate"]
+- ["So11UIResponderC", "portTextField"]
+- ["So11UIResponderC", "portTextFieldDelegate"]
+- !private ["So11UIResponderC", "resignFirstResponder"]
+- ["So11UIResponderC", "setipAddressTextField"]
+- !private ["So11UIResponderC", "text"]
+- ["So11UIResponderC", "unwindFromModalViewController"]
+- ["So11UIResponderC", "viewDidLoad"]
+- !private ["So30UIResponderStandardEditActionsP", "Pantry"]
+- ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
+- !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "ipAddressDelegate"]
+- !private ["So30UIResponderStandardEditActionsP", "ipAddressTextField"]
+- ["So30UIResponderStandardEditActionsP", "ipAddressTextFieldDelegate"]
+- !private ["So30UIResponderStandardEditActionsP", "portDelegate"]
+- !private ["So30UIResponderStandardEditActionsP", "portTextField"]
+- ["So30UIResponderStandardEditActionsP", "portTextFieldDelegate"]
+- !private ["So30UIResponderStandardEditActionsP", "resignFirstResponder"]
+- !private ["So30UIResponderStandardEditActionsP", "text"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
+- !private ["So16UIStateRestoringP", "Pantry"]
+- ["So16UIStateRestoringP", ""]
+- !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
+- !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "ipAddressDelegate"]
+- !private ["So16UIStateRestoringP", "ipAddressTextField"]
+- ["So16UIStateRestoringP", "ipAddressTextFieldDelegate"]
+- !private ["So16UIStateRestoringP", "portDelegate"]
+- !private ["So16UIStateRestoringP", "portTextField"]
+- ["So16UIStateRestoringP", "portTextFieldDelegate"]
+- !private ["So16UIStateRestoringP", "viewDidLoad"]
+- !private ["So15UITextDraggableP", "delegate"]
+- !private ["So15UITextDraggableP", "resignFirstResponder"]
+- !private ["So15UITextDraggableP", "text"]
+- !private ["So15UITextDroppableP", "delegate"]
+- !private ["So15UITextDroppableP", "resignFirstResponder"]
+- !private ["So15UITextDroppableP", "text"]
+- !private ["So11UITextFieldC", "delegate"]
+- !private ["So11UITextFieldC", "resignFirstResponder"]
+- !private ["So11UITextFieldC", "text"]
+- !private ["So19UITextFieldDelegateP", "Int"]
+- !private ["So19UITextFieldDelegateP", "Notification"]
+- !private ["So19UITextFieldDelegateP", "NotificationCenter"]
+- !private ["So19UITextFieldDelegateP", "Pantry"]
+- !private ["So19UITextFieldDelegateP", "UInt16"]
+- ["So19UITextFieldDelegateP", ""]
+- ["So19UITextFieldDelegateP", "init"]
+- !private ["So19UITextFieldDelegateP", "isValidIP"]
+- !private ["So19UITextFieldDelegateP", "isValidPort"]
+- ["So19UITextFieldDelegateP", "save"]
+- ["So19UITextFieldDelegateP", "textField"]
+- ["So19UITextFieldDelegateP", "textFieldDidBeginEditing"]
+- ["So19UITextFieldDelegateP", "textFieldDidEndEditing"]
+- ["So19UITextFieldDelegateP", "textFieldShouldBeginEditing"]
+- ["So19UITextFieldDelegateP", "textFieldShouldClear"]
+- ["So19UITextFieldDelegateP", "textFieldShouldEndEditing"]
+- ["So19UITextFieldDelegateP", "textFieldShouldReturn"]
+- !private ["So11UITextInputP", "delegate"]
+- !private ["So11UITextInputP", "resignFirstResponder"]
+- !private ["So11UITextInputP", "text"]
+- !private ["So17UITextInputTraitsP", "delegate"]
+- !private ["So17UITextInputTraitsP", "resignFirstResponder"]
+- !private ["So17UITextInputTraitsP", "text"]
+- !private ["So34UITextPasteConfigurationSupportingP", "delegate"]
+- !private ["So34UITextPasteConfigurationSupportingP", "resignFirstResponder"]
+- !private ["So34UITextPasteConfigurationSupportingP", "text"]
+- !private ["So18UITraitEnvironmentP", "Pantry"]
+- ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "delegate"]
+- !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
+- !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "ipAddressDelegate"]
+- !private ["So18UITraitEnvironmentP", "ipAddressTextField"]
+- ["So18UITraitEnvironmentP", "ipAddressTextFieldDelegate"]
+- !private ["So18UITraitEnvironmentP", "portDelegate"]
+- !private ["So18UITraitEnvironmentP", "portTextField"]
+- ["So18UITraitEnvironmentP", "portTextFieldDelegate"]
+- !private ["So18UITraitEnvironmentP", "resignFirstResponder"]
+- !private ["So18UITraitEnvironmentP", "text"]
+- !private ["So18UITraitEnvironmentP", "viewDidLoad"]
+- !private ["So6UIViewC", "delegate"]
+- !private ["So6UIViewC", "resignFirstResponder"]
+- !private ["So6UIViewC", "text"]
+- !private ["So16UIViewControllerC", "Pantry"]
+- ["So16UIViewControllerC", "String"]
+- ["So16UIViewControllerC", "UIStoryboardSegue"]
+- ["So16UIViewControllerC", "UITextField"]
+- ["So16UIViewControllerC", ""]
+- ["So16UIViewControllerC", "didReceiveMemoryWarning"]
+- ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "ipAddressDelegate"]
+- ["So16UIViewControllerC", "ipAddressTextField"]
+- ["So16UIViewControllerC", "ipAddressTextFieldDelegate"]
+- ["So16UIViewControllerC", "portDelegate"]
+- ["So16UIViewControllerC", "portTextField"]
+- ["So16UIViewControllerC", "portTextFieldDelegate"]
+- ["So16UIViewControllerC", "setipAddressTextField"]
+- ["So16UIViewControllerC", "unwindFromModalViewController"]
+- ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["s6UInt16V", "init"]
+- !private ["s15UnsignedIntegerP", "init"]
+- !private ["s14_ArrayProtocolP", "compactMap"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "filter"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "delegate"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "resignFirstResponder"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
+- !private ["s24_DestructorSafeContainerP", "compactMap"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "filter"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "components"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "components"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "components"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "components"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "components"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "components"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Notification"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NotificationCenter"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Pantry"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UInt16"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "components"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ipAddressDelegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ipAddressTextField"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "ipAddressTextFieldDelegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isValidIP"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isValidPort"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "portDelegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "portTextField"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "portTextFieldDelegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "post"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "resignFirstResponder"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "save"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textField"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textFieldDidBeginEditing"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textFieldDidEndEditing"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldBeginEditing"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldClear"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldEndEditing"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "textFieldShouldReturn"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["s21_ObjectiveCBridgeableP", "Name"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "compactMap"]
+- !private ["s21_ObjectiveCBridgeableP", "components"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "filter"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s14_StringElementP", "init"]
+- !private ["s20_SwiftNewtypeWrapperP", "init"]
+- !private ["s16_SwiftStringViewP", "components"]
+- !private ["s16_SwiftStringViewP", "init"]
+- ["10bounceOSCs26ipAddressTextFieldDelegateC", "Bool"]
+- !private ["10bounceOSCs26ipAddressTextFieldDelegateC", "Int"]
+- !private ["10bounceOSCs26ipAddressTextFieldDelegateC", "Notification"]
+- !private ["10bounceOSCs26ipAddressTextFieldDelegateC", "NotificationCenter"]
+- !private ["10bounceOSCs26ipAddressTextFieldDelegateC", "Pantry"]
+- ["10bounceOSCs26ipAddressTextFieldDelegateC", "String"]
+- ["10bounceOSCs26ipAddressTextFieldDelegateC", "UITextField"]
+- ["10bounceOSCs26ipAddressTextFieldDelegateC", "deinit"]
+- ["10bounceOSCs26ipAddressTextFieldDelegateC", "init"]
+- ["10bounceOSCs26ipAddressTextFieldDelegateC", "isValidIP"]
+- ["10bounceOSCs26ipAddressTextFieldDelegateC", "save"]
+- ["10bounceOSCs26ipAddressTextFieldDelegateC", "textField"]
+- ["10bounceOSCs26ipAddressTextFieldDelegateC", "textFieldDidBeginEditing"]
+- ["10bounceOSCs26ipAddressTextFieldDelegateC", "textFieldDidEndEditing"]
+- ["10bounceOSCs26ipAddressTextFieldDelegateC", "textFieldShouldBeginEditing"]
+- ["10bounceOSCs26ipAddressTextFieldDelegateC", "textFieldShouldClear"]
+- ["10bounceOSCs26ipAddressTextFieldDelegateC", "textFieldShouldEndEditing"]
+- ["10bounceOSCs26ipAddressTextFieldDelegateC", "textFieldShouldReturn"]
+- ["10bounceOSCs21portTextFieldDelegateC", "Bool"]
+- !private ["10bounceOSCs21portTextFieldDelegateC", "Notification"]
+- !private ["10bounceOSCs21portTextFieldDelegateC", "NotificationCenter"]
+- !private ["10bounceOSCs21portTextFieldDelegateC", "Pantry"]
+- ["10bounceOSCs21portTextFieldDelegateC", "String"]
+- ["10bounceOSCs21portTextFieldDelegateC", "UITextField"]
+- !private ["10bounceOSCs21portTextFieldDelegateC", "UInt16"]
+- ["10bounceOSCs21portTextFieldDelegateC", "deinit"]
+- ["10bounceOSCs21portTextFieldDelegateC", "init"]
+- ["10bounceOSCs21portTextFieldDelegateC", "isValidPort"]
+- ["10bounceOSCs21portTextFieldDelegateC", "save"]
+- ["10bounceOSCs21portTextFieldDelegateC", "textField"]
+- ["10bounceOSCs21portTextFieldDelegateC", "textFieldDidBeginEditing"]
+- ["10bounceOSCs21portTextFieldDelegateC", "textFieldDidEndEditing"]
+- ["10bounceOSCs21portTextFieldDelegateC", "textFieldShouldBeginEditing"]
+- ["10bounceOSCs21portTextFieldDelegateC", "textFieldShouldClear"]
+- ["10bounceOSCs21portTextFieldDelegateC", "textFieldShouldEndEditing"]
+- ["10bounceOSCs21portTextFieldDelegateC", "textFieldShouldReturn"]
+depends-nominal:
+- !private "8AudioKit11AKParameterP"
+- !private "Sa"
+- !private "s23BidirectionalCollectionP"
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- "s8HashableP"
+- !private "Si"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- "So8NSCodingP"
+- !private "So9NSCopyingP"
+- "So26NSExtensionRequestHandlingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "So14NSNotificationC4NameV"
+- !private "10Foundation12NotificationV"
+- !private "So18NotificationCenterC"
+- !private "8AudioKit7NumericP"
+- !private "s7NumericP"
+- !private "8AudioKit10OccupiableP"
+- !private "6PantryAAC"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "s8SequenceP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "6Pantry19StorableDefaultTypeP"
+- "10bounceOSCs6StoredP"
+- !private "s10StrideableP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- "10bounceOSCs19TXOSCViewControllerC"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- "So21UIAppearanceContainerP"
+- "So18UIContentContainerP"
+- !private "So30UIContentSizeCategoryAdjustingP"
+- !private "So9UIControlC"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So10UIKeyInputP"
+- "So30UIPasteConfigurationSupportingP"
+- "So11UIResponderC"
+- "So30UIResponderStandardEditActionsP"
+- "So16UIStateRestoringP"
+- !private "So15UITextDraggableP"
+- !private "So15UITextDroppableP"
+- !private "So11UITextFieldC"
+- "So19UITextFieldDelegateP"
+- !private "So11UITextInputP"
+- !private "So17UITextInputTraitsP"
+- !private "So34UITextPasteConfigurationSupportingP"
+- "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- "So16UIViewControllerC"
+- !private "s6UInt16V"
+- !private "s15UnsignedIntegerP"
+- !private "s14_ArrayProtocolP"
+- !private "s18_BitwiseOperationsP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s14_StringElementP"
+- !private "s20_SwiftNewtypeWrapperP"
+- !private "s16_SwiftStringViewP"
+- "10bounceOSCs26ipAddressTextFieldDelegateC"
+- "10bounceOSCs21portTextFieldDelegateC"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Accelerate.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/os.apinotesc"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Modules/AudioKit.swiftmodule/arm64.swiftmodule"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/Pantry/Pantry.framework/Modules/Pantry.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Accelerate.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/os.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioFFT.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/MMLanScan-umbrella.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/CocoaAsyncSocket/CocoaAsyncSocket.framework/Headers/CocoaAsyncSocket-umbrella.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/OSCKit/OSCKit.framework/Headers/OSCKit-umbrella.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/Pantry/Pantry.framework/Headers/Pantry-umbrella.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioFloatData.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/MMDevice.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioDevice.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/OSCKit/OSCKit.framework/Headers/OSCMessage.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioFile.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSamplerMetronome.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKMicrophoneTrackerEngine.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKTimeline.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZMicrophone.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/soundpipe.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKAudioUnitBase.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKGeneratorAudioUnitBase.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/route.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/SimplePing.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSporthStack.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/OSCKit/OSCKit.framework/Headers/OSCProtocol.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/MACOperation.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/PingOperation.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudio.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKTimelineTap.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKRenderTap.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKLazyTap.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKInterop.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/if_arp.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/MacFinder.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZRecorder.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/TPCircularBuffer.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPresetManager.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/ExceptionCatcher.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/if_ether.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioFileMarker.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/MMLANScanner.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/vocwrapper.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioFloatConverter.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/OSCKit/OSCKit.framework/Headers/OSCServer.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioPlayer.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/NetworkCalculator.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioUtilities.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/LANProperties.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSampler_Typedefs.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/CocoaAsyncSocket/CocoaAsyncSocket.framework/Headers/GCDAsyncSocket.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/CocoaAsyncSocket/CocoaAsyncSocket.framework/Headers/GCDAsyncUdpSocket.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AudioKit-Swift.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/Pantry/Pantry.framework/Headers/Pantry-Swift.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/OSCKit/OSCKit.framework/Headers/OSCKit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AudioKit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/TPCircularBuffer+Unit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBankAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKOscillatorBankAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKFMOscillatorBankAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPWMOscillatorBankAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKMorphingOscillatorBankAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPhaseDistortionOscillatorBankAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKMandolinAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKConvolutionAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKRhodesPianoAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBalancerAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKOfflineRenderAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPhaseLockedVocoderAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKShakerAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKAmplitudeTrackerAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKFrequencyTrackerAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKTesterAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSamplePlayerAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKRhinoGuitarProcessorAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDynaRageCompressorAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKOperationGeneratorAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKTubularBellsAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKOperationEffectAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/OSCKit/OSCKit.framework/Headers/OSCClient.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/TPCircularBuffer+AudioBufferList.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZOutput.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Modules/module.modulemap"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/CocoaAsyncSocket/CocoaAsyncSocket.framework/Modules/module.modulemap"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/OSCKit/OSCKit.framework/Modules/module.modulemap"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Modules/module.modulemap"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/Pantry/Pantry.framework/Modules/module.modulemap"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKZitaReverbDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKFlatFrequencyResponseReverbDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKChowningReverbDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKCostelloReverbDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKCombFilterReverbDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKAmplitudeEnvelopeDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKWhiteNoiseDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPinkNoiseDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBrownianNoiseDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKFluteDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPluckedStringDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKAutoWahDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDCBlockDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKTanhDistortionDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKTremoloDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDripDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKMetalBarDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKMoogLadderDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBitCrusherDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSamplerDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPannerDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKClipperDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPhaserDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPitchShifterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKStereoFieldLimiterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKRolandTB303FilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKModalResonanceFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKToneFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBandPassButterworthFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKHighPassButterworthFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKLowPassButterworthFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBandRejectButterworthFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKEqualizerFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKHighShelfParametricEqualizerFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKLowShelfParametricEqualizerFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPeakingParametricEqualizerFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKKorgLowPassFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKThreePoleLowpassFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKFormantFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKResonantFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKToneComplementFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBoosterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDynamicRangeCompressorDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKOscillatorDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKFMOscillatorDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPWMOscillatorDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKMorphingOscillatorDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPhaseDistortionOscillatorDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKStringResonatorDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKVocalTractDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKClarinetDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKModulatedDelayDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKVariableDelayDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDSPBase.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSoundpipeDSPBase.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKParameterRampBase.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/DSPKernel.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDSPKernel.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBankDSPKernel.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPWMOscillatorBankDSPKernel.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKMorphingOscillatorBankDSPKernel.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKRhinoGuitarProcessorDSPKernel.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDynaRageCompressorDSPKernel.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSoundpipeKernel.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKExponentialParameterRamp.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKLinearParameterRamp.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/ParameterRamper.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/BufferedAudioBus.hpp"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+interface-hash: "f447d3117b13a1b90728ad9c571be1df"

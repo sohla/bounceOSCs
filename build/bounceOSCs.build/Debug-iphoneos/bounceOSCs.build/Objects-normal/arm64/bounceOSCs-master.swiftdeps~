@@ -1,0 +1,22 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "45cc80843d3e1c4d75d3358942a807dd"
+build_time: [1523538907, 231117000]
+inputs:
+  "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/bounceOSCs/ButtonTableViewCell.swift": [1497457640, 0]
+  "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/bounceOSCs/SecondViewController.swift": [1495555658, 0]
+  "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/bounceOSCs/MotionSensors.swift": [1523538906, 0]
+  "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/bounceOSCs/SensorTransmitters.swift": [1523445407, 0]
+  "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/bounceOSCs/RXOSCViewController.swift": [1511724588, 0]
+  "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/bounceOSCs/AppDelegate.swift": [1515642814, 0]
+  "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/bounceOSCs/AudioSensors.swift": [1522741132, 0]
+  "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/bounceOSCs/SensorProtocol.swift": [1496075473, 0]
+  "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/bounceOSCs/SensorTableViewCell.swift": [1497452903, 0]
+  "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/bounceOSCs/FirstViewController.swift": [1511721127, 0]
+  "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/bounceOSCs/IPAddressTableViewController.swift": [1514554895, 0]
+  "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/bounceOSCs/TXOSCViewController.swift": [1522741254, 0]
+  "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/bounceOSCs/SliderTableViewCell.swift": [1497598809, 0]
+  "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/bounceOSCs/TransmittersTableViewController.swift": [1514554530, 0]
+  "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/bounceOSCs/TransmitterProtocol.swift": [1514555470, 0]
+  "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/bounceOSCs/TouchSensors.swift": [1522741254, 0]
+  "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/bounceOSCs/SensorTransmitter.swift": [1514553060, 0]
+  "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/bounceOSCs/SensorsTableViewController.swift": [1523445447, 0]

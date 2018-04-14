@@ -1,6 +1,7 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "motionManager"
+- "referenceAttitude"
 - "MotionSensor"
 - "RotationRateSensor"
 - "AttitudeSensor"
@@ -24,15 +25,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "!="
-- !private "+"
-- !private "-"
-- !private ">"
 - "AccelSensor"
 - "Array"
 - "AssignmentPrecedence"
 - "AttitudeSensor"
 - !private "CMAcceleration"
-- !private "CMAttitude"
+- "CMAttitude"
 - "CMMotionManager"
 - !private "CMQuaternion"
 - !private "CMRotationMatrix"
@@ -46,7 +44,7 @@ depends-top-level:
 - "String"
 - !private "StringLiteralType"
 - "motionManager"
-- !private "print"
+- "referenceAttitude"
 depends-member:
 - ["10bounceOSCs11AccelSensorC", "Array"]
 - !private ["10bounceOSCs11AccelSensorC", "CMAcceleration"]
@@ -61,17 +59,16 @@ depends-member:
 - !private ["Sa", "compactMap"]
 - !private ["Sa", "subscript"]
 - ["10bounceOSCs14AttitudeSensorC", "Array"]
-- !private ["10bounceOSCs14AttitudeSensorC", "CMAcceleration"]
 - !private ["10bounceOSCs14AttitudeSensorC", "CMAttitude"]
 - ["10bounceOSCs14AttitudeSensorC", "Double"]
 - ["10bounceOSCs14AttitudeSensorC", "String"]
 - ["10bounceOSCs14AttitudeSensorC", "deinit"]
+- !private ["10bounceOSCs14AttitudeSensorC", "getAttitude"]
 - ["10bounceOSCs14AttitudeSensorC", "getData"]
 - ["10bounceOSCs14AttitudeSensorC", "init"]
 - ["10bounceOSCs14AttitudeSensorC", "midiData"]
 - !private ["10bounceOSCs14AttitudeSensorC", "motionManager"]
 - ["10bounceOSCs14AttitudeSensorC", "oscData"]
-- !private ["10bounceOSCs14AttitudeSensorC", "print"]
 - !private ["s23BidirectionalCollectionP", "compactMap"]
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["s23BidirectionalCollectionP", "subscript"]
@@ -79,17 +76,16 @@ depends-member:
 - !private ["SC14CMAccelerationV", "x"]
 - !private ["SC14CMAccelerationV", "y"]
 - !private ["SC14CMAccelerationV", "z"]
+- ["So10CMAttitudeC", "init"]
 - !private ["So10CMAttitudeC", "pitch"]
 - !private ["So10CMAttitudeC", "quaternion"]
 - !private ["So10CMAttitudeC", "roll"]
 - !private ["So10CMAttitudeC", "rotationMatrix"]
 - !private ["So10CMAttitudeC", "yaw"]
 - !private ["So14CMDeviceMotionC", "attitude"]
-- !private ["So14CMDeviceMotionC", "gravity"]
 - !private ["So14CMDeviceMotionC", "rotationRate"]
 - !private ["So14CMDeviceMotionC", "userAcceleration"]
 - !private ["So9CMLogItemC", "attitude"]
-- !private ["So9CMLogItemC", "gravity"]
 - !private ["So9CMLogItemC", "rotationRate"]
 - !private ["So9CMLogItemC", "userAcceleration"]
 - !private ["So15CMMotionManagerC", "deviceMotion"]
@@ -118,7 +114,6 @@ depends-member:
 - !private ["s7CVarArgP", "compactMap"]
 - !private ["s7CVarArgP", "deviceMotion"]
 - !private ["s7CVarArgP", "deviceMotionUpdateInterval"]
-- !private ["s7CVarArgP", "gravity"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isDeviceMotionAvailable"]
 - !private ["s7CVarArgP", "pitch"]
@@ -138,7 +133,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "compactMap"]
 - !private ["s28CustomDebugStringConvertibleP", "deviceMotion"]
 - !private ["s28CustomDebugStringConvertibleP", "deviceMotionUpdateInterval"]
-- !private ["s28CustomDebugStringConvertibleP", "gravity"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isDeviceMotionAvailable"]
 - !private ["s28CustomDebugStringConvertibleP", "pitch"]
@@ -161,7 +155,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "compactMap"]
 - !private ["s23CustomStringConvertibleP", "deviceMotion"]
 - !private ["s23CustomStringConvertibleP", "deviceMotionUpdateInterval"]
-- !private ["s23CustomStringConvertibleP", "gravity"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isDeviceMotionAvailable"]
 - !private ["s23CustomStringConvertibleP", "pitch"]
@@ -186,7 +179,6 @@ depends-member:
 - !private ["s9EquatableP", "compactMap"]
 - !private ["s9EquatableP", "deviceMotion"]
 - !private ["s9EquatableP", "deviceMotionUpdateInterval"]
-- !private ["s9EquatableP", "gravity"]
 - ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "isDeviceMotionAvailable"]
 - !private ["s9EquatableP", "pitch"]
@@ -208,7 +200,6 @@ depends-member:
 - !private ["s8HashableP", "attitude"]
 - !private ["s8HashableP", "deviceMotion"]
 - !private ["s8HashableP", "deviceMotionUpdateInterval"]
-- !private ["s8HashableP", "gravity"]
 - ["s8HashableP", "init"]
 - !private ["s8HashableP", "isDeviceMotionAvailable"]
 - !private ["s8HashableP", "pitch"]
@@ -224,7 +215,7 @@ depends-member:
 - !private ["s10MirrorPathP", "init"]
 - ["10bounceOSCs12MotionSensorC", "Array"]
 - !private ["10bounceOSCs12MotionSensorC", "CMAcceleration"]
-- !private ["10bounceOSCs12MotionSensorC", "CMAttitude"]
+- ["10bounceOSCs12MotionSensorC", "CMAttitude"]
 - !private ["10bounceOSCs12MotionSensorC", "CMQuaternion"]
 - !private ["10bounceOSCs12MotionSensorC", "CMRotationMatrix"]
 - !private ["10bounceOSCs12MotionSensorC", "CMRotationRate"]
@@ -232,16 +223,18 @@ depends-member:
 - ["10bounceOSCs12MotionSensorC", "String"]
 - ["10bounceOSCs12MotionSensorC", ""]
 - ["10bounceOSCs12MotionSensorC", "deinit"]
+- ["10bounceOSCs12MotionSensorC", "getAttitude"]
 - ["10bounceOSCs12MotionSensorC", "getData"]
 - ["10bounceOSCs12MotionSensorC", "init"]
 - ["10bounceOSCs12MotionSensorC", "midiData"]
 - !private ["10bounceOSCs12MotionSensorC", "motionManager"]
 - ["10bounceOSCs12MotionSensorC", "oscData"]
-- !private ["10bounceOSCs12MotionSensorC", "print"]
+- !private ["10bounceOSCs12MotionSensorC", "referenceAttitude"]
+- ["10bounceOSCs12MotionSensorC", "setReference"]
 - !private ["s17MutableCollectionP", "compactMap"]
 - !private ["s17MutableCollectionP", "subscript"]
 - !private ["So8NSCodingP", "attitude"]
-- !private ["So8NSCodingP", "gravity"]
+- ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "pitch"]
 - !private ["So8NSCodingP", "quaternion"]
 - !private ["So8NSCodingP", "roll"]
@@ -250,7 +243,7 @@ depends-member:
 - !private ["So8NSCodingP", "userAcceleration"]
 - !private ["So8NSCodingP", "yaw"]
 - !private ["So9NSCopyingP", "attitude"]
-- !private ["So9NSCopyingP", "gravity"]
+- ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "pitch"]
 - !private ["So9NSCopyingP", "quaternion"]
 - !private ["So9NSCopyingP", "roll"]
@@ -261,7 +254,6 @@ depends-member:
 - !private ["So8NSObjectC", "attitude"]
 - !private ["So8NSObjectC", "deviceMotion"]
 - !private ["So8NSObjectC", "deviceMotionUpdateInterval"]
-- !private ["So8NSObjectC", "gravity"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "isDeviceMotionAvailable"]
 - !private ["So8NSObjectC", "pitch"]
@@ -275,7 +267,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "attitude"]
 - !private ["So16NSObjectProtocolP", "deviceMotion"]
 - !private ["So16NSObjectProtocolP", "deviceMotionUpdateInterval"]
-- !private ["So16NSObjectProtocolP", "gravity"]
 - ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "isDeviceMotionAvailable"]
 - !private ["So16NSObjectProtocolP", "pitch"]
@@ -287,7 +278,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "userAcceleration"]
 - !private ["So16NSObjectProtocolP", "yaw"]
 - !private ["So14NSSecureCodingP", "attitude"]
-- !private ["So14NSSecureCodingP", "gravity"]
+- ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "pitch"]
 - !private ["So14NSSecureCodingP", "quaternion"]
 - !private ["So14NSSecureCodingP", "roll"]
@@ -304,6 +295,7 @@ depends-member:
 - ["10bounceOSCs16QuaternionSensorC", "Double"]
 - ["10bounceOSCs16QuaternionSensorC", "String"]
 - ["10bounceOSCs16QuaternionSensorC", "deinit"]
+- !private ["10bounceOSCs16QuaternionSensorC", "getAttitude"]
 - ["10bounceOSCs16QuaternionSensorC", "getData"]
 - ["10bounceOSCs16QuaternionSensorC", "init"]
 - ["10bounceOSCs16QuaternionSensorC", "midiData"]
@@ -320,6 +312,7 @@ depends-member:
 - ["10bounceOSCs20RotationMatrixSensorC", "Double"]
 - ["10bounceOSCs20RotationMatrixSensorC", "String"]
 - ["10bounceOSCs20RotationMatrixSensorC", "deinit"]
+- !private ["10bounceOSCs20RotationMatrixSensorC", "getAttitude"]
 - ["10bounceOSCs20RotationMatrixSensorC", "getData"]
 - ["10bounceOSCs20RotationMatrixSensorC", "init"]
 - ["10bounceOSCs20RotationMatrixSensorC", "midiData"]
@@ -337,11 +330,11 @@ depends-member:
 - ["10bounceOSCs18RotationRateSensorC", "oscData"]
 - !private ["10bounceOSCs14SensorProtocolP", "String"]
 - ["10bounceOSCs14SensorProtocolP", ""]
+- !private ["10bounceOSCs14SensorProtocolP", "getAttitude"]
 - ["10bounceOSCs14SensorProtocolP", "getData"]
 - ["10bounceOSCs14SensorProtocolP", "midiData"]
 - !private ["10bounceOSCs14SensorProtocolP", "motionManager"]
 - ["10bounceOSCs14SensorProtocolP", "oscData"]
-- !private ["10bounceOSCs14SensorProtocolP", "print"]
 - !private ["s8SequenceP", "compactMap"]
 - !private ["s8SequenceP", "init"]
 - !private ["s8SequenceP", "subscript"]
@@ -364,7 +357,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "attitude"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "deviceMotion"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "deviceMotionUpdateInterval"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "gravity"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isDeviceMotionAvailable"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "pitch"]
@@ -387,7 +379,7 @@ depends-nominal:
 - !private "s23BidirectionalCollectionP"
 - !private "Sb"
 - !private "SC14CMAccelerationV"
-- !private "So10CMAttitudeC"
+- "So10CMAttitudeC"
 - !private "So14CMDeviceMotionC"
 - !private "So9CMLogItemC"
 - "So15CMMotionManagerC"
@@ -414,11 +406,11 @@ depends-nominal:
 - !private "s10MirrorPathP"
 - "10bounceOSCs12MotionSensorC"
 - !private "s17MutableCollectionP"
-- !private "So8NSCodingP"
-- !private "So9NSCopyingP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
-- !private "So14NSSecureCodingP"
+- "So14NSSecureCodingP"
 - !private "8AudioKit10OccupiableP"
 - "10bounceOSCs16QuaternionSensorC"
 - !private "s22RandomAccessCollectionP"
@@ -631,4 +623,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
-interface-hash: "9ef8e4ec2add3b11cc1399f5589aa4db"
+interface-hash: "1a7a92c93285a51a16209cd5a808ecc6"

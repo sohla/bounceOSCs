@@ -1,0 +1,406 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ButtonSensor"
+- "SliderSensor"
+provides-nominal:
+- "10bounceOSCs12ButtonSensorC"
+- "10bounceOSCs12SliderSensorC"
+provides-member:
+- ["10bounceOSCs12ButtonSensorC", ""]
+- ["10bounceOSCs12SliderSensorC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Array"
+- !private "AssignmentPrecedence"
+- "ButtonSensor"
+- !private "CastingPrecedence"
+- "Double"
+- "FloatLiteralType"
+- !private "Notification"
+- !private "NotificationCenter"
+- "SensorProtocol"
+- "SliderSensor"
+- "String"
+- !private "StringLiteralType"
+depends-member:
+- !private ["Sa", "compactMap"]
+- !private ["Sa", "subscript"]
+- !private ["s23BidirectionalCollectionP", "compactMap"]
+- !private ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
+- ["10bounceOSCs12ButtonSensorC", "Array"]
+- ["10bounceOSCs12ButtonSensorC", "Double"]
+- !private ["10bounceOSCs12ButtonSensorC", "Notification"]
+- !private ["10bounceOSCs12ButtonSensorC", "NotificationCenter"]
+- ["10bounceOSCs12ButtonSensorC", "String"]
+- ["10bounceOSCs12ButtonSensorC", "deinit"]
+- ["10bounceOSCs12ButtonSensorC", "getData"]
+- ["10bounceOSCs12ButtonSensorC", "init"]
+- ["10bounceOSCs12ButtonSensorC", "midiData"]
+- ["10bounceOSCs12ButtonSensorC", "oscData"]
+- ["10bounceOSCs12ButtonSensorC", "value"]
+- !private ["s7CVarArgP", "addObserver"]
+- !private ["s7CVarArgP", "compactMap"]
+- !private ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s10CollectionP", "compactMap"]
+- !private ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "Name"]
+- !private ["s28CustomDebugStringConvertibleP", "addObserver"]
+- !private ["s28CustomDebugStringConvertibleP", "compactMap"]
+- !private ["s28CustomDebugStringConvertibleP", "default"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "userInfo"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "Name"]
+- !private ["s17CustomReflectableP", "compactMap"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "userInfo"]
+- !private ["s23CustomStringConvertibleP", "Name"]
+- !private ["s23CustomStringConvertibleP", "addObserver"]
+- !private ["s23CustomStringConvertibleP", "compactMap"]
+- !private ["s23CustomStringConvertibleP", "default"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "userInfo"]
+- !private ["s9DecodableP", "compactMap"]
+- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s10DictionaryV", "subscript"]
+- !private ["s9EncodableP", "compactMap"]
+- !private ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "Name"]
+- !private ["s9EquatableP", "addObserver"]
+- !private ["s9EquatableP", "compactMap"]
+- !private ["s9EquatableP", "default"]
+- !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "userInfo"]
+- !private ["s25ExpressibleByArrayLiteralP", "compactMap"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "Name"]
+- !private ["s8HashableP", "addObserver"]
+- !private ["s8HashableP", "default"]
+- !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "userInfo"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["s17MutableCollectionP", "compactMap"]
+- !private ["s17MutableCollectionP", "subscript"]
+- !private ["So8NSObjectC", "addObserver"]
+- !private ["So8NSObjectC", "default"]
+- !private ["So16NSObjectProtocolP", "addObserver"]
+- !private ["So16NSObjectProtocolP", "default"]
+- !private ["So14NSNotificationC4NameV", "init"]
+- !private ["10Foundation12NotificationV", "Name"]
+- !private ["10Foundation12NotificationV", "userInfo"]
+- !private ["So18NotificationCenterC", "addObserver"]
+- !private ["So18NotificationCenterC", "default"]
+- !private ["8AudioKit10OccupiableP", "compactMap"]
+- !private ["8AudioKit10OccupiableP", "init"]
+- !private ["8AudioKit10OccupiableP", "subscript"]
+- !private ["s22RandomAccessCollectionP", "compactMap"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
+- !private ["s26RangeReplaceableCollectionP", "compactMap"]
+- !private ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- !private ["s16RawRepresentableP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "Name"]
+- !private ["10Foundation20ReferenceConvertibleP", "userInfo"]
+- !private ["10bounceOSCs14SensorProtocolP", "Notification"]
+- !private ["10bounceOSCs14SensorProtocolP", "NotificationCenter"]
+- !private ["10bounceOSCs14SensorProtocolP", "String"]
+- ["10bounceOSCs14SensorProtocolP", ""]
+- ["10bounceOSCs14SensorProtocolP", "getData"]
+- ["10bounceOSCs14SensorProtocolP", "midiData"]
+- ["10bounceOSCs14SensorProtocolP", "oscData"]
+- !private ["10bounceOSCs14SensorProtocolP", "value"]
+- !private ["s8SequenceP", "compactMap"]
+- !private ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "subscript"]
+- ["10bounceOSCs12SliderSensorC", "Array"]
+- ["10bounceOSCs12SliderSensorC", "Double"]
+- !private ["10bounceOSCs12SliderSensorC", "Notification"]
+- !private ["10bounceOSCs12SliderSensorC", "NotificationCenter"]
+- ["10bounceOSCs12SliderSensorC", "String"]
+- ["10bounceOSCs12SliderSensorC", "deinit"]
+- ["10bounceOSCs12SliderSensorC", "getData"]
+- ["10bounceOSCs12SliderSensorC", "init"]
+- ["10bounceOSCs12SliderSensorC", "midiData"]
+- ["10bounceOSCs12SliderSensorC", "oscData"]
+- ["10bounceOSCs12SliderSensorC", "value"]
+- !private ["6Pantry19StorableDefaultTypeP", "init"]
+- !private ["SS", "init"]
+- !private ["s14StringProtocolP", "init"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
+- !private ["s14_ArrayProtocolP", "compactMap"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s24_DestructorSafeContainerP", "compactMap"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addObserver"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["s21_ObjectiveCBridgeableP", "Name"]
+- !private ["s21_ObjectiveCBridgeableP", "compactMap"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "userInfo"]
+- !private ["s20_SwiftNewtypeWrapperP", "init"]
+- !private ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- !private "Sa"
+- !private "s23BidirectionalCollectionP"
+- "10bounceOSCs12ButtonSensorC"
+- !private "s7CVarArgP"
+- !private "s10CollectionP"
+- !private "s10ComparableP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s10DictionaryV"
+- !private "s9EncodableP"
+- !private "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s8HashableP"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- !private "So8NSObjectC"
+- !private "So16NSObjectProtocolP"
+- !private "So14NSNotificationC4NameV"
+- !private "10Foundation12NotificationV"
+- !private "So18NotificationCenterC"
+- !private "8AudioKit10OccupiableP"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "10Foundation20ReferenceConvertibleP"
+- "10bounceOSCs14SensorProtocolP"
+- !private "s8SequenceP"
+- "10bounceOSCs12SliderSensorC"
+- !private "6Pantry19StorableDefaultTypeP"
+- !private "SS"
+- !private "s14StringProtocolP"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s33_ExpressibleByStringInterpolationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s20_SwiftNewtypeWrapperP"
+- !private "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Accelerate.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/os.apinotesc"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Modules/AudioKit.swiftmodule/arm64.swiftmodule"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/Pantry/Pantry.framework/Modules/Pantry.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Accelerate.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/os.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioFFT.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/MMLanScan-umbrella.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/CocoaAsyncSocket/CocoaAsyncSocket.framework/Headers/CocoaAsyncSocket-umbrella.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/OSCKit/OSCKit.framework/Headers/OSCKit-umbrella.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/Pantry/Pantry.framework/Headers/Pantry-umbrella.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioFloatData.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/MMDevice.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioDevice.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/OSCKit/OSCKit.framework/Headers/OSCMessage.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioFile.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSamplerMetronome.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKMicrophoneTrackerEngine.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKTimeline.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZMicrophone.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/soundpipe.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKAudioUnitBase.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKGeneratorAudioUnitBase.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/route.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/SimplePing.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSporthStack.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/OSCKit/OSCKit.framework/Headers/OSCProtocol.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/MACOperation.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/PingOperation.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudio.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKTimelineTap.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKRenderTap.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKLazyTap.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKInterop.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/if_arp.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/MacFinder.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZRecorder.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/TPCircularBuffer.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPresetManager.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/ExceptionCatcher.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/if_ether.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioFileMarker.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/MMLANScanner.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/vocwrapper.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioFloatConverter.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/OSCKit/OSCKit.framework/Headers/OSCServer.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioPlayer.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/NetworkCalculator.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZAudioUtilities.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Headers/LANProperties.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSampler_Typedefs.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/CocoaAsyncSocket/CocoaAsyncSocket.framework/Headers/GCDAsyncSocket.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/CocoaAsyncSocket/CocoaAsyncSocket.framework/Headers/GCDAsyncUdpSocket.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AudioKit-Swift.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/Pantry/Pantry.framework/Headers/Pantry-Swift.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/OSCKit/OSCKit.framework/Headers/OSCKit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AudioKit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/TPCircularBuffer+Unit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBankAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKOscillatorBankAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKFMOscillatorBankAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPWMOscillatorBankAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKMorphingOscillatorBankAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPhaseDistortionOscillatorBankAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKMandolinAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKConvolutionAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKRhodesPianoAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBalancerAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKOfflineRenderAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPhaseLockedVocoderAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKShakerAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKAmplitudeTrackerAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKFrequencyTrackerAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKTesterAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSamplePlayerAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKRhinoGuitarProcessorAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDynaRageCompressorAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKOperationGeneratorAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKTubularBellsAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKOperationEffectAudioUnit.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/OSCKit/OSCKit.framework/Headers/OSCClient.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/TPCircularBuffer+AudioBufferList.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/EZOutput.h"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/MMLanScan/MMLanScan.framework/Modules/module.modulemap"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/CocoaAsyncSocket/CocoaAsyncSocket.framework/Modules/module.modulemap"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/OSCKit/OSCKit.framework/Modules/module.modulemap"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Modules/module.modulemap"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/build/Debug-iphoneos/Pantry/Pantry.framework/Modules/module.modulemap"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKZitaReverbDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKFlatFrequencyResponseReverbDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKChowningReverbDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKCostelloReverbDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKCombFilterReverbDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKAmplitudeEnvelopeDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKWhiteNoiseDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPinkNoiseDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBrownianNoiseDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKFluteDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPluckedStringDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKAutoWahDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDCBlockDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKTanhDistortionDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKTremoloDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDripDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKMetalBarDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKMoogLadderDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBitCrusherDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSamplerDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPannerDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKClipperDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPhaserDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPitchShifterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKStereoFieldLimiterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKRolandTB303FilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKModalResonanceFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKToneFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBandPassButterworthFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKHighPassButterworthFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKLowPassButterworthFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBandRejectButterworthFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKEqualizerFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKHighShelfParametricEqualizerFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKLowShelfParametricEqualizerFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPeakingParametricEqualizerFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKKorgLowPassFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKThreePoleLowpassFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKFormantFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKResonantFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKToneComplementFilterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBoosterDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDynamicRangeCompressorDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKOscillatorDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKFMOscillatorDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPWMOscillatorDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKMorphingOscillatorDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPhaseDistortionOscillatorDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKStringResonatorDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKVocalTractDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKClarinetDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKModulatedDelayDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKVariableDelayDSP.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDSPBase.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSoundpipeDSPBase.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKParameterRampBase.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/DSPKernel.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDSPKernel.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKBankDSPKernel.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKPWMOscillatorBankDSPKernel.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKMorphingOscillatorBankDSPKernel.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKRhinoGuitarProcessorDSPKernel.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKDynaRageCompressorDSPKernel.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKSoundpipeKernel.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKExponentialParameterRamp.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/AKLinearParameterRamp.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/ParameterRamper.hpp"
+- "/Users/soh_la/Develop/iOS/Projects/bounceOSCs/Pods/AudioKit/iOS/AudioKit.framework/Headers/BufferedAudioBus.hpp"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+interface-hash: "7e95b478df61c6a833be9b882668fc32"

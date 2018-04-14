@@ -11,6 +11,7 @@ import CoreMotion
 
 //• argh for now global
 let motionManager: CMMotionManager = CMMotionManager()
+var referenceAttitude: CMAttitude? = CMAttitude()
 
 class MotionSensor {
     
@@ -19,7 +20,23 @@ class MotionSensor {
         if(motionManager.isDeviceMotionAvailable){
             motionManager.deviceMotionUpdateInterval = 0.03
             motionManager.startDeviceMotionUpdates()
+            setReference()
         }
+    }
+    
+    func setReference() {
+        if((motionManager.deviceMotion) != nil){
+            referenceAttitude = motionManager.deviceMotion?.attitude
+        }
+    }
+    
+    func getAttitude() -> CMAttitude? {
+        
+//        if (referenceAttitude != nil) {
+////            motionManager.deviceMotion?.attitude.multiply(byInverseOf: referenceAttitude)
+//            print(referenceAttitude ?? 0)
+//        }
+        return motionManager.deviceMotion?.attitude
     }
 }
 
@@ -48,9 +65,7 @@ class AttitudeSensor : MotionSensor, SensorProtocol {
     func getData() -> Array<Double> {
         
         if((motionManager.deviceMotion) != nil){
-            let attitude: CMAttitude = (motionManager.deviceMotion?.attitude)!
-
-            //print([attitude.pitch,attitude.roll,attitude.yaw].map{$0 * (180.0 / Double.pi) + 180.0})
+            let attitude: CMAttitude = getAttitude()!//(motionManager.deviceMotion?.attitude)!
             return [attitude.pitch,attitude.roll,attitude.yaw]
         }
         return [0]
@@ -70,7 +85,7 @@ class RotationMatrixSensor : MotionSensor, SensorProtocol {
     func getData() -> Array<Double> {
         
         if((motionManager.deviceMotion) != nil){
-            let attitude: CMAttitude = (motionManager.deviceMotion?.attitude)!
+            let attitude: CMAttitude = getAttitude()!//(motionManager.deviceMotion?.attitude)!
             let m: CMRotationMatrix = attitude.rotationMatrix
             //print([attitude.pitch,attitude.roll,attitude.yaw].map{$0 * (180.0 / Double.pi) + 180.0})
             return([m.m11,m.m12,m.m13,0,
@@ -117,7 +132,7 @@ class QuaternionSensor : MotionSensor, SensorProtocol {
     func getData() -> Array<Double> {
         
         if((motionManager.deviceMotion) != nil){
-            let attitude: CMAttitude = (motionManager.deviceMotion?.attitude)!
+            let attitude: CMAttitude = getAttitude()!//(motionManager.deviceMotion?.attitude)!
             let q: CMQuaternion = attitude.quaternion
             return [q.w,q.x,q.y,q.z]
         }

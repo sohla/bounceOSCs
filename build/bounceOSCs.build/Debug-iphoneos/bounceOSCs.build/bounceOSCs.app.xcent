@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>558R49WUWP.com.sohla.bounceOSCs</string>
+	<string>G22NS3FXK9.com.sohla.bounceOSCs</string>
 	<key>com.apple.developer.team-identifier</key>
 	<string>G9C3VREPPJ</string>
 	<key>get-task-allow</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>558R49WUWP.com.sohla.bounceOSCs</string>
+		<string>G22NS3FXK9.com.sohla.bounceOSCs</string>
 	</array>
 </dict>
 </plist>
