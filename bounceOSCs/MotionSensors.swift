@@ -60,8 +60,6 @@ class MotionSensor {
         if(referenceAttitude != nil) {
             motionManager?.deviceMotion?.attitude.multiply(byInverseOf: referenceAttitude!)
         }
-        print(referenceAttitude)
-        print(motionManager?.deviceMotion?.attitude)
         return motionManager?.deviceMotion?.attitude
     }
 }

@@ -23,7 +23,7 @@ class SensorTransmitter {
     @objc func next(){
         transmitter?.transmit(sensor: sensor!)
     }
-    func run(interval:Double = 0.5) {
+    func run(interval:Double = 0.03) {
         //transmitter?.isOn = true//•URGH
         timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(next), userInfo: nil, repeats: true)
     }
