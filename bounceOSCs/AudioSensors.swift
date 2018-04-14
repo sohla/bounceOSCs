@@ -22,7 +22,7 @@ class AudioSensor {
         silence = AKBooster(tracker, gain: 0)
 
         AudioKit.output = silence
-        AudioKit.start()
+        try? AudioKit.start()
 
     }
 }
