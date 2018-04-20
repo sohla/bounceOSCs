@@ -19,6 +19,7 @@
 		F0345E8D1EDC5C4C00D1038A /* SensorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E8C1EDC5C4C00D1038A /* SensorProtocol.swift */; };
 		F0345E8F1EDC5C6D00D1038A /* TransmitterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E8E1EDC5C6D00D1038A /* TransmitterProtocol.swift */; };
 		F0345E911EDC5D5A00D1038A /* MotionSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E901EDC5D5A00D1038A /* MotionSensors.swift */; };
+		F060B75D2089C94F00DECBD2 /* OSCReciever.swift in Sources */ = {isa = PBXBuildFile; fileRef = F060B75C2089C94F00DECBD2 /* OSCReciever.swift */; };
 		F06B0BAB1EE30F5D000388ED /* IPAddressTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BAA1EE30F5D000388ED /* IPAddressTableViewController.swift */; };
 		F06B0BAD1EE45BE1000388ED /* SensorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BAC1EE45BE1000388ED /* SensorsTableViewController.swift */; };
 		F06B0BB11EE59C8D000388ED /* SensorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BB01EE59C8D000388ED /* SensorTableViewCell.swift */; };
@@ -50,6 +51,7 @@
 		F0345E8E1EDC5C6D00D1038A /* TransmitterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransmitterProtocol.swift; sourceTree = "<group>"; };
 		F0345E901EDC5D5A00D1038A /* MotionSensors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionSensors.swift; sourceTree = "<group>"; };
 		F0345E951EDDAEF300D1038A /* AudioSensors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSensors.swift; sourceTree = "<group>"; };
+		F060B75C2089C94F00DECBD2 /* OSCReciever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCReciever.swift; sourceTree = "<group>"; };
 		F06B0BAA1EE30F5D000388ED /* IPAddressTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddressTableViewController.swift; sourceTree = "<group>"; };
 		F06B0BAC1EE45BE1000388ED /* SensorsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorsTableViewController.swift; sourceTree = "<group>"; };
 		F06B0BB01EE59C8D000388ED /* SensorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorTableViewCell.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				F0345E711ED495CA00D1038A /* AppDelegate.swift */,
+				F060B75C2089C94F00DECBD2 /* OSCReciever.swift */,
 				F0938A5D1EE1AAEE00B116E7 /* TransmittersTableViewController.swift */,
 				F0938A5F1EE2FB1600B116E7 /* TXOSCViewController.swift */,
 				F0BD2B691FCB474E001A73F1 /* RXOSCViewController.swift */,
@@ -277,6 +280,7 @@
 				F0CA6CCB1FD03461005098BF /* AudioSensors.swift in Sources */,
 				F0345E8D1EDC5C4C00D1038A /* SensorProtocol.swift in Sources */,
 				F06B0BB11EE59C8D000388ED /* SensorTableViewCell.swift in Sources */,
+				F060B75D2089C94F00DECBD2 /* OSCReciever.swift in Sources */,
 				F0345E741ED495CA00D1038A /* FirstViewController.swift in Sources */,
 				F06B0BAB1EE30F5D000388ED /* IPAddressTableViewController.swift in Sources */,
 				F0938A601EE2FB1600B116E7 /* TXOSCViewController.swift in Sources */,

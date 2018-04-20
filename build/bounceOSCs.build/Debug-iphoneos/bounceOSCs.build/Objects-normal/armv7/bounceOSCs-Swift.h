@@ -164,11 +164,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import UIKit;
-@import OSCKit;
 @import MMLanScan;
 @import Foundation;
-@import CoreGraphics;
 @import ObjectiveC;
+@import OSCKit;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -188,13 +188,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class UIWindow;
 @class UIApplication;
-@class OSCMessage;
 
 SWIFT_CLASS("_TtC10bounceOSCs11AppDelegate")
-@interface AppDelegate : UIResponder <OSCServerDelegate, UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
-- (void)handleMessage:(OSCMessage * _Null_unspecified)message;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
@@ -261,6 +259,14 @@ SWIFT_CLASS("_TtC10bounceOSCs25MotionHeaderTableViewCell")
 - (IBAction)onReset:(id _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class OSCMessage;
+
+SWIFT_CLASS("_TtC10bounceOSCs11OSCReciever")
+@interface OSCReciever : NSObject <OSCServerDelegate>
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)handleMessage:(OSCMessage * _Null_unspecified)message;
 @end
 
 @class UITextField;
