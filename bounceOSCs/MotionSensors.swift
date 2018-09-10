@@ -175,6 +175,7 @@ class QuaternionSensor : MotionSensor, SensorProtocol {
     }
     
     func oscData() -> (String,Array<String>){
+        
         let arrayString: Array<String> = getData().compactMap { String($0) }
         return ("/gyrosc/quat",arrayString)
         

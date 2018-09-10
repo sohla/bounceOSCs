@@ -33,7 +33,8 @@ struct OSCTransmitter : TransmitterProtocol {
     
     func transmit(sensor: SensorProtocol){
         if(isOn){
-            let msg:OSCMessage = OSCMessage(address: sensor.oscData().0, arguments: sensor.oscData().1)
+            let data = sensor.oscData()
+            let msg:OSCMessage = OSCMessage(address: data.0, arguments: data.1)
             OSCTransmitter.client.send(msg, to: netAddress.asString())
         }else{
             //print("OSC Transmitter is OFF.")

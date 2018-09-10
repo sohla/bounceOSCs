@@ -35,7 +35,8 @@ class AudioAmpSensor : AudioSensor, SensorProtocol {
     }
     
     func oscData() -> (String,Array<String>){
-        return ("/gyrosc/amp",[String(tracker.amplitude)])
+        let amp = tracker.amplitude * 1024
+        return ("/gyrosc/amp",[String(amp)])
     }
     func midiData() -> String{ return "TODO"}
     
