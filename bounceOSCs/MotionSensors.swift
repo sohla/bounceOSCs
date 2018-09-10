@@ -51,7 +51,7 @@ class MotionSensor {
             print("waiting for device..")
         }
         referenceAttitude = motionManager?.deviceMotion?.attitude
-        print("device reference attitude \(referenceAttitude?.quaternion) set.")
+        //print("device reference attitude \(referenceAttitude?.quaternion) set.")
     
     }
     
