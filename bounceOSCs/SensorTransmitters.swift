@@ -128,7 +128,7 @@ class SensorTransmitters {
                 self.accelOSC.run(interval: 0.03)
                 self.rotationOSC.run(interval: 0.03)
                 self.quaternionOSC.run(interval: 0.03)
-                self.ampOSC.run(interval: 0.01)
+                self.ampOSC.run(interval: 0.03)
                 
                 // if we want to poll use run
                 //self.buttonOSC.run(interval: 0.3)
