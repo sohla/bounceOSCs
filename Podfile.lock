@@ -1,7 +1,10 @@
 PODS:
-  - AudioKit (4.2.3):
-    - AudioKit/UI (= 4.2.3)
-  - AudioKit/UI (4.2.3)
+  - AudioKit (4.5.2):
+    - AudioKit/Core (= 4.5.2)
+    - AudioKit/UI (= 4.5.2)
+  - AudioKit/Core (4.5.2)
+  - AudioKit/UI (4.5.2):
+    - AudioKit/Core
   - CocoaAsyncSocket (7.6.3)
   - MMLanScan (3.0.0)
   - OSCKit (0.3.5):
@@ -23,7 +26,7 @@ SPEC REPOS:
     - Pantry
 
 SPEC CHECKSUMS:
-  AudioKit: 65e0035ce267446932ac733257053ac97dfe395e
+  AudioKit: af6770360f1d8b2aed16ce2802dafe69f0e592d0
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
   MMLanScan: 86a0f77edbf163be30c1f58321469c7c8ce4c50e
   OSCKit: 4470dbd30bc792dcf66dc4e7b5d1ec7174add33c
