@@ -14,18 +14,25 @@ class AudioSensor {
     let mic: AKMicrophone!
     let tracker: AKAmplitudeTracker!
     let silence: AKBooster!
+    let bufferSize: UInt32 = 1_024
 
     init() {
         AKSettings.audioInputEnabled = true
-        AKSettings.bufferLength = .shortest
+        AKSettings.bufferLength = .veryShort
+        AKSettings.audioInputEnabled = true
+        
         mic = AKMicrophone()
         tracker = AKAmplitudeTracker.init(mic)
         silence = AKBooster(tracker, gain: 0)
-
+        
         AudioKit.output = silence
         try? AudioKit.start()
-        tracker.start()
+        //tracker.start()
 
+    }
+    
+    func trigger(_ sum: Float){
+        print("*",sum)
     }
 }
 
@@ -37,9 +44,9 @@ class AudioAmpSensor : AudioSensor, SensorProtocol {
     }
     
     func oscData() -> (String,Array<String>){
-        let amp = tracker.amplitude * 1024
+        let amp = tracker.amplitude 
         
-//        if tracker.amplitude > 0.05 {
+//        if tracker.amplitude > 0.01 {
 //            print(tracker.amplitude)
 //        }
         return ("/gyrosc/amp",[String(amp)])
