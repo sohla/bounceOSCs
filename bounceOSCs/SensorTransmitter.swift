@@ -21,7 +21,9 @@ class SensorTransmitter {
     }
     
     @objc func next(){
-        transmitter?.transmit(sensor: sensor!)
+        if let s = sensor {
+            transmitter?.transmit(sensor: s)
+        }
     }
     func run(interval:Double) {
         //transmitter?.isOn = true//•URGH
