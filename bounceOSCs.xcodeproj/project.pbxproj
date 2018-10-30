@@ -30,7 +30,6 @@
 		F0C57DA11EF186AB0099B5B7 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA01EF186AB0099B5B7 /* ButtonTableViewCell.swift */; };
 		F0C57DA31EF190060099B5B7 /* TouchSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA21EF190060099B5B7 /* TouchSensors.swift */; };
 		F0C57DA51EF3BED10099B5B7 /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA41EF3BED10099B5B7 /* SliderTableViewCell.swift */; };
-		F0CA6CCB1FD03461005098BF /* AudioSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E951EDDAEF300D1038A /* AudioSensors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -277,7 +276,6 @@
 				F0345E891EDC5BE100D1038A /* SensorTransmitters.swift in Sources */,
 				F0BD2B6A1FCB474E001A73F1 /* RXOSCViewController.swift in Sources */,
 				F0345E721ED495CA00D1038A /* AppDelegate.swift in Sources */,
-				F0CA6CCB1FD03461005098BF /* AudioSensors.swift in Sources */,
 				F0345E8D1EDC5C4C00D1038A /* SensorProtocol.swift in Sources */,
 				F06B0BB11EE59C8D000388ED /* SensorTableViewCell.swift in Sources */,
 				F060B75D2089C94F00DECBD2 /* OSCReciever.swift in Sources */,
