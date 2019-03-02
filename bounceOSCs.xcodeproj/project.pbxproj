@@ -227,7 +227,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-bounceOSCs/Pods-bounceOSCs-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-bounceOSCs/Pods-bounceOSCs-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
 				"${BUILT_PRODUCTS_DIR}/MMLanScan/MMLanScan.framework",
 				"${BUILT_PRODUCTS_DIR}/OSCKit/OSCKit.framework",
@@ -242,7 +242,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-bounceOSCs/Pods-bounceOSCs-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bounceOSCs/Pods-bounceOSCs-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C97ACDB5BB40B2D0458AD058 /* [CP] Check Pods Manifest.lock */ = {
