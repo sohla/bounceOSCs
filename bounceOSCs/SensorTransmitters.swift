@@ -121,7 +121,7 @@ class SensorTransmitters {
             print(n.userInfo!)
             
             let value = n.userInfo?["value"] as? Bool
-            let delta = 0.03
+            let delta = 0.06
             
             if(value!){
                 self.attitudeOSC.run(interval: delta)
