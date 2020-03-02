@@ -11,7 +11,11 @@ import Pantry
 
 class SensorTransmitters {
     
-    
+    let ampOSC = SensorTransmitter(
+        sensor: AudioAmpSensor(),
+        transmitter: OSCTransmitter(
+            netAddress: NetAddress(address: "127.0.0.1", port: "9000"), isOn: false))
+
     let attitudeOSC = SensorTransmitter(
         sensor: AttitudeSensor(),
         transmitter: OSCTransmitter(
@@ -37,10 +41,6 @@ class SensorTransmitters {
         transmitter: OSCTransmitter(
             netAddress: NetAddress(address: "127.0.0.1", port: "9000"), isOn: false))
 
-    let ampOSC = SensorTransmitter(
-        sensor: AudioAmpSensor(),
-        transmitter: OSCTransmitter(
-            netAddress: NetAddress(address: "127.0.0.1", port: "9000"), isOn: false))
 
     let buttonOSC = SensorTransmitter(
         sensor: ButtonSensor(),

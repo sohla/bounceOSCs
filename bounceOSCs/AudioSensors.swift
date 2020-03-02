@@ -16,18 +16,20 @@ class AudioSensor {
     let silence: AKBooster!
     let bufferSize: UInt32 = 1_024
 
+    
     init() {
+
         AKSettings.audioInputEnabled = true
         AKSettings.bufferLength = .veryShort
-        AKSettings.audioInputEnabled = true
         
         mic = AKMicrophone()
+        
         tracker = AKAmplitudeTracker.init(mic)
         silence = AKBooster(tracker, gain: 0)
         
-        //AudioKit.output = silence
-        //try? AudioKit.start()
-        //tracker.start()
+//        AudioKit.output = silence
+//        try? AudioKit.start()
+//        tracker.start()
 
     }
     
