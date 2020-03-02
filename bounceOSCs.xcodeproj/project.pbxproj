@@ -20,7 +20,6 @@
 		F0345E8F1EDC5C6D00D1038A /* TransmitterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E8E1EDC5C6D00D1038A /* TransmitterProtocol.swift */; };
 		F0345E911EDC5D5A00D1038A /* MotionSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E901EDC5D5A00D1038A /* MotionSensors.swift */; };
 		F060B75D2089C94F00DECBD2 /* OSCReciever.swift in Sources */ = {isa = PBXBuildFile; fileRef = F060B75C2089C94F00DECBD2 /* OSCReciever.swift */; };
-		F06B0BAB1EE30F5D000388ED /* IPAddressTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BAA1EE30F5D000388ED /* IPAddressTableViewController.swift */; };
 		F06B0BAD1EE45BE1000388ED /* SensorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BAC1EE45BE1000388ED /* SensorsTableViewController.swift */; };
 		F06B0BB11EE59C8D000388ED /* SensorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BB01EE59C8D000388ED /* SensorTableViewCell.swift */; };
 		F090B4B12080372000C64B53 /* MotionHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F090B4B02080372000C64B53 /* MotionHeaderTableViewCell.swift */; };
@@ -283,7 +282,6 @@
 				F06B0BB11EE59C8D000388ED /* SensorTableViewCell.swift in Sources */,
 				F060B75D2089C94F00DECBD2 /* OSCReciever.swift in Sources */,
 				F0345E741ED495CA00D1038A /* FirstViewController.swift in Sources */,
-				F06B0BAB1EE30F5D000388ED /* IPAddressTableViewController.swift in Sources */,
 				F0938A601EE2FB1600B116E7 /* TXOSCViewController.swift in Sources */,
 				F0C57DA51EF3BED10099B5B7 /* SliderTableViewCell.swift in Sources */,
 				F0938A5E1EE1AAEE00B116E7 /* TransmittersTableViewController.swift in Sources */,
@@ -434,12 +432,15 @@
 			baseConfigurationReference = 6AA8B20FC592CF5F13144390 /* Pods-bounceOSCs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G9C3VREPPJ;
 				INFOPLIST_FILE = bounceOSCs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sohla.bounceOSCs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -449,12 +450,15 @@
 			baseConfigurationReference = 5C6B2055AE0AB9877DAFC5AC /* Pods-bounceOSCs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G9C3VREPPJ;
 				INFOPLIST_FILE = bounceOSCs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sohla.bounceOSCs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;

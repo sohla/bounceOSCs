@@ -1,11 +1,11 @@
 PODS:
-  - AudioKit (4.7.1):
-    - AudioKit/Core (= 4.7.1)
-    - AudioKit/UI (= 4.7.1)
-  - AudioKit/Core (4.7.1)
-  - AudioKit/UI (4.7.1):
+  - AudioKit (4.9.4):
+    - AudioKit/Core (= 4.9.4)
+    - AudioKit/UI (= 4.9.4)
+  - AudioKit/Core (4.9.4)
+  - AudioKit/UI (4.9.4):
     - AudioKit/Core
-  - CocoaAsyncSocket (7.6.3)
+  - CocoaAsyncSocket (7.6.4)
   - MMLanScan (3.0.0)
   - OSCKit (0.3.5):
     - CocoaAsyncSocket (~> 7.3)
@@ -18,7 +18,7 @@ DEPENDENCIES:
   - Pantry
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - AudioKit
     - CocoaAsyncSocket
     - MMLanScan
@@ -26,12 +26,12 @@ SPEC REPOS:
     - Pantry
 
 SPEC CHECKSUMS:
-  AudioKit: fb42378fbe950033462b47efe3643c108698ba03
-  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  AudioKit: 2ad2c0c546f53134967e4a381dfd8691b7674093
+  CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   MMLanScan: 86a0f77edbf163be30c1f58321469c7c8ce4c50e
   OSCKit: 4470dbd30bc792dcf66dc4e7b5d1ec7174add33c
   Pantry: 98481849be65d2b2cb9658976533e84ebd266192
 
 PODFILE CHECKSUM: 9801d3204e41250965d721b25f0114354b8c26f4
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.4

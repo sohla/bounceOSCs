@@ -25,8 +25,8 @@ class AudioSensor {
         tracker = AKAmplitudeTracker.init(mic)
         silence = AKBooster(tracker, gain: 0)
         
-        AudioKit.output = silence
-        try? AudioKit.start()
+        //AudioKit.output = silence
+        //try? AudioKit.start()
         //tracker.start()
 
     }

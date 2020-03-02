@@ -17,7 +17,7 @@ class IPAddressTableViewController: UITableViewController, MMLANScannerDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.lanScanner = MMLANScanner(delegate:self)
+//        self.lanScanner = MMLANScanner(delegate:self)
         self.connectedDevices = [MMDevice]()
         
         self.title = "scanning..."
