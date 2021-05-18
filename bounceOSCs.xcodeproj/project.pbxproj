@@ -151,6 +151,7 @@
 			buildConfigurationList = F0345E821ED495CA00D1038A /* Build configuration list for PBXNativeTarget "bounceOSCs" */;
 			buildPhases = (
 				C97ACDB5BB40B2D0458AD058 /* [CP] Check Pods Manifest.lock */,
+				1B0C10F1C487334F90E542C4 /* [CP] Prepare Artifacts */,
 				F0345E6A1ED495CA00D1038A /* Sources */,
 				F0345E6B1ED495CA00D1038A /* Frameworks */,
 				F0345E6C1ED495CA00D1038A /* Resources */,
@@ -193,6 +194,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -220,6 +222,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1B0C10F1C487334F90E542C4 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bounceOSCs/Pods-bounceOSCs-artifacts.sh",
+				"${PODS_ROOT}/AudioKit/AudioKit.xcframework",
+				"${PODS_ROOT}/AudioKit/AudioKitUI.xcframework",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/cocoapods-artifacts-${CONFIGURATION}.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bounceOSCs/Pods-bounceOSCs-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		769479CB1261F3865218354F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -227,6 +248,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-bounceOSCs/Pods-bounceOSCs-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/cocoapods-artifacts-${CONFIGURATION}.txt",
 				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
 				"${BUILT_PRODUCTS_DIR}/MMLanScan/MMLanScan.framework",
 				"${BUILT_PRODUCTS_DIR}/OSCKit/OSCKit.framework",
@@ -437,7 +459,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sohla.bounceOSCs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -452,7 +474,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sohla.bounceOSCs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

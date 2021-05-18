@@ -1,5 +1,5 @@
 # Uncomment this line to define a global platform for your project
- platform :ios, '9.0'
+ platform :ios, '9.3'
 
 #post_install do |installer|
 #    installer.pods_project.targets.each do |target|
@@ -16,7 +16,7 @@ target 'bounceOSCs' do
   # Pods for bounceOSCs
 
 pod 'OSCKit'
-pod 'AudioKit', '~> 4.2.4'
+pod 'AudioKit'
 pod 'MMLanScan'
 pod 'Pantry'
 
