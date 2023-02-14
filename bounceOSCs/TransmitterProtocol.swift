@@ -27,7 +27,7 @@ struct NetAddress {
 
 struct OSCTransmitter : TransmitterProtocol {
    
-    let client:OSCClient = OSCClient()
+    static let client:OSCClient = OSCClient()
     var netAddress:NetAddress
     var isOn: Bool
     
@@ -35,7 +35,7 @@ struct OSCTransmitter : TransmitterProtocol {
         if(isOn){
             let data = sensor.oscData()
             let msg:OSCMessage = OSCMessage(address: data.0, arguments: data.1)
-            client.send(msg, to: netAddress.asString())
+            OSCTransmitter.client.send(msg, to: netAddress.asString())
         }else{
             //print("OSC Transmitter is OFF.")
         }

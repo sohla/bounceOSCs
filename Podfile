@@ -1,6 +1,8 @@
 # Uncomment this line to define a global platform for your project
  platform :ios, '9.3'
 
+warn_for_unused_master_specs_repo => false
+
 #post_install do |installer|
 #    installer.pods_project.targets.each do |target|
 #        target.build_configurations.each do |config|

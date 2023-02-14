@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		279FAA1D57B03FEFB1A92AFA /* Pods_bounceOSCs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA7BA15B3B83AE03B3EEF2C /* Pods_bounceOSCs.framework */; };
 		F0345E721ED495CA00D1038A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E711ED495CA00D1038A /* AppDelegate.swift */; };
 		F0345E741ED495CA00D1038A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E731ED495CA00D1038A /* FirstViewController.swift */; };
 		F0345E761ED495CA00D1038A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E751ED495CA00D1038A /* SecondViewController.swift */; };
@@ -23,6 +22,7 @@
 		F06B0BAB1EE30F5D000388ED /* IPAddressTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BAA1EE30F5D000388ED /* IPAddressTableViewController.swift */; };
 		F06B0BAD1EE45BE1000388ED /* SensorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BAC1EE45BE1000388ED /* SensorsTableViewController.swift */; };
 		F06B0BB11EE59C8D000388ED /* SensorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BB01EE59C8D000388ED /* SensorTableViewCell.swift */; };
+		F0882267299B2F1D0087A135 /* Pods_bounceOSCs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA7BA15B3B83AE03B3EEF2C /* Pods_bounceOSCs.framework */; };
 		F090B4B12080372000C64B53 /* MotionHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F090B4B02080372000C64B53 /* MotionHeaderTableViewCell.swift */; };
 		F0938A5E1EE1AAEE00B116E7 /* TransmittersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0938A5D1EE1AAEE00B116E7 /* TransmittersTableViewController.swift */; };
 		F0938A601EE2FB1600B116E7 /* TXOSCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0938A5F1EE2FB1600B116E7 /* TXOSCViewController.swift */; };
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				279FAA1D57B03FEFB1A92AFA /* Pods_bounceOSCs.framework in Frameworks */,
+				F0882267299B2F1D0087A135 /* Pods_bounceOSCs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +151,6 @@
 			buildConfigurationList = F0345E821ED495CA00D1038A /* Build configuration list for PBXNativeTarget "bounceOSCs" */;
 			buildPhases = (
 				C97ACDB5BB40B2D0458AD058 /* [CP] Check Pods Manifest.lock */,
-				1B0C10F1C487334F90E542C4 /* [CP] Prepare Artifacts */,
 				F0345E6A1ED495CA00D1038A /* Sources */,
 				F0345E6B1ED495CA00D1038A /* Frameworks */,
 				F0345E6C1ED495CA00D1038A /* Resources */,
@@ -222,25 +221,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1B0C10F1C487334F90E542C4 /* [CP] Prepare Artifacts */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-bounceOSCs/Pods-bounceOSCs-artifacts.sh",
-				"${PODS_ROOT}/AudioKit/AudioKit.xcframework",
-				"${PODS_ROOT}/AudioKit/AudioKitUI.xcframework",
-			);
-			name = "[CP] Prepare Artifacts";
-			outputPaths = (
-				"${BUILT_PRODUCTS_DIR}/cocoapods-artifacts-${CONFIGURATION}.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bounceOSCs/Pods-bounceOSCs-artifacts.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		769479CB1261F3865218354F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,7 +228,6 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-bounceOSCs/Pods-bounceOSCs-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/cocoapods-artifacts-${CONFIGURATION}.txt",
 				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
 				"${BUILT_PRODUCTS_DIR}/MMLanScan/MMLanScan.framework",
 				"${BUILT_PRODUCTS_DIR}/OSCKit/OSCKit.framework",
@@ -384,7 +363,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -438,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -454,12 +433,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G9C3VREPPJ;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = bounceOSCs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sohla.bounceOSCs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -469,12 +450,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G9C3VREPPJ;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = bounceOSCs/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sohla.bounceOSCs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

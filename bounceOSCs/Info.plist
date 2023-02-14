@@ -37,6 +37,10 @@
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
+		<string>wifi</string>
+		<string>magnetometer</string>
+		<string>gyroscope</string>
+		<string>accelerometer</string>
 		<string>armv7</string>
 	</array>
 	<key>UIRequiresFullScreen</key>
