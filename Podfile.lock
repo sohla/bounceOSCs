@@ -1,10 +1,20 @@
 PODS:
-  - AudioKit (4.11):
-    - AudioKit/Core (= 4.11)
-    - AudioKit/UI (= 4.11)
-  - AudioKit/Core (4.11)
-  - AudioKit/UI (4.11):
-    - AudioKit/Core
+  - AudioKit (5.1.0):
+    - AudioKit/C (= 5.1.0)
+    - AudioKit/Core (= 5.1.0)
+    - AudioKit/Soundpipe (= 5.1.0)
+    - AudioKit/Sporth (= 5.1.0)
+    - AudioKit/STK (= 5.1.0)
+  - AudioKit/C (5.1.0):
+    - AudioKit/Soundpipe
+    - AudioKit/Sporth
+    - AudioKit/STK
+  - AudioKit/Core (5.1.0):
+    - AudioKit/C
+  - AudioKit/Soundpipe (5.1.0)
+  - AudioKit/Sporth (5.1.0):
+    - AudioKit/Soundpipe
+  - AudioKit/STK (5.1.0)
   - CocoaAsyncSocket (7.6.5)
   - MMLanScan (3.0.0)
   - OSCKit (0.3.5):
@@ -26,12 +36,12 @@ SPEC REPOS:
     - Pantry
 
 SPEC CHECKSUMS:
-  AudioKit: 3baf8cba8e578ba91691c3f60775fccac9cbfdba
+  AudioKit: 81246a4ccdd7ca3c6e0076f913070e90987b4369
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   MMLanScan: 86a0f77edbf163be30c1f58321469c7c8ce4c50e
   OSCKit: 4470dbd30bc792dcf66dc4e7b5d1ec7174add33c
   Pantry: 98481849be65d2b2cb9658976533e84ebd266192
 
-PODFILE CHECKSUM: a5826be537184e90f872d606e80de310e579599d
+PODFILE CHECKSUM: d9e483d81139c1db3b8db4a5c84dd7714a0eec74
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.3
