@@ -6,7 +6,7 @@ target 'bounceOSCs' do
   use_frameworks!
 
   # Pods for bounceOSCs
-  pod 'OSCKit'
+#  pod 'OSCKit'
   pod 'AudioKit'
   pod 'MMLanScan'
   pod 'Pantry'

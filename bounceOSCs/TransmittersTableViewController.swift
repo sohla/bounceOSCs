@@ -11,7 +11,7 @@ import UIKit
 class TransmittersTableViewController: UITableViewController {
 
 //    let types:Array<String> = ["OSC","MIDI","BTLE"]
-    let types:Array<String> = ["TX OSC", "RX OSC"]
+    let types:Array<String> = ["TX OSC", "RX OSC", "MIDI"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
