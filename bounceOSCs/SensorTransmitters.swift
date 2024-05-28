@@ -97,7 +97,6 @@ class SensorTransmitters {
         }
 
          NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "TX OSC_onOffChanged"), object: nil, queue: nil) { n in
-            print(n.userInfo!)
             
             let value = n.userInfo?["value"] as? Bool
              let framerate = 1.0 / 12.0

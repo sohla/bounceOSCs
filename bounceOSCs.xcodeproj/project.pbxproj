@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5898E779360AFE3466C3570B /* Pods_bounceOSCs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7856DD6FF0214C9270134538 /* Pods_bounceOSCs.framework */; };
 		F0345E721ED495CA00D1038A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E711ED495CA00D1038A /* AppDelegate.swift */; };
 		F0345E741ED495CA00D1038A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E731ED495CA00D1038A /* FirstViewController.swift */; };
 		F0345E761ED495CA00D1038A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E751ED495CA00D1038A /* SecondViewController.swift */; };
@@ -29,15 +28,13 @@
 		F0938A601EE2FB1600B116E7 /* TXOSCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0938A5F1EE2FB1600B116E7 /* TXOSCViewController.swift */; };
 		F0BD2B6A1FCB474E001A73F1 /* RXOSCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BD2B691FCB474E001A73F1 /* RXOSCViewController.swift */; };
 		F0C3AD6A2C056F8100D30060 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C3AD692C056F8100D30060 /* UserSettings.swift */; };
+		F0C3AD6D2C0590E900D30060 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = F0C3AD6C2C0590E900D30060 /* AudioKit */; };
 		F0C57DA11EF186AB0099B5B7 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA01EF186AB0099B5B7 /* ButtonTableViewCell.swift */; };
 		F0C57DA31EF190060099B5B7 /* TouchSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA21EF190060099B5B7 /* TouchSensors.swift */; };
 		F0C57DA51EF3BED10099B5B7 /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA41EF3BED10099B5B7 /* SliderTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2FEF881D3D6D39BECBF010D2 /* Pods-bounceOSCs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bounceOSCs.debug.xcconfig"; path = "Target Support Files/Pods-bounceOSCs/Pods-bounceOSCs.debug.xcconfig"; sourceTree = "<group>"; };
-		7856DD6FF0214C9270134538 /* Pods_bounceOSCs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bounceOSCs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A232EDCD3C819E9375E20BD /* Pods-bounceOSCs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bounceOSCs.release.xcconfig"; path = "Target Support Files/Pods-bounceOSCs/Pods-bounceOSCs.release.xcconfig"; sourceTree = "<group>"; };
 		F0345E6E1ED495CA00D1038A /* bounceOSCs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bounceOSCs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0345E711ED495CA00D1038A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0345E731ED495CA00D1038A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +53,6 @@
 		F06B0BAC1EE45BE1000388ED /* SensorsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorsTableViewController.swift; sourceTree = "<group>"; };
 		F06B0BB01EE59C8D000388ED /* SensorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorTableViewCell.swift; sourceTree = "<group>"; };
 		F090B4B02080372000C64B53 /* MotionHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionHeaderTableViewCell.swift; sourceTree = "<group>"; };
-		F0938A5C1EE19CFB00B116E7 /* MMLanScan-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMLanScan-Bridging-Header.h"; sourceTree = "<group>"; };
 		F0938A5D1EE1AAEE00B116E7 /* TransmittersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransmittersTableViewController.swift; sourceTree = "<group>"; };
 		F0938A5F1EE2FB1600B116E7 /* TXOSCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TXOSCViewController.swift; sourceTree = "<group>"; };
 		F0BD2B691FCB474E001A73F1 /* RXOSCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXOSCViewController.swift; sourceTree = "<group>"; };
@@ -71,8 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5898E779360AFE3466C3570B /* Pods_bounceOSCs.framework in Frameworks */,
 				F0533B012C043F72000C4D1D /* OSCKit in Frameworks */,
+				F0C3AD6D2C0590E900D30060 /* AudioKit in Frameworks */,
 				F0533B032C043F72000C4D1D /* OSCKitCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,30 +76,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03DE3E99FE7CEE0746C2FF8B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7856DD6FF0214C9270134538 /* Pods_bounceOSCs.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		62874AEDE25CEDB13E088350 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2FEF881D3D6D39BECBF010D2 /* Pods-bounceOSCs.debug.xcconfig */,
-				7A232EDCD3C819E9375E20BD /* Pods-bounceOSCs.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		F0345E651ED495CA00D1038A = {
 			isa = PBXGroup;
 			children = (
 				F0345E701ED495CA00D1038A /* bounceOSCs */,
 				F0345E6F1ED495CA00D1038A /* Products */,
-				62874AEDE25CEDB13E088350 /* Pods */,
-				03DE3E99FE7CEE0746C2FF8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,7 +115,6 @@
 				F0345E951EDDAEF300D1038A /* AudioSensors.swift */,
 				F0C57DA21EF190060099B5B7 /* TouchSensors.swift */,
 				F0345E8E1EDC5C6D00D1038A /* TransmitterProtocol.swift */,
-				F0938A5C1EE19CFB00B116E7 /* MMLanScan-Bridging-Header.h */,
 				F0345E771ED495CA00D1038A /* Main.storyboard */,
 				F0345E7A1ED495CA00D1038A /* Assets.xcassets */,
 				F0345E7C1ED495CA00D1038A /* LaunchScreen.storyboard */,
@@ -154,7 +130,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0345E821ED495CA00D1038A /* Build configuration list for PBXNativeTarget "bounceOSCs" */;
 			buildPhases = (
-				F68F8AF702ABCFBFBF48E76F /* [CP] Check Pods Manifest.lock */,
 				F0345E6A1ED495CA00D1038A /* Sources */,
 				F0345E6B1ED495CA00D1038A /* Frameworks */,
 				F0345E6C1ED495CA00D1038A /* Resources */,
@@ -167,6 +142,7 @@
 			packageProductDependencies = (
 				F0533B002C043F72000C4D1D /* OSCKit */,
 				F0533B022C043F72000C4D1D /* OSCKitCore */,
+				F0C3AD6C2C0590E900D30060 /* AudioKit */,
 			);
 			productName = bounceOSCs;
 			productReference = F0345E6E1ED495CA00D1038A /* bounceOSCs.app */;
@@ -207,6 +183,7 @@
 			mainGroup = F0345E651ED495CA00D1038A;
 			packageReferences = (
 				F0533AFF2C043F72000C4D1D /* XCRemoteSwiftPackageReference "OSCKit" */,
+				F0C3AD6B2C0590E900D30060 /* XCRemoteSwiftPackageReference "AudioKit" */,
 			);
 			productRefGroup = F0345E6F1ED495CA00D1038A /* Products */;
 			projectDirPath = "";
@@ -229,31 +206,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		F68F8AF702ABCFBFBF48E76F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-bounceOSCs-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F0345E6A1ED495CA00D1038A /* Sources */ = {
@@ -420,7 +372,6 @@
 		};
 		F0345E831ED495CA00D1038A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2FEF881D3D6D39BECBF010D2 /* Pods-bounceOSCs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G9C3VREPPJ;
@@ -440,7 +391,6 @@
 		};
 		F0345E841ED495CA00D1038A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A232EDCD3C819E9375E20BD /* Pods-bounceOSCs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = G9C3VREPPJ;
@@ -491,6 +441,14 @@
 				minimumVersion = 0.5.1;
 			};
 		};
+		F0C3AD6B2C0590E900D30060 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.4;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -503,6 +461,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F0533AFF2C043F72000C4D1D /* XCRemoteSwiftPackageReference "OSCKit" */;
 			productName = OSCKitCore;
+		};
+		F0C3AD6C2C0590E900D30060 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0C3AD6B2C0590E900D30060 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
