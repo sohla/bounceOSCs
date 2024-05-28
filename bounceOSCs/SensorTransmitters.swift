@@ -121,17 +121,18 @@ class SensorTransmitters {
             print(n.userInfo!)
             
             let value = n.userInfo?["value"] as? Bool
-            
+             let framerate = 1.0 / 12.0
+             
             if(value!){
-                self.attitudeOSC.run(interval: 0.03)
-                self.rotationMatrixOSC.run(interval: 0.03)
-                self.accelOSC.run(interval: 0.03)
-                self.rotationOSC.run(interval: 0.03)
-                self.quaternionOSC.run(interval: 0.03)
-//                self.ampOSC.run(interval: 0.02)
+                self.attitudeOSC.run(interval: framerate)
+                self.rotationMatrixOSC.run(interval: framerate)
+                self.accelOSC.run(interval: framerate)
+                self.rotationOSC.run(interval: framerate)
+                self.quaternionOSC.run(interval: framerate)
+//                self.ampOSC.run(interval: framerate)
                 
                 // if we want to poll use run
-                //self.buttonOSC.run(interval: 0.3)
+                //self.buttonOSC.run(interval: framerate)
                 
                 self.buttonOSC.transmitter?.isOn = true
                 self.sliderOSC.transmitter?.isOn = true
