@@ -29,8 +29,8 @@ class TXOSCViewController: UIViewController {
             portTextField.text = str
         }
         
-//        ipAddressTextField.keyboardType = UIKeyboardType.numberPad
-//        portTextField.keyboardType = UIKeyboardType.numberPad
+        ipAddressTextField.keyboardType = UIKeyboardType.decimalPad
+        portTextField.keyboardType = UIKeyboardType.decimalPad
     }
 
     override func didReceiveMemoryWarning() {
