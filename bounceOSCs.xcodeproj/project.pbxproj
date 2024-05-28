@@ -162,7 +162,7 @@
 					F0345E6D1ED495CA00D1038A = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = G9C3VREPPJ;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = "";
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -185,6 +185,7 @@
 			packageReferences = (
 				F0533AFF2C043F72000C4D1D /* XCRemoteSwiftPackageReference "OSCKit" */,
 				F0C3AD6B2C0590E900D30060 /* XCRemoteSwiftPackageReference "AudioKit" */,
+				F0AF68612C059E2000483494 /* XCRemoteSwiftPackageReference "MIDIKit" */,
 			);
 			productRefGroup = F0345E6F1ED495CA00D1038A /* Products */;
 			projectDirPath = "";
@@ -441,6 +442,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.5.1;
+			};
+		};
+		F0AF68612C059E2000483494 /* XCRemoteSwiftPackageReference "MIDIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/orchetect/MIDIKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.6;
 			};
 		};
 		F0C3AD6B2C0590E900D30060 /* XCRemoteSwiftPackageReference "AudioKit" */ = {

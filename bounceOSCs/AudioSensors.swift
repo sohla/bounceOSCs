@@ -9,12 +9,16 @@
 import Foundation
 import AudioKit
 
+
+
 class AudioSensor {
     
     let audioEngine = AudioEngine()
     let mic: AudioEngine.InputNode
     let ampTap: AmplitudeTap
 
+    
+//    let midiManager = MIDIManager(clientName: "oscBounces", model: "iphone", manufacturer: "sohla")
     init() {
         mic = audioEngine.input!
         ampTap = AmplitudeTap(mic)
@@ -24,6 +28,7 @@ class AudioSensor {
         ampTap.start()
         mic.start()
         try? audioEngine.start()
+//        try?midiManager.start()
         
         
     }
