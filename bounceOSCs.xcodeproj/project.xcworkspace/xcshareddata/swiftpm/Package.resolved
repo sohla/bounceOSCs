@@ -1,5 +1,5 @@
 {
-  "originHash" : "eca0176cae4fe888bad55148bd8ca89c16ecd2c890e65ab85156ad94a8ce5dd5",
+  "originHash" : "d3f29c57130801880fa8504a132892ca1bf634d14904101e54a2fcd1d2c7cf5c",
   "pins" : [
     {
       "identity" : "audiokit",
@@ -17,6 +17,15 @@
       "state" : {
         "revision" : "dbdc00669c1ced63b27c3c5f052ee4d28f10150c",
         "version" : "7.6.5"
+      }
+    },
+    {
+      "identity" : "haptica",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/efremidze/Haptica.git",
+      "state" : {
+        "revision" : "e03932406d2f36f10beefd31717730b2c2fa9014",
+        "version" : "3.0.3"
       }
     },
     {

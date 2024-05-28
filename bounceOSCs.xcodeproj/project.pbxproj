@@ -33,6 +33,7 @@
 		F0C57DA11EF186AB0099B5B7 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA01EF186AB0099B5B7 /* ButtonTableViewCell.swift */; };
 		F0C57DA31EF190060099B5B7 /* TouchSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA21EF190060099B5B7 /* TouchSensors.swift */; };
 		F0C57DA51EF3BED10099B5B7 /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA41EF3BED10099B5B7 /* SliderTableViewCell.swift */; };
+		F0FEFDD62C05A52100058D6D /* Haptica in Frameworks */ = {isa = PBXBuildFile; productRef = F0FEFDD52C05A52100058D6D /* Haptica */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0533B012C043F72000C4D1D /* OSCKit in Frameworks */,
+				F0FEFDD62C05A52100058D6D /* Haptica in Frameworks */,
 				F0C3AD6D2C0590E900D30060 /* AudioKit in Frameworks */,
 				F0533B032C043F72000C4D1D /* OSCKitCore in Frameworks */,
 			);
@@ -144,6 +146,7 @@
 				F0533B002C043F72000C4D1D /* OSCKit */,
 				F0533B022C043F72000C4D1D /* OSCKitCore */,
 				F0C3AD6C2C0590E900D30060 /* AudioKit */,
+				F0FEFDD52C05A52100058D6D /* Haptica */,
 			);
 			productName = bounceOSCs;
 			productReference = F0345E6E1ED495CA00D1038A /* bounceOSCs.app */;
@@ -186,6 +189,7 @@
 				F0533AFF2C043F72000C4D1D /* XCRemoteSwiftPackageReference "OSCKit" */,
 				F0C3AD6B2C0590E900D30060 /* XCRemoteSwiftPackageReference "AudioKit" */,
 				F0AF68612C059E2000483494 /* XCRemoteSwiftPackageReference "MIDIKit" */,
+				F0FEFDD42C05A52100058D6D /* XCRemoteSwiftPackageReference "Haptica" */,
 			);
 			productRefGroup = F0345E6F1ED495CA00D1038A /* Products */;
 			projectDirPath = "";
@@ -466,6 +470,14 @@
 				minimumVersion = 5.6.4;
 			};
 		};
+		F0FEFDD42C05A52100058D6D /* XCRemoteSwiftPackageReference "Haptica" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/efremidze/Haptica.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -483,6 +495,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F0C3AD6B2C0590E900D30060 /* XCRemoteSwiftPackageReference "AudioKit" */;
 			productName = AudioKit;
+		};
+		F0FEFDD52C05A52100058D6D /* Haptica */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0FEFDD42C05A52100058D6D /* XCRemoteSwiftPackageReference "Haptica" */;
+			productName = Haptica;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

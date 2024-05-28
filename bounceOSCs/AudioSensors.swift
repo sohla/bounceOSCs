@@ -9,16 +9,19 @@
 import Foundation
 import AudioKit
 
+import CoreMIDI
+import Haptica
 
-
-class AudioSensor {
+class AudioSensor : MIDIListener {
+    
+    
     
     let audioEngine = AudioEngine()
     let mic: AudioEngine.InputNode
     let ampTap: AmplitudeTap
-
     
-//    let midiManager = MIDIManager(clientName: "oscBounces", model: "iphone", manufacturer: "sohla")
+    
+    //    let midiManager = MIDIManager(clientName: "oscBounces", model: "iphone", manufacturer: "sohla")
     init() {
         mic = audioEngine.input!
         ampTap = AmplitudeTap(mic)
@@ -28,13 +31,57 @@ class AudioSensor {
         ampTap.start()
         mic.start()
         try? audioEngine.start()
-//        try?midiManager.start()
+        //        try?midiManager.start()
+        
+        let midi = MIDI.sharedInstance
+        print(midi.inputNames)
+        midi.openInput()
+        midi.addListener(self)
+        
         
         
     }
     
     func trigger(_ sum: Float){
         print("*",sum)
+    }
+    
+    func receivedMIDINoteOn(noteNumber: AudioKit.MIDINoteNumber, velocity: AudioKit.MIDIVelocity, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
+        print("midi note on: \(noteNumber) velocity: \(velocity) channel: \(channel)")
+        
+        Haptic.impact(.heavy).generate()
+    }
+    
+
+    
+    func receivedMIDINoteOff(noteNumber: AudioKit.MIDINoteNumber, velocity: AudioKit.MIDIVelocity, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
+    }
+    
+    func receivedMIDIController(_ controller: AudioKit.MIDIByte, value: AudioKit.MIDIByte, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
+    }
+    
+    func receivedMIDIAftertouch(noteNumber: AudioKit.MIDINoteNumber, pressure: AudioKit.MIDIByte, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
+    }
+    
+    func receivedMIDIAftertouch(_ pressure: AudioKit.MIDIByte, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
+    }
+    
+    func receivedMIDIPitchWheel(_ pitchWheelValue: AudioKit.MIDIWord, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
+    }
+    
+    func receivedMIDIProgramChange(_ program: AudioKit.MIDIByte, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
+    }
+    
+    func receivedMIDISystemCommand(_ data: [AudioKit.MIDIByte], portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
+    }
+    
+    func receivedMIDISetupChange() {
+    }
+    
+    func receivedMIDIPropertyChange(propertyChangeInfo: MIDIObjectPropertyChangeNotification) {
+    }
+    
+    func receivedMIDINotification(notification: MIDINotification) {
     }
 }
 
