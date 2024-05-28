@@ -16,10 +16,10 @@ enum UserSettings {
     static let receiveIP = "rx_ip"
     static let receivePort = "rx_port"
 
-    static let gyroscopeOn = "gyroscope_on"
-    static let rotationMatrixOn = "rotatioMatrix_on"
-    static let accelerometerOn = "accelerometer_on"
-    static let rotationOn = "rotationRate_on"
-    static let quaternionOn = "quaternion_on"
+    static let gyroscopeOn = "Gyroscope"
+    static let rotationMatrixOn = "RotationMatrix"
+    static let accelerometerOn = "Accelerometer"
+    static let rotationOn = "RotationRate"
+    static let quaternionOn = "Quaternion"
 
 }

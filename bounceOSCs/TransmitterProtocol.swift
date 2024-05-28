@@ -26,6 +26,10 @@ struct NetAddress {
     }
 }
 
+
+// WHAT THE HELL WERE YOU THINKING. THIS iS THE WORST FIXXXXX!!!!!!
+//
+
 struct OSCTransmitter : TransmitterProtocol {
    
     static let client:OSCClient = OSCClient()
@@ -35,11 +39,15 @@ struct OSCTransmitter : TransmitterProtocol {
     func transmit(sensor: SensorProtocol){
         if(isOn){
             let data = sensor.oscData()
-//            let msg:OSCMessage = OSCMessage(address: data.0, arguments: data.1)
-//            OSCTransmitter.client.send(msg, to: netAddress.asString())
             let msg = OSCMessage(data.0, values: data.1)
-//            try? OSCTransmitter.client.send(msg, to: "192.168.1.147", port: 57120)
-            try? OSCTransmitter.client.send(msg, to: "49.127.56.182", port: 57120)
+            if let ip = UserDefaults.standard.string(forKey: UserSettings.transmitIP) {
+                if let port = UserDefaults.standard.string(forKey: UserSettings.transmitPort) {
+                    if let portInt = UInt16(port) {
+                        try? OSCTransmitter.client.send(msg, to: ip, port: portInt)
+                    }
+                }
+            }
+
 
         }else{
             //print("OSC Transmitter is OFF.")
