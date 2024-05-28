@@ -22,7 +22,6 @@
 		F0533B012C043F72000C4D1D /* OSCKit in Frameworks */ = {isa = PBXBuildFile; productRef = F0533B002C043F72000C4D1D /* OSCKit */; };
 		F0533B032C043F72000C4D1D /* OSCKitCore in Frameworks */ = {isa = PBXBuildFile; productRef = F0533B022C043F72000C4D1D /* OSCKitCore */; };
 		F060B75D2089C94F00DECBD2 /* OSCReciever.swift in Sources */ = {isa = PBXBuildFile; fileRef = F060B75C2089C94F00DECBD2 /* OSCReciever.swift */; };
-		F06B0BAB1EE30F5D000388ED /* IPAddressTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BAA1EE30F5D000388ED /* IPAddressTableViewController.swift */; };
 		F06B0BAD1EE45BE1000388ED /* SensorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BAC1EE45BE1000388ED /* SensorsTableViewController.swift */; };
 		F06B0BB11EE59C8D000388ED /* SensorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0BB01EE59C8D000388ED /* SensorTableViewCell.swift */; };
 		F090B4B12080372000C64B53 /* MotionHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F090B4B02080372000C64B53 /* MotionHeaderTableViewCell.swift */; };
@@ -54,7 +53,6 @@
 		F0345E901EDC5D5A00D1038A /* MotionSensors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionSensors.swift; sourceTree = "<group>"; };
 		F0345E951EDDAEF300D1038A /* AudioSensors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSensors.swift; sourceTree = "<group>"; };
 		F060B75C2089C94F00DECBD2 /* OSCReciever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSCReciever.swift; sourceTree = "<group>"; };
-		F06B0BAA1EE30F5D000388ED /* IPAddressTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddressTableViewController.swift; sourceTree = "<group>"; };
 		F06B0BAC1EE45BE1000388ED /* SensorsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorsTableViewController.swift; sourceTree = "<group>"; };
 		F06B0BB01EE59C8D000388ED /* SensorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorTableViewCell.swift; sourceTree = "<group>"; };
 		F090B4B02080372000C64B53 /* MotionHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionHeaderTableViewCell.swift; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 				F0938A5F1EE2FB1600B116E7 /* TXOSCViewController.swift */,
 				F0C3AD692C056F8100D30060 /* UserSettings.swift */,
 				F0BD2B691FCB474E001A73F1 /* RXOSCViewController.swift */,
-				F06B0BAA1EE30F5D000388ED /* IPAddressTableViewController.swift */,
 				F06B0BAC1EE45BE1000388ED /* SensorsTableViewController.swift */,
 				F090B4B02080372000C64B53 /* MotionHeaderTableViewCell.swift */,
 				F06B0BB01EE59C8D000388ED /* SensorTableViewCell.swift */,
@@ -161,7 +158,6 @@
 				F0345E6A1ED495CA00D1038A /* Sources */,
 				F0345E6B1ED495CA00D1038A /* Frameworks */,
 				F0345E6C1ED495CA00D1038A /* Resources */,
-				E9CAC2B414F0E1479C3223FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,23 +231,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		E9CAC2B414F0E1479C3223FE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-bounceOSCs/Pods-bounceOSCs-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-bounceOSCs/Pods-bounceOSCs-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bounceOSCs/Pods-bounceOSCs-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F68F8AF702ABCFBFBF48E76F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,7 +271,6 @@
 				F06B0BB11EE59C8D000388ED /* SensorTableViewCell.swift in Sources */,
 				F060B75D2089C94F00DECBD2 /* OSCReciever.swift in Sources */,
 				F0345E741ED495CA00D1038A /* FirstViewController.swift in Sources */,
-				F06B0BAB1EE30F5D000388ED /* IPAddressTableViewController.swift in Sources */,
 				F0938A601EE2FB1600B116E7 /* TXOSCViewController.swift in Sources */,
 				F0C3AD6A2C056F8100D30060 /* UserSettings.swift in Sources */,
 				F0C57DA51EF3BED10099B5B7 /* SliderTableViewCell.swift in Sources */,

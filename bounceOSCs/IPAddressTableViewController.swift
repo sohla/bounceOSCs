@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MMLanScan
+//import MMLanScan
 
 class IPAddressTableViewController: UITableViewController, MMLANScannerDelegate {
 
