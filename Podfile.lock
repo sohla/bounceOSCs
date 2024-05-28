@@ -16,24 +16,20 @@ PODS:
     - AudioKit/Soundpipe
   - AudioKit/STK (5.1.0)
   - MMLanScan (3.0.0)
-  - Pantry (0.3)
 
 DEPENDENCIES:
   - AudioKit
   - MMLanScan
-  - Pantry
 
 SPEC REPOS:
   trunk:
     - AudioKit
     - MMLanScan
-    - Pantry
 
 SPEC CHECKSUMS:
   AudioKit: 81246a4ccdd7ca3c6e0076f913070e90987b4369
   MMLanScan: 86a0f77edbf163be30c1f58321469c7c8ce4c50e
-  Pantry: 98481849be65d2b2cb9658976533e84ebd266192
 
-PODFILE CHECKSUM: b51ac47f40951c9777b00402dc57a657ccecd341
+PODFILE CHECKSUM: ad1e32c3f73f36b7dcde75ad75b8b1c79b93d33a
 
 COCOAPODS: 1.15.2

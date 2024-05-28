@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Pantry
+//import Pantry
 
 //protocol SensorTableViewCellDelegate : class{
 //    func onOffSwitchDidChange(_ cell: SensorTableViewCell, state: Bool)
@@ -31,23 +31,26 @@ class SensorTableViewCell: UITableViewCell {
     }
 
     @IBAction func onOffSwitchChanged(_ sender: Any) {
-        //delegate?.onOffSwitchDidChange(self, state: (sender as! UISwitch).isOn)
-
-        Pantry.pack(onOffSwitch.isOn, key: titleLabel.text!)
-        
-        NotificationCenter.default.post(
-            name: Notification.Name(rawValue: titleLabel.text! + "_onOffChanged"),
-            object: nil,
-            userInfo: ["value": onOffSwitch.isOn])
-    }
-    
-    func load(_ s: String) {
-        if let state: Bool = Pantry.unpack(s) {
-            onOffSwitch.isOn = state
+        if let title = titleLabel.text {
+            UserDefaults.standard.set(onOffSwitch.isOn, forKey: title)
             NotificationCenter.default.post(
-                name: Notification.Name(rawValue: titleLabel.text! + "_onOffChanged"),
+                name: Notification.Name(rawValue: title + "_onOffChanged"),
                 object: nil,
                 userInfo: ["value": onOffSwitch.isOn])
         }
+    }
+    
+    func load(_ s: String) {
+        if let title = titleLabel.text {
+            let value = UserDefaults.standard.bool(forKey: title)
+            if(value != onOffSwitch.isOn){
+                onOffSwitch.isOn = value
+                NotificationCenter.default.post(
+                    name: Notification.Name(rawValue: titleLabel.text! + "_onOffChanged"),
+                    object: nil,
+                    userInfo: ["value": onOffSwitch.isOn])
+            }
+        }
+        
     }
 }

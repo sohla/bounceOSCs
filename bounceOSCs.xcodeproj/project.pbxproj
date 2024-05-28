@@ -29,6 +29,7 @@
 		F0938A5E1EE1AAEE00B116E7 /* TransmittersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0938A5D1EE1AAEE00B116E7 /* TransmittersTableViewController.swift */; };
 		F0938A601EE2FB1600B116E7 /* TXOSCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0938A5F1EE2FB1600B116E7 /* TXOSCViewController.swift */; };
 		F0BD2B6A1FCB474E001A73F1 /* RXOSCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BD2B691FCB474E001A73F1 /* RXOSCViewController.swift */; };
+		F0C3AD6A2C056F8100D30060 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C3AD692C056F8100D30060 /* UserSettings.swift */; };
 		F0C57DA11EF186AB0099B5B7 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA01EF186AB0099B5B7 /* ButtonTableViewCell.swift */; };
 		F0C57DA31EF190060099B5B7 /* TouchSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA21EF190060099B5B7 /* TouchSensors.swift */; };
 		F0C57DA51EF3BED10099B5B7 /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA41EF3BED10099B5B7 /* SliderTableViewCell.swift */; };
@@ -61,6 +62,7 @@
 		F0938A5D1EE1AAEE00B116E7 /* TransmittersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransmittersTableViewController.swift; sourceTree = "<group>"; };
 		F0938A5F1EE2FB1600B116E7 /* TXOSCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TXOSCViewController.swift; sourceTree = "<group>"; };
 		F0BD2B691FCB474E001A73F1 /* RXOSCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXOSCViewController.swift; sourceTree = "<group>"; };
+		F0C3AD692C056F8100D30060 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		F0C57DA01EF186AB0099B5B7 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		F0C57DA21EF190060099B5B7 /* TouchSensors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchSensors.swift; sourceTree = "<group>"; };
 		F0C57DA41EF3BED10099B5B7 /* SliderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				F060B75C2089C94F00DECBD2 /* OSCReciever.swift */,
 				F0938A5D1EE1AAEE00B116E7 /* TransmittersTableViewController.swift */,
 				F0938A5F1EE2FB1600B116E7 /* TXOSCViewController.swift */,
+				F0C3AD692C056F8100D30060 /* UserSettings.swift */,
 				F0BD2B691FCB474E001A73F1 /* RXOSCViewController.swift */,
 				F06B0BAA1EE30F5D000388ED /* IPAddressTableViewController.swift */,
 				F06B0BAC1EE45BE1000388ED /* SensorsTableViewController.swift */,
@@ -237,15 +240,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-bounceOSCs/Pods-bounceOSCs-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MMLanScan/MMLanScan.framework",
-				"${BUILT_PRODUCTS_DIR}/Pantry/Pantry.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bounceOSCs/Pods-bounceOSCs-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMLanScan.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pantry.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bounceOSCs/Pods-bounceOSCs-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -294,6 +294,7 @@
 				F0345E741ED495CA00D1038A /* FirstViewController.swift in Sources */,
 				F06B0BAB1EE30F5D000388ED /* IPAddressTableViewController.swift in Sources */,
 				F0938A601EE2FB1600B116E7 /* TXOSCViewController.swift in Sources */,
+				F0C3AD6A2C056F8100D30060 /* UserSettings.swift in Sources */,
 				F0C57DA51EF3BED10099B5B7 /* SliderTableViewCell.swift in Sources */,
 				F0938A5E1EE1AAEE00B116E7 /* TransmittersTableViewController.swift in Sources */,
 				F0345E8F1EDC5C6D00D1038A /* TransmitterProtocol.swift in Sources */,

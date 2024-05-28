@@ -7,91 +7,70 @@
 //
 
 import Foundation
-import Pantry
+//import Pantry
 
 class SensorTransmitters {
     
     
     let attitudeOSC = SensorTransmitter(
         sensor: AttitudeSensor(),
-        transmitter: OSCTransmitter(
-            netAddress: NetAddress(address: "127.0.0.1", port: "9000"), isOn: false))
+        transmitter: OSCTransmitter())
 
     let rotationMatrixOSC = SensorTransmitter(
         sensor: RotationMatrixSensor(),
-        transmitter: OSCTransmitter(
-            netAddress: NetAddress(address: "127.0.0.1", port: "9000"), isOn: false))
+        transmitter: OSCTransmitter())
 
     let accelOSC = SensorTransmitter(
         sensor: AccelSensor(),
-        transmitter: OSCTransmitter(
-            netAddress: NetAddress(address: "127.0.0.1", port: "9000"), isOn: false))
+        transmitter: OSCTransmitter())
 
     let rotationOSC = SensorTransmitter(
         sensor: RotationRateSensor(),
-        transmitter: OSCTransmitter(
-            netAddress: NetAddress(address: "127.0.0.1", port: "9000"), isOn: false))
+        transmitter: OSCTransmitter())
 
     let quaternionOSC = SensorTransmitter(
         sensor: QuaternionSensor(),
-        transmitter: OSCTransmitter(
-            netAddress: NetAddress(address: "127.0.0.1", port: "9000"), isOn: false))
+        transmitter: OSCTransmitter())
 
 //    let ampOSC = SensorTransmitter(
 //        sensor: AudioAmpSensor(),
-//        transmitter: OSCTransmitter(
-//            netAddress: NetAddress(address: "127.0.0.1", port: "9000"), isOn: false))
+//        transmitter: OSCTransmitter())
 
     let buttonOSC = SensorTransmitter(
         sensor: ButtonSensor(),
-        transmitter: OSCTransmitter(
-            netAddress: NetAddress(address: "127.0.0.1", port: "9000"), isOn: false))
+        transmitter: OSCTransmitter())
 
     let sliderOSC = SensorTransmitter(
         sensor: SliderSensor(),
-        transmitter: OSCTransmitter(
-            netAddress: NetAddress(address: "127.0.0.1", port: "9000"), isOn: false))
+        transmitter: OSCTransmitter())
     
     
     init() {
 
-        if let ipAddress: String = Pantry.unpack("ip_address"),
-            let port: String = Pantry.unpack("txport") {
-            
-            let na = NetAddress(address: ipAddress, port: port)
-            
-            self.attitudeOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
-            self.rotationMatrixOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
-            self.accelOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
-            self.rotationOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
-            self.quaternionOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
-            //self.ampOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
-            self.buttonOSC.transmitter = OSCTransmitter(netAddress: na, isOn: true)
-            self.sliderOSC.transmitter = OSCTransmitter(netAddress: na, isOn: true)
+        if let ipAddress = UserDefaults.standard.string(forKey: UserSettings.transmitIP) {
+            if let port = UserDefaults.standard.string(forKey: UserSettings.transmitPort) {
+                
+                let na = NetAddress(address: ipAddress, port: port)
+                
+                self.attitudeOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
+                self.rotationMatrixOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
+                self.accelOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
+                self.rotationOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
+                self.quaternionOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
+                //self.ampOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
+                self.buttonOSC.transmitter = OSCTransmitter(netAddress: na, isOn: true)
+                self.sliderOSC.transmitter = OSCTransmitter(netAddress: na, isOn: true)
+            }
         }
         
-        if let on: Bool = Pantry.unpack("Gyroscope") {
-            self.attitudeOSC.transmitter?.isOn = on
-        }
 
-        if let on: Bool = Pantry.unpack("RotationMatrix") {
-            self.rotationMatrixOSC.transmitter?.isOn = on
-        }
+        self.attitudeOSC.transmitter?.isOn = UserDefaults.standard.bool(forKey: UserSettings.gyroscopeOn)
+        self.rotationMatrixOSC.transmitter?.isOn = UserDefaults.standard.bool(forKey: UserSettings.rotationMatrixOn)
+        self.accelOSC.transmitter?.isOn = UserDefaults.standard.bool(forKey: UserSettings.accelerometerOn)
+        self.rotationOSC.transmitter?.isOn = UserDefaults.standard.bool(forKey: UserSettings.rotationOn)
+        self.quaternionOSC.transmitter?.isOn = UserDefaults.standard.bool(forKey: UserSettings.quaternionOn)
+        
 
-        if let on: Bool = Pantry.unpack("Accelerometer") {
-            self.accelOSC.transmitter?.isOn = on
-        }
-
-        if let on: Bool = Pantry.unpack("RotationRate") {
-            self.rotationOSC.transmitter?.isOn = on
-        }
-        if let on: Bool = Pantry.unpack("Quaternion") {
-            self.quaternionOSC.transmitter?.isOn = on
-        }
-
-//        if let on: Bool = Pantry.unpack("Amp") {
-//            self.ampOSC.transmitter?.isOn = on
-//        }
         NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "ip_address"), object: nil, queue: nil) { n in
             let ip = n.userInfo?["value"] as? String
 

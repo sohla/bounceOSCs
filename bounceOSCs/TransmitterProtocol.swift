@@ -16,8 +16,9 @@ protocol TransmitterProtocol {
 }
 
 struct NetAddress {
-    var address:String
-    var port:String
+    var address:String = "127.0.0.1"
+    var port:String = "57120"
+    
     
     func asString() -> String {
         let head:String = "udp://";
@@ -28,8 +29,8 @@ struct NetAddress {
 struct OSCTransmitter : TransmitterProtocol {
    
     static let client:OSCClient = OSCClient()
-    var netAddress:NetAddress
-    var isOn: Bool
+    var netAddress:NetAddress = NetAddress()
+    var isOn: Bool = false
     
     func transmit(sensor: SensorProtocol){
         if(isOn){

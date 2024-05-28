@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Pantry
+//import Pantry
 
 class RXOSCViewController: UIViewController {
     
@@ -20,7 +20,10 @@ class RXOSCViewController: UIViewController {
         
         rxportTextField.delegate = rxportDelegate
         
-        rxportTextField.text = Pantry.unpack("rxport")
+        if let str = UserDefaults.standard.string(forKey: UserSettings.receivePort) {
+            rxportTextField.text = str
+        }
+
         
         //        ipAddressTextField.keyboardType = UIKeyboardType.numberPad
         //        portTextField.keyboardType = UIKeyboardType.numberPad
@@ -54,16 +57,16 @@ class rxportTextFieldDelegate : NSObject, UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         return true
     }
+
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
         if(isValidPort(s: textField.text!)){
             textField.resignFirstResponder()
             return true
-            
         }
         return false
         
     }
+
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         return true
     }
@@ -74,18 +77,19 @@ class rxportTextFieldDelegate : NSObject, UITextFieldDelegate {
             save(textField.text!)
         }
     }
+
     func isValidPort(s: String) -> Bool {
         if let _ = UInt16(s) { return true }
         return false
     }
+
     func save(_ s: String) {
-        Pantry.pack(s, key: "rxport")
         
+        UserDefaults.standard.set(s, forKey: UserSettings.receivePort)
         NotificationCenter.default.post(
-            name: Notification.Name(rawValue: "rxport"),
+            name: Notification.Name(rawValue: UserSettings.receivePort),
             object: nil,
             userInfo: ["value": s])
-        
     }
     
 }

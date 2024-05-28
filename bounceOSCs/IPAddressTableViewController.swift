@@ -106,7 +106,7 @@ class IPAddressTableViewController: UITableViewController, MMLANScannerDelegate 
     //
     
     func lanScanDidFindNewDevice(_ device: MMDevice!){
-        print("new device found at : \(device.ipAddress)")
+        print("new device found at : \(String(describing: device.ipAddress))")
 
         connectedDevices?.append(device)
         self.tableView.reloadData()

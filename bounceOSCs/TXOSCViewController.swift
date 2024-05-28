@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Pantry
 
 class TXOSCViewController: UIViewController {
 
@@ -23,8 +22,12 @@ class TXOSCViewController: UIViewController {
         ipAddressTextField.delegate = ipAddressDelegate
         portTextField.delegate = portDelegate
         
-        ipAddressTextField.text = Pantry.unpack("ip_address")
-        portTextField.text = Pantry.unpack("txport")
+        if let str = UserDefaults.standard.string(forKey: UserSettings.transmitIP) {
+            ipAddressTextField.text = str
+        }
+        if let str = UserDefaults.standard.string(forKey: UserSettings.transmitPort) {
+            portTextField.text = str
+        }
         
 //        ipAddressTextField.keyboardType = UIKeyboardType.numberPad
 //        portTextField.keyboardType = UIKeyboardType.numberPad
@@ -67,6 +70,7 @@ class ipAddressTextFieldDelegate : NSObject, UITextFieldDelegate, Stored {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         return true
     }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         if(isValidIP(s: textField.text!)){
@@ -77,6 +81,7 @@ class ipAddressTextFieldDelegate : NSObject, UITextFieldDelegate, Stored {
         return false
         
     }
+    
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         return true
     }
@@ -88,20 +93,20 @@ class ipAddressTextFieldDelegate : NSObject, UITextFieldDelegate, Stored {
             save(textField.text!)
         }
     }
+
     func isValidIP(s: String) -> Bool {
         let parts = s.components(separatedBy: ".")
         let nums = parts.compactMap { Int($0) }
         return parts.count == 4 && nums.count == 4 && nums.filter { $0 >= 0 && $0 < 256}.count == 4
     }
     
-
     func save(_ s: String) {
-        Pantry.pack(s, key: "ip_address")
+        
+        UserDefaults.standard.set(s, forKey: UserSettings.transmitIP)
         NotificationCenter.default.post(
-            name: Notification.Name(rawValue: "ip_address"),
+            name: Notification.Name(rawValue: UserSettings.transmitIP),
             object: nil,
             userInfo: ["value": s])
-        
     }
 }
 
@@ -111,6 +116,7 @@ class portTextFieldDelegate : NSObject, UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         return true
     }
+
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         if(isValidPort(s: textField.text!)){
@@ -121,6 +127,7 @@ class portTextFieldDelegate : NSObject, UITextFieldDelegate {
         return false
         
     }
+
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         return true
     }
@@ -131,18 +138,18 @@ class portTextFieldDelegate : NSObject, UITextFieldDelegate {
             save(textField.text!)
         }
     }
+    
     func isValidPort(s: String) -> Bool {
         if let _ = UInt16(s) { return true }
         return false
     }
+    
     func save(_ s: String) {
-        Pantry.pack(s, key: "txport")
+        UserDefaults.standard.set(s, forKey: UserSettings.transmitPort)
         NotificationCenter.default.post(
-            name: Notification.Name(rawValue: "txport"),
+            name: Notification.Name(rawValue: UserSettings.transmitPort),
             object: nil,
             userInfo: ["value": s])
-        
-    
     }
   
 }
