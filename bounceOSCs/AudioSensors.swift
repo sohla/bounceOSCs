@@ -16,21 +16,21 @@ class AudioSensor : MIDIListener {
     
     
     
-    let audioEngine = AudioEngine()
-    let mic: AudioEngine.InputNode
-    let ampTap: AmplitudeTap
+//    let audioEngine = AudioEngine()
+//    let mic: AudioEngine.InputNode
+//    let ampTap: AmplitudeTap
     
     
     //    let midiManager = MIDIManager(clientName: "oscBounces", model: "iphone", manufacturer: "sohla")
     init() {
-        mic = audioEngine.input!
-        ampTap = AmplitudeTap(mic)
-        ampTap.analysisMode = .peak
-        audioEngine.output = mic
-        audioEngine.mainMixerNode?.volume = 0.0
-        ampTap.start()
-        mic.start()
-        try? audioEngine.start()
+//        mic = audioEngine.input!
+//        ampTap = AmplitudeTap(mic)
+//        ampTap.analysisMode = .peak
+//        audioEngine.output = mic
+//        audioEngine.mainMixerNode?.volume = 0.0
+//        ampTap.start()
+//        mic.start()
+//        try? audioEngine.start()
         //        try?midiManager.start()
         
         let midi = MIDI.sharedInstance
@@ -96,7 +96,7 @@ class AudioAmpSensor : AudioSensor, SensorProtocol {
     }
     
     func oscData() -> (String,Array<String>){
-        let amp = ampTap.amplitude
+        let amp = 0.0//ampTap.amplitude
         print(amp)
         return ("/gyrosc/amp",[String(amp)])
     }
