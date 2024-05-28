@@ -162,7 +162,7 @@
 					F0345E6D1ED495CA00D1038A = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = G9C3VREPPJ;
-						LastSwiftMigration = "";
+						LastSwiftMigration = 1530;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -387,7 +387,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sohla.bounceOSCs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -407,7 +407,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sohla.bounceOSCs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
