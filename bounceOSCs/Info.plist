@@ -23,7 +23,7 @@
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Tracking Location</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>true</string>
+	<string>YES</string>
 	<key>UIApplicationExitsOnSuspend</key>
 	<false/>
 	<key>UIBackgroundModes</key>

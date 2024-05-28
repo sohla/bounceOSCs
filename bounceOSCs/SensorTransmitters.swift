@@ -7,7 +7,6 @@
 //
 
 import Foundation
-//import Pantry
 
 class SensorTransmitters {
     
@@ -32,9 +31,9 @@ class SensorTransmitters {
         sensor: QuaternionSensor(),
         transmitter: OSCTransmitter())
 
-//    let ampOSC = SensorTransmitter(
-//        sensor: AudioAmpSensor(),
-//        transmitter: OSCTransmitter())
+    let ampOSC = SensorTransmitter(
+        sensor: AudioAmpSensor(),
+        transmitter: OSCTransmitter())
 
     let buttonOSC = SensorTransmitter(
         sensor: ButtonSensor(),
@@ -57,7 +56,7 @@ class SensorTransmitters {
                 self.accelOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
                 self.rotationOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
                 self.quaternionOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
-                //self.ampOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
+                self.ampOSC.transmitter = OSCTransmitter(netAddress: na, isOn: false)
                 self.buttonOSC.transmitter = OSCTransmitter(netAddress: na, isOn: true)
                 self.sliderOSC.transmitter = OSCTransmitter(netAddress: na, isOn: true)
             }
@@ -69,7 +68,8 @@ class SensorTransmitters {
         self.accelOSC.transmitter?.isOn = UserDefaults.standard.bool(forKey: UserSettings.accelerometerOn)
         self.rotationOSC.transmitter?.isOn = UserDefaults.standard.bool(forKey: UserSettings.rotationOn)
         self.quaternionOSC.transmitter?.isOn = UserDefaults.standard.bool(forKey: UserSettings.quaternionOn)
-        
+        self.ampOSC.transmitter?.isOn = UserDefaults.standard.bool(forKey: UserSettings.ampOn)
+
 
         NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "ip_address"), object: nil, queue: nil) { n in
             let ip = n.userInfo?["value"] as? String
@@ -79,7 +79,7 @@ class SensorTransmitters {
             self.accelOSC.transmitter?.netAddress.address = ip!
             self.rotationOSC.transmitter?.netAddress.address = ip!
             self.quaternionOSC.transmitter?.netAddress.address = ip!
-//            self.ampOSC.transmitter?.netAddress.address = ip!
+            self.ampOSC.transmitter?.netAddress.address = ip!
             self.buttonOSC.transmitter?.netAddress.address = ip!
             self.sliderOSC.transmitter?.netAddress.address = ip!
         }
@@ -91,7 +91,7 @@ class SensorTransmitters {
             self.accelOSC.transmitter?.netAddress.port = port!
             self.rotationOSC.transmitter?.netAddress.port = port!
             self.quaternionOSC.transmitter?.netAddress.port = port!
-//            self.ampOSC.transmitter?.netAddress.port = port!
+            self.ampOSC.transmitter?.netAddress.port = port!
             self.buttonOSC.transmitter?.netAddress.port = port!
             self.sliderOSC.transmitter?.netAddress.port = port!
         }
@@ -107,7 +107,7 @@ class SensorTransmitters {
                 self.accelOSC.run(interval: framerate)
                 self.rotationOSC.run(interval: framerate)
                 self.quaternionOSC.run(interval: framerate)
-//                self.ampOSC.run(interval: framerate)
+                self.ampOSC.run(interval: framerate)
                 
                 // if we want to poll use run
                 //self.buttonOSC.run(interval: framerate)
@@ -121,7 +121,7 @@ class SensorTransmitters {
                 self.accelOSC.stop()
                 self.rotationOSC.stop()
                 self.quaternionOSC.stop()
-//                self.ampOSC.stop()
+                self.ampOSC.stop()
                 self.buttonOSC.transmitter?.isOn = false
                 self.sliderOSC.transmitter?.isOn = false
             }
@@ -155,10 +155,10 @@ class SensorTransmitters {
             self.quaternionOSC.transmitter?.isOn = value!
         }
 
-//        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "Amp_onOffChanged"), object: nil, queue: nil) { n in
-//            let value = n.userInfo?["value"] as? Bool
-////            self.ampOSC.transmitter?.isOn = value!
-//        }
+        NotificationCenter.default.addObserver(forName: Notification.Name(rawValue: "Amp_onOffChanged"), object: nil, queue: nil) { n in
+            let value = n.userInfo?["value"] as? Bool
+            self.ampOSC.transmitter?.isOn = value!
+        }
 
         
         

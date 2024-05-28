@@ -26,6 +26,7 @@
 		F090B4B12080372000C64B53 /* MotionHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F090B4B02080372000C64B53 /* MotionHeaderTableViewCell.swift */; };
 		F0938A5E1EE1AAEE00B116E7 /* TransmittersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0938A5D1EE1AAEE00B116E7 /* TransmittersTableViewController.swift */; };
 		F0938A601EE2FB1600B116E7 /* TXOSCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0938A5F1EE2FB1600B116E7 /* TXOSCViewController.swift */; };
+		F0ABB0072C05930800A427F5 /* AudioSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0345E951EDDAEF300D1038A /* AudioSensors.swift */; };
 		F0BD2B6A1FCB474E001A73F1 /* RXOSCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BD2B691FCB474E001A73F1 /* RXOSCViewController.swift */; };
 		F0C3AD6A2C056F8100D30060 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C3AD692C056F8100D30060 /* UserSettings.swift */; };
 		F0C3AD6D2C0590E900D30060 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = F0C3AD6C2C0590E900D30060 /* AudioKit */; };
@@ -220,6 +221,7 @@
 				F0BD2B6A1FCB474E001A73F1 /* RXOSCViewController.swift in Sources */,
 				F0345E721ED495CA00D1038A /* AppDelegate.swift in Sources */,
 				F0345E8D1EDC5C4C00D1038A /* SensorProtocol.swift in Sources */,
+				F0ABB0072C05930800A427F5 /* AudioSensors.swift in Sources */,
 				F06B0BB11EE59C8D000388ED /* SensorTableViewCell.swift in Sources */,
 				F060B75D2089C94F00DECBD2 /* OSCReciever.swift in Sources */,
 				F0345E741ED495CA00D1038A /* FirstViewController.swift in Sources */,

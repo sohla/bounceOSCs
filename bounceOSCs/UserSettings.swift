@@ -21,5 +21,6 @@ enum UserSettings {
     static let accelerometerOn = "Accelerometer"
     static let rotationOn = "RotationRate"
     static let quaternionOn = "Quaternion"
+    static let ampOn = "Amp"
 
 }

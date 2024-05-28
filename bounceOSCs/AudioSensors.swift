@@ -11,24 +11,21 @@ import AudioKit
 
 class AudioSensor {
     
-    let mic: AKMicrophone!
-    let tracker: AKAmplitudeTracker!
-    let silence: AKBooster!
-    let bufferSize: UInt32 = 1_024
+    let audioEngine = AudioEngine()
+    let mic: AudioEngine.InputNode
+    let ampTap: AmplitudeTap
 
     init() {
-        AKSettings.audioInputEnabled = true
-        AKSettings.bufferLength = .veryShort
-        AKSettings.audioInputEnabled = true
+        mic = audioEngine.input!
+        ampTap = AmplitudeTap(mic)
+        ampTap.analysisMode = .peak
+        audioEngine.output = mic
+        audioEngine.mainMixerNode?.volume = 0.0
+        ampTap.start()
+        mic.start()
+        try? audioEngine.start()
         
-        mic = AKMicrophone()
-        tracker = AKAmplitudeTracker.init(mic)
-        silence = AKBooster(tracker, gain: 0)
         
-        AudioKit.output = silence
-        try? AudioKit.start()
-        //tracker.start()
-
     }
     
     func trigger(_ sum: Float){
@@ -38,17 +35,17 @@ class AudioSensor {
 
 
 class AudioAmpSensor : AudioSensor, SensorProtocol {
-    
+
+    override init() {
+    }
+
     func getData() -> Array<Double> {
-        return [tracker.amplitude]
+        return [0.0]
     }
     
     func oscData() -> (String,Array<String>){
-        let amp = tracker.amplitude 
-        
-//        if tracker.amplitude > 0.01 {
-//            print(tracker.amplitude)
-//        }
+        let amp = ampTap.amplitude
+        print(amp)
         return ("/gyrosc/amp",[String(amp)])
     }
     func midiData() -> String{ return "TODO"}
