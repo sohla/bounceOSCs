@@ -7,12 +7,8 @@
 //
 
 import Foundation
-import AudioKit
 
-import CoreMIDI
-import Haptica
-
-class AudioSensor : MIDIListener {
+class AudioSensor {
     
     
     
@@ -32,13 +28,7 @@ class AudioSensor : MIDIListener {
 //        mic.start()
 //        try? audioEngine.start()
         //        try?midiManager.start()
-        
-        let midi = MIDI.sharedInstance
-        print(midi.inputNames)
-        midi.openInput()
-        midi.addListener(self)
-        
-        
+          
         
     }
     
@@ -46,43 +36,7 @@ class AudioSensor : MIDIListener {
         print("*",sum)
     }
     
-    func receivedMIDINoteOn(noteNumber: AudioKit.MIDINoteNumber, velocity: AudioKit.MIDIVelocity, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
-        print("midi note on: \(noteNumber) velocity: \(velocity) channel: \(channel)")
-        
-        Haptic.impact(.heavy).generate()
-    }
-    
 
-    
-    func receivedMIDINoteOff(noteNumber: AudioKit.MIDINoteNumber, velocity: AudioKit.MIDIVelocity, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
-    }
-    
-    func receivedMIDIController(_ controller: AudioKit.MIDIByte, value: AudioKit.MIDIByte, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
-    }
-    
-    func receivedMIDIAftertouch(noteNumber: AudioKit.MIDINoteNumber, pressure: AudioKit.MIDIByte, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
-    }
-    
-    func receivedMIDIAftertouch(_ pressure: AudioKit.MIDIByte, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
-    }
-    
-    func receivedMIDIPitchWheel(_ pitchWheelValue: AudioKit.MIDIWord, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
-    }
-    
-    func receivedMIDIProgramChange(_ program: AudioKit.MIDIByte, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
-    }
-    
-    func receivedMIDISystemCommand(_ data: [AudioKit.MIDIByte], portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
-    }
-    
-    func receivedMIDISetupChange() {
-    }
-    
-    func receivedMIDIPropertyChange(propertyChangeInfo: MIDIObjectPropertyChangeNotification) {
-    }
-    
-    func receivedMIDINotification(notification: MIDINotification) {
-    }
 }
 
 

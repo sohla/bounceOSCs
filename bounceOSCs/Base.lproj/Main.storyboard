@@ -177,7 +177,7 @@
         <!--Play-->
         <scene sceneID="XVE-RN-rsU">
             <objects>
-                <viewController id="mFi-1z-Mjp" sceneMemberID="viewController">
+                <viewController id="mFi-1z-Mjp" customClass="PlayController" customModule="bounceOSCs" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="owJ-GW-8MP"/>
                         <viewControllerLayoutGuide type="bottom" id="oFs-P8-zir"/>
