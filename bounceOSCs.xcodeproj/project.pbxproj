@@ -30,9 +30,11 @@
 		F0BD2B6A1FCB474E001A73F1 /* RXOSCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BD2B691FCB474E001A73F1 /* RXOSCViewController.swift */; };
 		F0C3AD6A2C056F8100D30060 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C3AD692C056F8100D30060 /* UserSettings.swift */; };
 		F0C3AD6D2C0590E900D30060 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = F0C3AD6C2C0590E900D30060 /* AudioKit */; };
+		F0C50D202C06CFB70019F23F /* PlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C50D1F2C06CFB70019F23F /* PlayController.swift */; };
 		F0C57DA11EF186AB0099B5B7 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA01EF186AB0099B5B7 /* ButtonTableViewCell.swift */; };
 		F0C57DA31EF190060099B5B7 /* TouchSensors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA21EF190060099B5B7 /* TouchSensors.swift */; };
 		F0C57DA51EF3BED10099B5B7 /* SliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C57DA41EF3BED10099B5B7 /* SliderTableViewCell.swift */; };
+		F0E7AED32C06DCC200B0DAAF /* SoundpipeAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = F0E7AED22C06DCC200B0DAAF /* SoundpipeAudioKit */; };
 		F0FEFDD62C05A52100058D6D /* Haptica in Frameworks */ = {isa = PBXBuildFile; productRef = F0FEFDD52C05A52100058D6D /* Haptica */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +61,7 @@
 		F0938A5F1EE2FB1600B116E7 /* TXOSCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TXOSCViewController.swift; sourceTree = "<group>"; };
 		F0BD2B691FCB474E001A73F1 /* RXOSCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXOSCViewController.swift; sourceTree = "<group>"; };
 		F0C3AD692C056F8100D30060 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		F0C50D1F2C06CFB70019F23F /* PlayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayController.swift; sourceTree = "<group>"; };
 		F0C57DA01EF186AB0099B5B7 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
 		F0C57DA21EF190060099B5B7 /* TouchSensors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchSensors.swift; sourceTree = "<group>"; };
 		F0C57DA41EF3BED10099B5B7 /* SliderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderTableViewCell.swift; sourceTree = "<group>"; };
@@ -70,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0533B012C043F72000C4D1D /* OSCKit in Frameworks */,
+				F0E7AED32C06DCC200B0DAAF /* SoundpipeAudioKit in Frameworks */,
 				F0FEFDD62C05A52100058D6D /* Haptica in Frameworks */,
 				F0C3AD6D2C0590E900D30060 /* AudioKit in Frameworks */,
 				F0533B032C043F72000C4D1D /* OSCKitCore in Frameworks */,
@@ -110,6 +114,7 @@
 				F0C57DA01EF186AB0099B5B7 /* ButtonTableViewCell.swift */,
 				F0C57DA41EF3BED10099B5B7 /* SliderTableViewCell.swift */,
 				F0345E731ED495CA00D1038A /* FirstViewController.swift */,
+				F0C50D1F2C06CFB70019F23F /* PlayController.swift */,
 				F0345E751ED495CA00D1038A /* SecondViewController.swift */,
 				F0345E881EDC5BE100D1038A /* SensorTransmitters.swift */,
 				F0345E8A1EDC5C2700D1038A /* SensorTransmitter.swift */,
@@ -147,6 +152,7 @@
 				F0533B022C043F72000C4D1D /* OSCKitCore */,
 				F0C3AD6C2C0590E900D30060 /* AudioKit */,
 				F0FEFDD52C05A52100058D6D /* Haptica */,
+				F0E7AED22C06DCC200B0DAAF /* SoundpipeAudioKit */,
 			);
 			productName = bounceOSCs;
 			productReference = F0345E6E1ED495CA00D1038A /* bounceOSCs.app */;
@@ -190,6 +196,7 @@
 				F0C3AD6B2C0590E900D30060 /* XCRemoteSwiftPackageReference "AudioKit" */,
 				F0AF68612C059E2000483494 /* XCRemoteSwiftPackageReference "MIDIKit" */,
 				F0FEFDD42C05A52100058D6D /* XCRemoteSwiftPackageReference "Haptica" */,
+				F0E7AED12C06DCC200B0DAAF /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
 			);
 			productRefGroup = F0345E6F1ED495CA00D1038A /* Products */;
 			projectDirPath = "";
@@ -228,6 +235,7 @@
 				F0345E8D1EDC5C4C00D1038A /* SensorProtocol.swift in Sources */,
 				F0ABB0072C05930800A427F5 /* AudioSensors.swift in Sources */,
 				F06B0BB11EE59C8D000388ED /* SensorTableViewCell.swift in Sources */,
+				F0C50D202C06CFB70019F23F /* PlayController.swift in Sources */,
 				F060B75D2089C94F00DECBD2 /* OSCReciever.swift in Sources */,
 				F0345E741ED495CA00D1038A /* FirstViewController.swift in Sources */,
 				F0938A601EE2FB1600B116E7 /* TXOSCViewController.swift in Sources */,
@@ -470,6 +478,14 @@
 				minimumVersion = 5.6.4;
 			};
 		};
+		F0E7AED12C06DCC200B0DAAF /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/SoundpipeAudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.1;
+			};
+		};
 		F0FEFDD42C05A52100058D6D /* XCRemoteSwiftPackageReference "Haptica" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/efremidze/Haptica.git";
@@ -495,6 +511,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F0C3AD6B2C0590E900D30060 /* XCRemoteSwiftPackageReference "AudioKit" */;
 			productName = AudioKit;
+		};
+		F0E7AED22C06DCC200B0DAAF /* SoundpipeAudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0E7AED12C06DCC200B0DAAF /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */;
+			productName = SoundpipeAudioKit;
 		};
 		F0FEFDD52C05A52100058D6D /* Haptica */ = {
 			isa = XCSwiftPackageProductDependency;

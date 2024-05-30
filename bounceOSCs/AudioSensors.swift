@@ -7,38 +7,28 @@
 //
 
 import Foundation
-import AudioKit
 
-import CoreMIDI
-import Haptica
-
-class AudioSensor : MIDIListener {
+class AudioSensor {
     
     
     
-    let audioEngine = AudioEngine()
-    let mic: AudioEngine.InputNode
-    let ampTap: AmplitudeTap
+//    let audioEngine = AudioEngine()
+//    let mic: AudioEngine.InputNode
+//    let ampTap: AmplitudeTap
     
     
     //    let midiManager = MIDIManager(clientName: "oscBounces", model: "iphone", manufacturer: "sohla")
     init() {
-        mic = audioEngine.input!
-        ampTap = AmplitudeTap(mic)
-        ampTap.analysisMode = .peak
-        audioEngine.output = mic
-        audioEngine.mainMixerNode?.volume = 0.0
-        ampTap.start()
-        mic.start()
-        try? audioEngine.start()
+//        mic = audioEngine.input!
+//        ampTap = AmplitudeTap(mic)
+//        ampTap.analysisMode = .peak
+//        audioEngine.output = mic
+//        audioEngine.mainMixerNode?.volume = 0.0
+//        ampTap.start()
+//        mic.start()
+//        try? audioEngine.start()
         //        try?midiManager.start()
-        
-        let midi = MIDI.sharedInstance
-        print(midi.inputNames)
-        midi.openInput()
-        midi.addListener(self)
-        
-        
+          
         
     }
     
@@ -46,43 +36,7 @@ class AudioSensor : MIDIListener {
         print("*",sum)
     }
     
-    func receivedMIDINoteOn(noteNumber: AudioKit.MIDINoteNumber, velocity: AudioKit.MIDIVelocity, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
-        print("midi note on: \(noteNumber) velocity: \(velocity) channel: \(channel)")
-        
-        Haptic.impact(.heavy).generate()
-    }
-    
 
-    
-    func receivedMIDINoteOff(noteNumber: AudioKit.MIDINoteNumber, velocity: AudioKit.MIDIVelocity, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
-    }
-    
-    func receivedMIDIController(_ controller: AudioKit.MIDIByte, value: AudioKit.MIDIByte, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
-    }
-    
-    func receivedMIDIAftertouch(noteNumber: AudioKit.MIDINoteNumber, pressure: AudioKit.MIDIByte, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
-    }
-    
-    func receivedMIDIAftertouch(_ pressure: AudioKit.MIDIByte, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
-    }
-    
-    func receivedMIDIPitchWheel(_ pitchWheelValue: AudioKit.MIDIWord, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
-    }
-    
-    func receivedMIDIProgramChange(_ program: AudioKit.MIDIByte, channel: AudioKit.MIDIChannel, portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
-    }
-    
-    func receivedMIDISystemCommand(_ data: [AudioKit.MIDIByte], portID: MIDIUniqueID?, timeStamp: MIDITimeStamp?) {
-    }
-    
-    func receivedMIDISetupChange() {
-    }
-    
-    func receivedMIDIPropertyChange(propertyChangeInfo: MIDIObjectPropertyChangeNotification) {
-    }
-    
-    func receivedMIDINotification(notification: MIDINotification) {
-    }
 }
 
 
@@ -96,7 +50,7 @@ class AudioAmpSensor : AudioSensor, SensorProtocol {
     }
     
     func oscData() -> (String,Array<String>){
-        let amp = ampTap.amplitude
+        let amp = 0.0//ampTap.amplitude
         print(amp)
         return ("/gyrosc/amp",[String(amp)])
     }
