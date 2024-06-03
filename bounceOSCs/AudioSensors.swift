@@ -27,7 +27,7 @@ class AudioSensor {
 //        ampTap.start()
 //        mic.start()
 //        try? audioEngine.start()
-        //        try?midiManager.start()
+//        try?midiManager.start()
           
         
     }

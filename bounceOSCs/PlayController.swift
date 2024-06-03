@@ -16,8 +16,9 @@ class PlayController: UIViewController, MIDIListener {
     
     let engine = AudioEngine()
     let midi = MIDI.sharedInstance
-    var osc = Oscillator()
+    var osc = DynamicOscillator()
     var env: AmplitudeEnvelope
+    
     
     required init?(coder aDecoder: NSCoder) {
         self.env = AmplitudeEnvelope(osc)
